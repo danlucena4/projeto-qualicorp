@@ -27,8 +27,8 @@
     ],
     "tables": [
       {
-        "blockLabel": "Tabela (sem marcador)",
-        "includesCoparticipation": null,
+        "blockLabel": "Planos COM Coparticipação Parcial",
+        "includesCoparticipation": "PARTIAL",
         "products": [
           {
             "rawName": "Saúde por adesão rede 250 A+H+Obs Copart Bem Estar por adesão rede 550 A+H+Obs Copart",
@@ -71,8 +71,8 @@
         ]
       },
       {
-        "blockLabel": "Planos COM Coparticipação Parcial",
-        "includesCoparticipation": "PARTIAL",
+        "blockLabel": "Planos COM Coparticipação Total",
+        "includesCoparticipation": "WITH",
         "products": [
           {
             "rawName": "Saúde por adesão rede 250 A+H+Obs Copart Bem Estar por adesão rede 550 A+H+Obs Copart",
@@ -164,8 +164,8 @@
     "tables": [
       {
         "name": "Saúde",
-        "sourceLabel": "Tabela (sem marcador)",
-        "includesCoparticipation": null,
+        "sourceLabel": "Planos COM Coparticipação Parcial",
+        "includesCoparticipation": "PARTIAL",
         "contractType": "NOT_APPLICABLE",
         "lpts": [],
         "associations": [
@@ -179,7 +179,7 @@
         "isRefundable": false,
         "inferred": {
           "name": true,
-          "includesCoparticipation": true,
+          "includesCoparticipation": false,
           "contractType": true
         },
         "products": [
@@ -267,8 +267,8 @@
       },
       {
         "name": "Saúde",
-        "sourceLabel": "Planos COM Coparticipação Parcial",
-        "includesCoparticipation": "PARTIAL",
+        "sourceLabel": "Planos COM Coparticipação Total",
+        "includesCoparticipation": "WITH",
         "contractType": "NOT_APPLICABLE",
         "lpts": [],
         "associations": [

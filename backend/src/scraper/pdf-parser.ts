@@ -523,7 +523,20 @@ function extractNumbersFromRow(row: string): number[] {
 // âncora. Delimita cada bloco usando "Valores mensais expressos em Reais" como
 // separador de fim — isso evita que um bloco herde o conteúdo (e a coparticipação)
 // do bloco anterior quando vários blocos aparecem em sequência sem header claro.
-function splitPriceBlocks(pricesText: string): string[] {
+function detectLabelPattern(pricesSection: string): 'header' | 'footer' | 'unknown' {
+  const ansMatch = /\b\d{3}\.\d{3}\/\d{2}-\d\b/.exec(pricesSection);
+  const labelMatch = /Planos\s+(SEM|COM)\s+Coparticipação\s+(Parcial|Total)/i.exec(
+    pricesSection,
+  );
+  if (!ansMatch) return 'unknown';
+  if (!labelMatch) return 'header';
+  return labelMatch.index < ansMatch.index ? 'header' : 'footer';
+}
+
+function splitPriceBlocks(
+  pricesText: string,
+  pattern: 'header' | 'footer' | 'unknown' = 'header',
+): string[] {
   const lines = splitLines(pricesText);
   const anchors: number[] = [];
   for (let i = 0; i < lines.length; i++) {
@@ -532,14 +545,35 @@ function splitPriceBlocks(pricesText: string): string[] {
   if (anchors.length === 0) return [];
 
   const closureRe = /Valores mensais expressos/i;
+  const labelRe = /^Planos\s+(SEM|COM)\s+Coparticipação\s+(Parcial|Total)/i;
 
+  // Em modo footer, cada label aponta pro bloco ACIMA dele — usamos isso pra
+  // delimitar os blocos: bloco N termina na linha do label que o descreve.
+  if (pattern === 'footer') {
+    const labelLines: number[] = [];
+    for (let i = 0; i < lines.length; i++) {
+      if (labelRe.test(lines[i])) labelLines.push(i);
+    }
+
+    const blocks: string[] = [];
+    let lastBoundary = -1;
+    for (let i = 0; i < anchors.length; i++) {
+      const ansLine = anchors[i];
+      const start = lastBoundary + 1;
+      // end = primeiro label APÓS o ANS, ou fim do arquivo.
+      const nextLabel = labelLines.find((l) => l > ansLine);
+      const end = nextLabel !== undefined ? nextLabel + 1 : lines.length;
+      blocks.push(lines.slice(start, end).join('\n'));
+      lastBoundary = end - 1;
+    }
+    return blocks;
+  }
+
+  // Modo header (padrão): fecha cada bloco em "Valores mensais expressos".
   const blocks: string[] = [];
   for (let i = 0; i < anchors.length; i++) {
     const ansLine = anchors[i];
     const prevAnchor = i === 0 ? -1 : anchors[i - 1];
-    // Fim do bloco anterior: última "Valores mensais expressos" entre o anchor
-    // anterior e o atual — se existir, começamos depois disso. Senão, caímos
-    // em anchor[i-1] + 1.
     let start = i === 0 ? 0 : prevAnchor + 1;
     for (let j = ansLine - 1; j > prevAnchor; j--) {
       if (closureRe.test(lines[j])) {
@@ -547,13 +581,11 @@ function splitPriceBlocks(pricesText: string): string[] {
         break;
       }
     }
-    // Fim do bloco atual: primeiro "Valores mensais expressos" após o anchor
-    // ou a linha antes do próximo anchor (exclusivo).
     const nextLimit = i === anchors.length - 1 ? lines.length : anchors[i + 1];
     let end = nextLimit;
     for (let j = ansLine + 1; j < nextLimit; j++) {
       if (closureRe.test(lines[j])) {
-        end = j + 1; // inclui a linha de fechamento
+        end = j + 1;
         break;
       }
     }
@@ -734,8 +766,11 @@ export async function parseQualicorpPdf(data: Uint8Array): Promise<ExtractedPDF>
   const pricesSection =
     priceStart >= 0 ? text.slice(priceStart, priceEnd > priceStart ? priceEnd : undefined) : '';
 
-  // Divide em blocos e parseia cada um.
-  const blocks = splitPriceBlocks(pricesSection);
+  // Divide em blocos e parseia cada um. O pattern (header vs footer) ajusta
+  // a extensão do bloco: em footer (LIV Saúde), o bloco inclui a linha de
+  // label que vem DEPOIS do "Valores mensais", apontando pra ESTE bloco.
+  const labelPattern = detectLabelPattern(pricesSection);
+  const blocks = splitPriceBlocks(pricesSection, labelPattern);
   const tables: ExtractedTable[] = [];
 
   // Detecta variações conhecidas dentro da seção de preços (pares de sub-
