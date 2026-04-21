@@ -1,0 +1,354 @@
+{
+  "meta": {
+    "qcTableId": 1,
+    "operator": "HAPVIDA",
+    "uf": "AL",
+    "entity": "ABRABDIR",
+    "pdfUrl": "https://tabelasdevendas.qualicorp.com.br/tabelas/QUALIPRO_CS_HAPVIDA_AL_NP_25.pdf"
+  },
+  "extraction": {
+    "operatorHint": "HAPVIDA",
+    "planNameHint": "Nosso Plano A CA MUN CC QC 207 Nosso Plano AHO CA MUN Enf CC QC 166 Nosso Plano AHO CA MUN Apt CC QC 188",
+    "validityBaseMonth": "Junho",
+    "validityPeriod": "Agosto 2025 até Maio 2026",
+    "entities": [
+      {
+        "code": "ABRABDIR",
+        "name": "Associação Brasileira de Advogados e Bacharéis em Direito"
+      },
+      {
+        "code": "ABRACEM",
+        "name": "Associação Brasileira de Consultores Empresariais e Profissionais Liberais"
+      },
+      {
+        "code": "AFB",
+        "name": "Associação de Fisioterapeutas do Brasil"
+      },
+      {
+        "code": "AJUFE",
+        "name": "Associação dos Juízes Federais do Brasil"
+      },
+      {
+        "code": "AMB",
+        "name": "Associação Médica Brasileira"
+      },
+      {
+        "code": "ANAPROLIE",
+        "name": "Associação Nacional dos Profissionais Liberais e Empreendedores"
+      },
+      {
+        "code": "FNA",
+        "name": "Federação Nacional dos Arquitetos e Urbanistas"
+      },
+      {
+        "code": "GASP",
+        "name": "Grupo Associativo dos Servidores Públicos"
+      },
+      {
+        "code": "MÚTUA",
+        "name": "Mútua de Assistência dos Profissionais da Engenharia, Arquitetura e Agronomia"
+      },
+      {
+        "code": "UBE",
+        "name": "União Brasileira dos Estudantes"
+      },
+      {
+        "code": "UBES",
+        "name": "União Brasileira dos Estudantes Secundaristas"
+      },
+      {
+        "code": "UNE",
+        "name": "União Brasileira dos Estudantes Secundaristas"
+      }
+    ],
+    "tables": [
+      {
+        "blockLabel": "Coparticipação Parcial",
+        "includesCoparticipation": "PARTIAL",
+        "products": [
+          {
+            "rawName": "Nosso Plano A CA MUN CC QC 207 Nosso Plano AHO CA MUN Enf CC QC 166 Nosso Plano AHO CA MUN Apt CC QC 188",
+            "ansCode": "485.741/20-1",
+            "segment": "Ambulatorial",
+            "coverage": "Municipal",
+            "accommodation": null,
+            "prices": {
+              "age0_18": 211.28,
+              "age19_23": 279.52,
+              "age24_28": 319.21,
+              "age29_33": 356.56,
+              "age34_38": 375.46,
+              "age39_43": 422.02,
+              "age44_48": 516.97,
+              "age49_53": 718.59,
+              "age54_58": 970.1,
+              "age59Upper": 1261.13
+            }
+          },
+          {
+            "rawName": "Nosso Plano A CA MUN CC QC 207 Nosso Plano AHO CA MUN Enf CC QC 166 Nosso Plano AHO CA MUN Apt CC QC 188",
+            "ansCode": "485.699/20-6",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Municipal",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 287.66,
+              "age19_23": 379.71,
+              "age24_28": 436.67,
+              "age29_33": 489.07,
+              "age34_38": 513.52,
+              "age39_43": 580.28,
+              "age44_48": 707.94,
+              "age49_53": 976.96,
+              "age54_58": 1318.9,
+              "age59Upper": 1714.57
+            }
+          },
+          {
+            "rawName": "Nosso Plano A CA MUN CC QC 207 Nosso Plano AHO CA MUN Enf CC QC 166 Nosso Plano AHO CA MUN Apt CC QC 188",
+            "ansCode": "485.711/20-9",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Municipal",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 427.35,
+              "age19_23": 564.1,
+              "age24_28": 648.72,
+              "age29_33": 726.57,
+              "age34_38": 762.9,
+              "age39_43": 862.08,
+              "age44_48": 1051.74,
+              "age49_53": 1451.4,
+              "age54_58": 1959.39,
+              "age59Upper": 2547.21
+            }
+          }
+        ]
+      },
+      {
+        "blockLabel": "Coparticipação Parcial",
+        "includesCoparticipation": "PARTIAL",
+        "products": [
+          {
+            "rawName": "Nosso Plano A CA MUN CC QC 207 Nosso Plano AHO CA MUN Enf CC QC 166 Nosso Plano AHO CA MUN Apt CC QC 188",
+            "ansCode": "485.741/20-1",
+            "segment": "Ambulatorial",
+            "coverage": "Municipal",
+            "accommodation": null,
+            "prices": {
+              "age0_18": 210.28,
+              "age19_23": 277.15,
+              "age24_28": 316.05,
+              "age29_33": 352.65,
+              "age34_38": 371.16,
+              "age39_43": 416.78,
+              "age44_48": 509.82,
+              "age49_53": 707.38,
+              "age54_58": 953.83,
+              "age59Upper": 1239
+            }
+          },
+          {
+            "rawName": "Nosso Plano A CA MUN CC QC 207 Nosso Plano AHO CA MUN Enf CC QC 166 Nosso Plano AHO CA MUN Apt CC QC 188",
+            "ansCode": "485.699/20-6",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Municipal",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 282.66,
+              "age19_23": 372.07,
+              "age24_28": 427.39,
+              "age29_33": 478.29,
+              "age34_38": 502.04,
+              "age39_43": 566.88,
+              "age44_48": 690.88,
+              "age49_53": 952.18,
+              "age54_58": 1284.3,
+              "age59Upper": 1668.62
+            }
+          },
+          {
+            "rawName": "Nosso Plano A CA MUN CC QC 207 Nosso Plano AHO CA MUN Enf CC QC 166 Nosso Plano AHO CA MUN Apt CC QC 188",
+            "ansCode": "485.711/20-9",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Municipal",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 422.35,
+              "age19_23": 556.46,
+              "age24_28": 639.45,
+              "age29_33": 715.79,
+              "age34_38": 751.41,
+              "age39_43": 848.67,
+              "age44_48": 1034.66,
+              "age49_53": 1426.59,
+              "age54_58": 1924.76,
+              "age59Upper": 2501.21
+            }
+          }
+        ]
+      },
+      {
+        "blockLabel": "Com Coparticipação",
+        "includesCoparticipation": "WITH",
+        "products": [
+          {
+            "rawName": "Nosso Plano A CA MUN CC QC 207 Nosso Plano AHO CA MUN Enf CC QC 166 Nosso Plano AHO CA MUN Apt CC QC 188",
+            "ansCode": "485.741/20-1",
+            "segment": "Ambulatorial",
+            "coverage": "Municipal",
+            "accommodation": null,
+            "prices": {
+              "age0_18": 125.25,
+              "age19_23": 165.71,
+              "age24_28": 189.24,
+              "age29_33": 211.38,
+              "age34_38": 222.58,
+              "age39_43": 250.18,
+              "age44_48": 306.47,
+              "age49_53": 425.99,
+              "age54_58": 575.09,
+              "age59Upper": 747.62
+            }
+          },
+          {
+            "rawName": "Nosso Plano A CA MUN CC QC 207 Nosso Plano AHO CA MUN Enf CC QC 166 Nosso Plano AHO CA MUN Apt CC QC 188",
+            "ansCode": "485.699/20-6",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Municipal",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 208.23,
+              "age19_23": 274.86,
+              "age24_28": 316.09,
+              "age29_33": 354.02,
+              "age34_38": 371.72,
+              "age39_43": 420.04,
+              "age44_48": 512.45,
+              "age49_53": 707.18,
+              "age54_58": 954.69,
+              "age59Upper": 1241.1
+            }
+          },
+          {
+            "rawName": "Nosso Plano A CA MUN CC QC 207 Nosso Plano AHO CA MUN Enf CC QC 166 Nosso Plano AHO CA MUN Apt CC QC 188",
+            "ansCode": "485.711/20-9",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Municipal",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 310.15,
+              "age19_23": 409.4,
+              "age24_28": 470.81,
+              "age29_33": 527.31,
+              "age34_38": 553.68,
+              "age39_43": 625.66,
+              "age44_48": 763.31,
+              "age49_53": 1053.37,
+              "age54_58": 1422.05,
+              "age59Upper": 1848.67
+            }
+          }
+        ]
+      },
+      {
+        "blockLabel": "Com Coparticipação",
+        "includesCoparticipation": "WITH",
+        "products": [
+          {
+            "rawName": "Nosso Plano A CA MUN CC QC 207 Nosso Plano AHO CA MUN Enf CC QC 166 Nosso Plano AHO CA MUN Apt CC QC 188",
+            "ansCode": "485.741/20-1",
+            "segment": "Ambulatorial",
+            "coverage": "Municipal",
+            "accommodation": null,
+            "prices": {
+              "age0_18": 124.25,
+              "age19_23": 163.33,
+              "age24_28": 186.06,
+              "age29_33": 207.45,
+              "age34_38": 218.27,
+              "age39_43": 244.93,
+              "age44_48": 299.31,
+              "age49_53": 414.77,
+              "age54_58": 558.8,
+              "age59Upper": 725.46
+            }
+          },
+          {
+            "rawName": "Nosso Plano A CA MUN CC QC 207 Nosso Plano AHO CA MUN Enf CC QC 166 Nosso Plano AHO CA MUN Apt CC QC 188",
+            "ansCode": "485.699/20-6",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Municipal",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 207.23,
+              "age19_23": 272.5,
+              "age24_28": 312.88,
+              "age29_33": 350.03,
+              "age34_38": 367.37,
+              "age39_43": 414.7,
+              "age44_48": 505.22,
+              "age49_53": 695.97,
+              "age54_58": 938.42,
+              "age59Upper": 1218.96
+            }
+          },
+          {
+            "rawName": "Nosso Plano A CA MUN CC QC 207 Nosso Plano AHO CA MUN Enf CC QC 166 Nosso Plano AHO CA MUN Apt CC QC 188",
+            "ansCode": "485.711/20-9",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Municipal",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 309.15,
+              "age19_23": 407.03,
+              "age24_28": 467.59,
+              "age29_33": 523.31,
+              "age34_38": 549.32,
+              "age39_43": 620.31,
+              "age44_48": 756.06,
+              "age49_53": 1042.12,
+              "age54_58": 1405.72,
+              "age59Upper": 1826.45
+            }
+          }
+        ]
+      }
+    ],
+    "cities": [
+      {
+        "name": "Coqueiro Seco"
+      },
+      {
+        "name": "Maceió"
+      },
+      {
+        "name": "Marechal Deodoro"
+      },
+      {
+        "name": "Paripueira"
+      },
+      {
+        "name": "Rio Largo"
+      },
+      {
+        "name": "Santa Luzia do Norte"
+      },
+      {
+        "name": "Satuba"
+      }
+    ],
+    "refnets": [],
+    "stats": {
+      "pages": 18,
+      "textLength": 33862,
+      "tableBlocks": 4,
+      "products": 12,
+      "citiesCount": 7,
+      "refnetsCount": 0,
+      "warnings": [
+        "Nenhuma refnet extraída (é possível que o PDF só remeta ao site)"
+      ]
+    }
+  }
+}

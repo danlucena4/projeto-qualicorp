@@ -170,31 +170,61 @@ function extractHints(text: string): Pick<
 // ---------------------------------------------------------------------------
 
 function sniffCoparticipation(block: string): ExtractedTable['includesCoparticipation'] {
+  // Prioridade 1: a LINHA específica do bloco "Coparticipação <valor>" — é o
+  // marcador do atributo da tabela (aparece dentro do bloco de preços, próximo
+  // aos ANS). Usa TAB/espaço como separador, nunca ":".
+  //
+  // Ex.: "Coparticipação \tParcial", "Coparticipação \tSim", "Coparticipação \tTotal"
+  const attrRe = /^\s*Coparticipação\s*[\t\s]+(\S[^\n]*?)\s*$/gim;
+  const attrValues: string[] = [];
+  let m: RegExpExecArray | null;
+  while ((m = attrRe.exec(block)) !== null) attrValues.push(m[1].trim().toLowerCase());
+  for (const v of attrValues) {
+    if (/^parcial/.test(v)) return 'PARTIAL';
+    if (/^total/.test(v) || /^sim/.test(v) || /^com\b/.test(v)) return 'WITH';
+    if (/^não\b|^nao\b|^sem\b/.test(v)) return 'WITHOUT';
+  }
+
+  // Prioridade 2: cabeçalho específico do bloco (PLANOS | COPARTICIPAÇÃO X)
+  if (/PLANOS\s*\|\s*COPARTICIPAÇÃO\s+PARCIAL/i.test(block)) return 'PARTIAL';
+  if (/PLANOS\s*\|\s*COPARTICIPAÇÃO\s+TOTAL/i.test(block)) return 'WITH';
+
+  // Prioridade 3: cabeçalho "Planos COM Coparticipação (Parcial|Total)"
+  if (/Planos?\s+COM\s+Coparticipação\s+Parcial/i.test(block)) return 'PARTIAL';
+  if (/Planos?\s+COM\s+Coparticipação\s+Total/i.test(block)) return 'WITH';
+
+  // Prioridade 4: genérico "Planos SEM/COM Coparticipação" (só usa se nada
+  // mais específico foi encontrado).
+  if (/Planos?\s+SEM\s+Coparticipação/i.test(block)) return 'WITHOUT';
+  if (/Planos?\s+COM\s+Coparticipação/i.test(block)) return 'WITH';
+
+  // Prioridade 5: fallbacks soltos.
   const lower = block.toLowerCase();
-  if (/coparticipação\s*parcial/i.test(block)) return 'PARTIAL';
-  if (/coparticipação\s*total/i.test(block)) return 'WITH';
-  if (/planos?\s+sem\s+coparticipação/i.test(block)) return 'WITHOUT';
-  if (/planos?\s+com\s+coparticipação/i.test(block)) return 'WITH';
-  if (/coparticipação\s*[:：]\s*sim/i.test(block)) return 'WITH';
-  if (/coparticipação\s*[:：]\s*não/i.test(block)) return 'WITHOUT';
-  if (/coparticipação\s*[:：]\s*parcial/i.test(block)) return 'PARTIAL';
   if (lower.includes('com coparticipação')) return 'WITH';
   if (lower.includes('sem coparticipação')) return 'WITHOUT';
   return null;
 }
 
-function sniffBlockLabel(block: string): string {
+function sniffBlockLabel(
+  block: string,
+  copart: ExtractedTable['includesCoparticipation'],
+): string {
+  // Label derivado do copart resolvido (garantido consistente com o campo).
+  if (copart === 'WITH') return 'Com Coparticipação';
+  if (copart === 'WITHOUT') return 'Sem Coparticipação';
+  if (copart === 'PARTIAL') return 'Coparticipação Parcial';
+  // Fallback: tenta extrair do texto do bloco (quando nem copart foi resolvido).
   const first = block.split('\n').slice(0, 12).join('\n');
   const candidates = [
     /PLANOS\s*\|\s*(COPARTICIPAÇÃO\s+\w+)/i,
+    /Planos\s+(SEM|COM)\s+Coparticipação\s+\w+/i,
     /Planos\s+(SEM|COM)\s+Coparticipação/i,
-    /(COM|SEM)\s+COPARTICIPAÇÃO/i,
   ];
   for (const re of candidates) {
     const m = re.exec(first);
     if (m) return m[0].trim();
   }
-  return 'Tabela';
+  return 'Tabela (sem marcador)';
 }
 
 // Dado o texto de um bloco de preços, extrai a lista de produtos.
@@ -334,8 +364,6 @@ function findRowForLabel(block: string, re: RegExp): string | null {
 function extractFieldValues(block: string, labelRe: RegExp, count: number): string[] {
   const row = findRowForLabel(block, labelRe);
   if (!row) return [];
-  // Remove o label. Cobre casos tipo "Segmentação", "Abrangência geográfica
-  // de atendimento", "Padrão de acomodação em internação", "Coparticipação".
   const labelsToStrip = [
     labelRe,
     /^Abrangência\s+geográfica\s+de\s+atendimento/i,
@@ -350,6 +378,11 @@ function extractFieldValues(block: string, labelRe: RegExp, count: number): stri
   const chunks = splitColumns(after);
   if (chunks.length === 0) return [];
   if (chunks.length === 1 && count > 1) {
+    // Alguns PDFs (ex.: Hapvida "com odonto") colam 2 segmentações num valor
+    // só ("Ambulatorial¹ Ambulatorial + Hospitalar com obstetrícia¹") porque o
+    // superscript de nota de rodapé elimina o tab. Tenta dividir quando reconhece.
+    const split = trySplitConcatenatedSegment(chunks[0], count);
+    if (split) return split;
     // Valor único vale pra todas as colunas (ex.: "Municipal" único).
     return new Array(count).fill(chunks[0]);
   }
@@ -358,6 +391,20 @@ function extractFieldValues(block: string, labelRe: RegExp, count: number): stri
     out.push(chunks[i] ?? chunks[chunks.length - 1] ?? '');
   }
   return out;
+}
+
+// Tenta separar um valor de segmentação concatenada "Ambulatorial Ambulatorial + ..."
+// em 2 valores independentes. Distribui em N colunas replicando o último valor.
+function trySplitConcatenatedSegment(value: string, count: number): string[] | null {
+  const cleaned = value
+    .replace(/[¹²³⁴⁵⁶⁷⁸⁹⁰]+/g, '')
+    .replace(/(\w)\s*[0-9]\b/g, '$1')
+    .trim();
+  const m = cleaned.match(/^(Ambulatorial)\s+(Ambulatorial\s*\+.*)$/i);
+  if (!m) return null;
+  const base = [m[1], m[2]];
+  while (base.length < count) base.push(base[base.length - 1]);
+  return base;
 }
 
 function normalizeField(s: string | undefined): string | null {
@@ -390,7 +437,10 @@ function extractNumbersFromRow(row: string): number[] {
   return matches.map(parseBrazilianNumber).filter((n): n is number => n !== null);
 }
 
-// Divide a seção "Tabelas de Preços" em blocos, usando as linhas com ANS como âncora.
+// Divide a seção "Tabelas de Preços" em blocos, usando as linhas com ANS como
+// âncora. Delimita cada bloco usando "Valores mensais expressos em Reais" como
+// separador de fim — isso evita que um bloco herde o conteúdo (e a coparticipação)
+// do bloco anterior quando vários blocos aparecem em sequência sem header claro.
 function splitPriceBlocks(pricesText: string): string[] {
   const lines = splitLines(pricesText);
   const anchors: number[] = [];
@@ -399,11 +449,33 @@ function splitPriceBlocks(pricesText: string): string[] {
   }
   if (anchors.length === 0) return [];
 
+  const closureRe = /Valores mensais expressos/i;
+
   const blocks: string[] = [];
   for (let i = 0; i < anchors.length; i++) {
-    const start = i === 0 ? 0 : anchors[i - 1] + 1;
-    const end = i === anchors.length - 1 ? lines.length : anchors[i + 1] - 1;
-    blocks.push(lines.slice(start, end + 1).join('\n'));
+    const ansLine = anchors[i];
+    const prevAnchor = i === 0 ? -1 : anchors[i - 1];
+    // Fim do bloco anterior: última "Valores mensais expressos" entre o anchor
+    // anterior e o atual — se existir, começamos depois disso. Senão, caímos
+    // em anchor[i-1] + 1.
+    let start = i === 0 ? 0 : prevAnchor + 1;
+    for (let j = ansLine - 1; j > prevAnchor; j--) {
+      if (closureRe.test(lines[j])) {
+        start = j + 1;
+        break;
+      }
+    }
+    // Fim do bloco atual: primeiro "Valores mensais expressos" após o anchor
+    // ou a linha antes do próximo anchor (exclusivo).
+    const nextLimit = i === anchors.length - 1 ? lines.length : anchors[i + 1];
+    let end = nextLimit;
+    for (let j = ansLine + 1; j < nextLimit; j++) {
+      if (closureRe.test(lines[j])) {
+        end = j + 1; // inclui a linha de fechamento
+        break;
+      }
+    }
+    blocks.push(lines.slice(start, end).join('\n'));
   }
   return blocks;
 }
@@ -420,8 +492,11 @@ function extractCities(text: string): ExtractedCity[] {
   const endIdx = tail.search(/Rede\s+Médica|qualicorp\.com\.br\s*$|Para\s+acessar\s+a\s+rede/i);
   const section = endIdx > 0 ? tail.slice(0, endIdx) : tail;
 
-  // Procura por linha com "municípios de:" e extrai tudo até o ponto final.
-  const match = /municípios\s+de:\s*([\s\S]+?)\./i.exec(section);
+  // Alguns PDFs escrevem "no município de Feira de Santana." (singular, sem `:`)
+  // e outros "nos municípios de: X, Y, Z." (plural com `:`). Ambos valem.
+  const match =
+    /munic[íi]pios?\s+de:?\s*([\s\S]+?)\./i.exec(section) ??
+    /comercializados?\s+(?:no|nos)\s+munic[íi]pios?\s+de:?\s*([\s\S]+?)\./i.exec(section);
   if (!match) return [];
 
   const list = match[1]
@@ -580,17 +655,34 @@ export async function parseQualicorpPdf(data: Uint8Array): Promise<ExtractedPDF>
   // Divide em blocos e parseia cada um.
   const blocks = splitPriceBlocks(pricesSection);
   const tables: ExtractedTable[] = [];
+  // Herança contextual pra bloco-gêmeos (SulAmérica: dois blocos com mesmos
+  // ANS onde só o primeiro captura o header "COM COPARTICIPAÇÃO"). Herdamos
+  // somente quando o bloco atual tem a MESMA lista de ANS do bloco anterior
+  // (indicando que é uma variação do mesmo catálogo).
+  let lastCopart: ExtractedTable['includesCoparticipation'] = null;
+  let lastAnsSet = '';
+
   for (const block of blocks) {
-    // Descarta "blocos fantasma": ANS que aparece em rodapé/nota sem preços.
     if (!/Até\s+18\s+anos/i.test(block)) continue;
     const products = parsePriceBlock(block);
     if (!products.length) continue;
-    // Descarta se nenhum produto tem preço > 0 (sinal de rodapé).
     const hasPrices = products.some((p) => Object.values(p.prices).some((v) => v > 0));
     if (!hasPrices) continue;
+
+    const blockCopart = sniffCoparticipation(block);
+    const ansKey = products
+      .map((p) => p.ansCode ?? '')
+      .sort()
+      .join('|');
+    const sameAns = ansKey === lastAnsSet && ansKey !== '';
+
+    const resolvedCopart = blockCopart ?? (sameAns ? lastCopart : null);
+    if (blockCopart) lastCopart = blockCopart;
+    lastAnsSet = ansKey;
+
     tables.push({
-      blockLabel: sniffBlockLabel(block),
-      includesCoparticipation: sniffCoparticipation(block),
+      blockLabel: sniffBlockLabel(block, resolvedCopart),
+      includesCoparticipation: resolvedCopart,
       products,
     });
   }

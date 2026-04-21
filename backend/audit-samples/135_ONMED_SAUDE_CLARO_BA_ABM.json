@@ -1,0 +1,409 @@
+{
+  "meta": {
+    "qcTableId": 135,
+    "operator": "ONMED_SAUDE_CLARO",
+    "uf": "BA",
+    "entity": "ABM",
+    "pdfUrl": "https://tabelasdevendas.qualicorp.com.br/tabelas/QUALIPRO_ONMED_BA_F_25.pdf"
+  },
+  "extraction": {
+    "operatorHint": "ONMED_SAUDE_CLARO",
+    "planNameHint": "Classic BA CA Enf",
+    "validityBaseMonth": "Outubro",
+    "validityPeriod": "Dezembro/2025 até Setembro/2026",
+    "entities": [
+      {
+        "code": "ABM",
+        "name": "Associação Bahiana de Medicina"
+      },
+      {
+        "code": "ABO-BA",
+        "name": "Associação Brasileira de Odontologia – Seção Bahia"
+      },
+      {
+        "code": "ABRABDIR",
+        "name": "Associação Brasileira de Advogados e Bacharéis em Direito"
+      },
+      {
+        "code": "ACRESP",
+        "name": "Associação Cultural e Recreativa dos Servidores Públicos"
+      },
+      {
+        "code": "AFB",
+        "name": "Associação de Fisioterapeutas do Brasil"
+      },
+      {
+        "code": "AJUFE",
+        "name": "Associação dos Juízes Federais do Brasil"
+      },
+      {
+        "code": "CRA-BA",
+        "name": "Conselho Regional de Administração da Bahia"
+      },
+      {
+        "code": "CRECI-BA",
+        "name": "Conselho Regional de Corretores de Imóveis do Estado da Bahia – 9ª Região"
+      },
+      {
+        "code": "CREFONO-4",
+        "name": "Conselho Reg. de Fonoaudiologia - 4ª Região - Alagoas, Bahia, Paraíba, Pernambuco e Sergipe"
+      },
+      {
+        "code": "GASP",
+        "name": "Grupo Associativo dos Servidores Públicos"
+      },
+      {
+        "code": "MÚTUA",
+        "name": "Mútua de Assistência dos Profissionais da Engenharia e Agronomia"
+      },
+      {
+        "code": "UNASP",
+        "name": "União Nacional de Assistência aos Servidores Públicos"
+      }
+    ],
+    "tables": [
+      {
+        "blockLabel": "Sem Coparticipação",
+        "includesCoparticipation": "WITHOUT",
+        "products": [
+          {
+            "rawName": "Classic BA CA Enf",
+            "ansCode": "505.281/25-5",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 348.7,
+              "age19_23": 424.71,
+              "age24_28": 488.42,
+              "age29_33": 552.41,
+              "age34_38": 613.72,
+              "age39_43": 702.71,
+              "age44_48": 872.77,
+              "age49_53": 1091.83,
+              "age54_58": 1394.27,
+              "age59Upper": 2013.33
+            }
+          },
+          {
+            "rawName": "Classic BA CA Apto",
+            "ansCode": "505.282/25-3",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 435.9,
+              "age19_23": 530.92,
+              "age24_28": 610.56,
+              "age29_33": 690.54,
+              "age34_38": 767.19,
+              "age39_43": 878.44,
+              "age44_48": 1091.02,
+              "age49_53": 1364.86,
+              "age54_58": 1742.93,
+              "age59Upper": 2516.79
+            }
+          },
+          {
+            "rawName": "Life BA CA Enf",
+            "ansCode": "505.285/25-8",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 357.84,
+              "age19_23": 435.84,
+              "age24_28": 501.22,
+              "age29_33": 566.88,
+              "age34_38": 629.8,
+              "age39_43": 721.13,
+              "age44_48": 895.64,
+              "age49_53": 1120.44,
+              "age54_58": 1430.81,
+              "age59Upper": 2066.09
+            }
+          },
+          {
+            "rawName": "Life BA CA Apto",
+            "ansCode": "505.287/25-4",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 447.29,
+              "age19_23": 544.8,
+              "age24_28": 626.52,
+              "age29_33": 708.6,
+              "age34_38": 787.25,
+              "age39_43": 901.4,
+              "age44_48": 1119.54,
+              "age49_53": 1400.55,
+              "age54_58": 1788.5,
+              "age59Upper": 2582.59
+            }
+          },
+          {
+            "rawName": "Comfort BA CA Apto",
+            "ansCode": "505.289/25-1",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 592.51,
+              "age19_23": 721.68,
+              "age24_28": 829.93,
+              "age29_33": 938.65,
+              "age34_38": 1042.84,
+              "age39_43": 1194.05,
+              "age44_48": 1483.01,
+              "age49_53": 1855.25,
+              "age54_58": 2369.15,
+              "age59Upper": 3421.06
+            }
+          }
+        ]
+      },
+      {
+        "blockLabel": "Com Coparticipação",
+        "includesCoparticipation": "WITH",
+        "products": [
+          {
+            "rawName": "Classic BA CA Enf Copart Classic BA CA Apto Copart Life BA CA Enf Copart Life BA CA Apto Copart Comfort BA CA Apto Copart",
+            "ansCode": "505.283/25-1",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 290.58,
+              "age19_23": 353.93,
+              "age24_28": 407.02,
+              "age29_33": 460.34,
+              "age34_38": 511.44,
+              "age39_43": 585.59,
+              "age44_48": 727.31,
+              "age49_53": 909.86,
+              "age54_58": 1161.89,
+              "age59Upper": 1677.77
+            }
+          },
+          {
+            "rawName": "Classic BA CA Enf Copart Classic BA CA Apto Copart Life BA CA Enf Copart Life BA CA Apto Copart Comfort BA CA Apto Copart",
+            "ansCode": "505.284/25-0",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 363.25,
+              "age19_23": 442.44,
+              "age24_28": 508.81,
+              "age29_33": 575.46,
+              "age34_38": 639.34,
+              "age39_43": 732.04,
+              "age44_48": 909.2,
+              "age49_53": 1137.41,
+              "age54_58": 1452.47,
+              "age59Upper": 2097.36
+            }
+          },
+          {
+            "rawName": "Classic BA CA Enf Copart Classic BA CA Apto Copart Life BA CA Enf Copart Life BA CA Apto Copart Comfort BA CA Apto Copart",
+            "ansCode": "505.286/25-6",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 298.2,
+              "age19_23": 363.2,
+              "age24_28": 417.68,
+              "age29_33": 472.4,
+              "age34_38": 524.83,
+              "age39_43": 600.94,
+              "age44_48": 746.36,
+              "age49_53": 933.7,
+              "age54_58": 1192.33,
+              "age59Upper": 1721.73
+            }
+          },
+          {
+            "rawName": "Classic BA CA Enf Copart Classic BA CA Apto Copart Life BA CA Enf Copart Life BA CA Apto Copart Comfort BA CA Apto Copart",
+            "ansCode": "505.288/25-2",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 372.74,
+              "age19_23": 454,
+              "age24_28": 522.1,
+              "age29_33": 590.5,
+              "age34_38": 656.04,
+              "age39_43": 751.17,
+              "age44_48": 932.95,
+              "age49_53": 1167.12,
+              "age54_58": 1490.42,
+              "age59Upper": 2152.16
+            }
+          },
+          {
+            "rawName": "Classic BA CA Enf Copart Classic BA CA Apto Copart Life BA CA Enf Copart Life BA CA Apto Copart Comfort BA CA Apto Copart",
+            "ansCode": "505.290/25-4",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 493.76,
+              "age19_23": 601.4,
+              "age24_28": 691.61,
+              "age29_33": 782.22,
+              "age34_38": 869.04,
+              "age39_43": 995.05,
+              "age44_48": 1235.86,
+              "age49_53": 1546.05,
+              "age54_58": 1974.31,
+              "age59Upper": 2850.91
+            }
+          }
+        ]
+      }
+    ],
+    "cities": [
+      {
+        "name": "Camaçari",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Candeias",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Conde",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Dias d'Ávila",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Itaparica",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Lauro de Freitas",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Madre de Deus",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Mata de São João",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Pojuca",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Salvador",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Santo Amaro",
+        "state": "BAHIA"
+      },
+      {
+        "name": "São Francisco do Conde",
+        "state": "BAHIA"
+      },
+      {
+        "name": "São Sebastião do Passé",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Saubara",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Simões Filho",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Vera Cruz",
+        "state": "BAHIA"
+      }
+    ],
+    "refnets": [
+      {
+        "name": "Camaçari Lab. Pesquisa Matriz e Meddi Labor Camaçari",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Feira de Santana Análises Lab. de Patologia Clínica, Cedapi – Cto. Diagnóstico Pires,",
+        "kind": "LAB"
+      },
+      {
+        "name": "Hemocenter, Labore e Lade Lab.",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Bio Exames, Clab, Clilab, Diagnostlabora, Imagepat, J.C. Lab.",
+        "city": "Salvador",
+        "kind": "LAB"
+      },
+      {
+        "name": "– Lab. Jaime Cerqueira, JPC Lab., Labchecap Imbuí, Laboclin,",
+        "city": "Salvador",
+        "kind": "LAB"
+      },
+      {
+        "name": "Hosp. Bambino",
+        "city": "Feira de Santana",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS"
+        ]
+      },
+      {
+        "name": "Hosp. Ortopédico",
+        "city": "Feira de Santana",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS"
+        ]
+      },
+      {
+        "name": "Hosp. Jorge Valente",
+        "city": "Clisur INT INT INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. Português",
+        "city": "Clisur INT INT INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "INT",
+          "MAT"
+        ]
+      }
+    ],
+    "stats": {
+      "pages": 15,
+      "textLength": 24437,
+      "tableBlocks": 2,
+      "products": 10,
+      "citiesCount": 16,
+      "refnetsCount": 9,
+      "warnings": []
+    }
+  }
+}

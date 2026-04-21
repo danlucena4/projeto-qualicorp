@@ -1,0 +1,1605 @@
+{
+  "meta": {
+    "qcTableId": 115,
+    "operator": "SULAMÉRICA HOSPITALAR",
+    "uf": "BA",
+    "entity": "ABM",
+    "pdfUrl": "https://tabelasdevendas.qualicorp.com.br/tabelas/QUALIPRO_SAS_BA_F_25_NP.pdf"
+  },
+  "extraction": {
+    "operatorHint": "SULAMÉRICA HOSPITALAR",
+    "planNameHint": "Direto Salvador Adesão Trad. 23 F AHO QC COP",
+    "validityBaseMonth": "Julho",
+    "validityPeriod": "Julho/2025 até Junho/2026",
+    "entities": [
+      {
+        "code": "ABM",
+        "name": "Associação Bahiana de Medicina"
+      },
+      {
+        "code": "ABO-BA",
+        "name": "Associação Brasileira de Odontologia – Seção Bahia"
+      },
+      {
+        "code": "ABRABDIR",
+        "name": "Associação Brasileira de Advogados e Bacharéis em Direito"
+      },
+      {
+        "code": "ACRESP",
+        "name": "Associação Cultural e Recreativa dos Servidores Públicos"
+      },
+      {
+        "code": "ADEP-BA",
+        "name": "Associação dos Defensores Públicos da Bahia"
+      },
+      {
+        "code": "AFB",
+        "name": "Associação de Fisioterapeutas do Brasil"
+      },
+      {
+        "code": "AJUFE",
+        "name": "Associação dos Juízes Federais do Brasil"
+      },
+      {
+        "code": "AMB",
+        "name": "Associação dos Magistrados Brasileiros"
+      },
+      {
+        "code": "AMN",
+        "name": "Abrigo do Marinheiro"
+      },
+      {
+        "code": "ANADEF",
+        "name": "Associação Nacional das Defensoras e Defensores Públicos Federais"
+      },
+      {
+        "code": "ANADEP",
+        "name": "Associação Nacional das Defensoras e Defensores Públicos"
+      },
+      {
+        "code": "ANAMATRA",
+        "name": "Associação Nacional dos Magistrados da Justiça do Trabalho"
+      },
+      {
+        "code": "ANPR",
+        "name": "Associação Nacional dos Procuradores da República"
+      },
+      {
+        "code": "ANPT",
+        "name": "Associação Nacional dos Procuradores do Trabalho"
+      },
+      {
+        "code": "ASCAF",
+        "name": "Associação dos Servidores Públicos Civis, Municipais, Estaduais, Distritais e Federais"
+      },
+      {
+        "code": "CORECON-BA",
+        "name": "Conselho Regional de Economia - 5ª Região - Bahia"
+      },
+      {
+        "code": "CRA-BA",
+        "name": "Conselho Regional de Administração da Bahia"
+      },
+      {
+        "code": "CRECI-BA",
+        "name": "Conselho Regional de Corretores de Imóveis do Estado da Bahia – 9ª Região"
+      },
+      {
+        "code": "CREFONO-4",
+        "name": "Conselho Reg. de Fonoaudiologia - 4ª Região - Alagoas, Bahia, Paraíba, Pernambuco e Sergipe"
+      },
+      {
+        "code": "CRP-03",
+        "name": "Conselho Regional de Psicologia da 3ª Região"
+      },
+      {
+        "code": "FNA",
+        "name": "Federação Nacional dos Arquitetos e Urbanistas"
+      },
+      {
+        "code": "GASP",
+        "name": "Grupo Associativo dos Servidores Públicos"
+      },
+      {
+        "code": "MÚTUA",
+        "name": "Mútua de Assistência dos Profissionais da Engenharia, Arquitetura e Agronomia"
+      },
+      {
+        "code": "SINDICONTA-BA",
+        "name": "Sindicato dos Contabilistas do Estado da Bahia"
+      },
+      {
+        "code": "SINPRO-BA",
+        "name": "Sindicato dos Professores no Estado da Bahia"
+      }
+    ],
+    "tables": [
+      {
+        "blockLabel": "Com Coparticipação",
+        "includesCoparticipation": "WITH",
+        "products": [
+          {
+            "rawName": "Direto Salvador Adesão Trad. 23 F AHO QC COP",
+            "ansCode": "495.732/23-6",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 294.59,
+              "age19_23": 405.72,
+              "age24_28": 440.69,
+              "age29_33": 522.92,
+              "age34_38": 570.5,
+              "age39_43": 631.48,
+              "age44_48": 721.6,
+              "age49_53": 887.5,
+              "age54_58": 1105.03,
+              "age59Upper": 1767.44
+            }
+          },
+          {
+            "rawName": "AHO QP COP",
+            "ansCode": "495.729/23-6",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 322.48,
+              "age19_23": 444.11,
+              "age24_28": 482.4,
+              "age29_33": 572.41,
+              "age34_38": 624.5,
+              "age39_43": 691.25,
+              "age44_48": 789.91,
+              "age49_53": 971.5,
+              "age54_58": 1209.61,
+              "age59Upper": 1934.73
+            }
+          }
+        ]
+      },
+      {
+        "blockLabel": "Com Coparticipação",
+        "includesCoparticipation": "WITH",
+        "products": [
+          {
+            "rawName": "*Para mais informações sobre os múltiplos de reembolso de consultas em urgência e emergência, consulte o Contrato de Adesão. TITULAR ou TITULAR + 1 DEPENDENTE TITULAR + 2 ou MAIS DEPENDENTES Direto Salvador Adesão Trad. 23 F AHO QC COP",
+            "ansCode": "495.732/23-6",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 267.81,
+              "age19_23": 368.83,
+              "age24_28": 400.63,
+              "age29_33": 475.38,
+              "age34_38": 518.64,
+              "age39_43": 574.07,
+              "age44_48": 656.01,
+              "age49_53": 806.83,
+              "age54_58": 1004.57,
+              "age59Upper": 1606.77
+            }
+          },
+          {
+            "rawName": "AHO QP COP",
+            "ansCode": "495.729/23-6",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 293.16,
+              "age19_23": 403.74,
+              "age24_28": 438.55,
+              "age29_33": 520.37,
+              "age34_38": 567.73,
+              "age39_43": 628.41,
+              "age44_48": 718.1,
+              "age49_53": 883.18,
+              "age54_58": 1099.66,
+              "age59Upper": 1758.85
+            }
+          }
+        ]
+      },
+      {
+        "blockLabel": "Com Coparticipação",
+        "includesCoparticipation": "WITH",
+        "products": [
+          {
+            "rawName": "Direto Nacional Adesão Trad. 23 F AHO QC COP RM",
+            "ansCode": "496.892/23-1",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 513.69,
+              "age19_23": 707.44,
+              "age24_28": 768.44,
+              "age29_33": 911.81,
+              "age34_38": 994.79,
+              "age39_43": 1101.11,
+              "age44_48": 1258.26,
+              "age49_53": 1547.54,
+              "age54_58": 1926.83,
+              "age59Upper": 3081.9
+            }
+          },
+          {
+            "rawName": "AHO QP COP RM",
+            "ansCode": "496.893/23-0",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 569.79,
+              "age19_23": 784.7,
+              "age24_28": 852.35,
+              "age29_33": 1011.38,
+              "age34_38": 1103.42,
+              "age39_43": 1221.36,
+              "age44_48": 1395.67,
+              "age49_53": 1716.54,
+              "age54_58": 2137.25,
+              "age59Upper": 3418.44
+            }
+          }
+        ]
+      },
+      {
+        "blockLabel": "Com Coparticipação",
+        "includesCoparticipation": "WITH",
+        "products": [
+          {
+            "rawName": "*Para mais informações sobre os múltiplos de reembolso de consultas em urgência e emergência, consulte o Contrato de Adesão. TITULAR ou TITULAR + 1 DEPENDENTE TITULAR + 2 ou MAIS DEPENDENTES Direto Nacional Adesão Trad. 23 F AHO QC COP RM",
+            "ansCode": "496.892/23-1",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 466.98,
+              "age19_23": 643.13,
+              "age24_28": 698.58,
+              "age29_33": 828.92,
+              "age34_38": 904.35,
+              "age39_43": 1001.01,
+              "age44_48": 1143.87,
+              "age49_53": 1406.85,
+              "age54_58": 1751.67,
+              "age59Upper": 2801.71
+            }
+          },
+          {
+            "rawName": "AHO QP COP RM",
+            "ansCode": "496.893/23-0",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 517.99,
+              "age19_23": 713.36,
+              "age24_28": 774.87,
+              "age29_33": 919.44,
+              "age34_38": 1003.12,
+              "age39_43": 1110.33,
+              "age44_48": 1268.79,
+              "age49_53": 1560.48,
+              "age54_58": 1942.96,
+              "age59Upper": 3107.68
+            }
+          }
+        ]
+      },
+      {
+        "blockLabel": "Com Coparticipação",
+        "includesCoparticipation": "WITH",
+        "products": [
+          {
+            "rawName": "Clássico 100 Adesão Trad.23 F Especial 100 Adesão Trad.23 F Especial 100 Adesão Trad.23 F Executivo Pleno Adesão Trad.23 F AHO QC COP RM",
+            "ansCode": "500.480/24-2",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 623.87,
+              "age19_23": 859.19,
+              "age24_28": 933.27,
+              "age29_33": 1107.38,
+              "age34_38": 1208.16,
+              "age39_43": 1337.29,
+              "age44_48": 1528.15,
+              "age49_53": 1879.48,
+              "age54_58": 2340.12,
+              "age59Upper": 3742.93
+            }
+          },
+          {
+            "rawName": "AHO QP COP RM RC",
+            "ansCode": "495.735/23-1",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 681.88,
+              "age19_23": 939.06,
+              "age24_28": 1020.03,
+              "age29_33": 1210.34,
+              "age34_38": 1320.5,
+              "age39_43": 1461.62,
+              "age44_48": 1670.23,
+              "age49_53": 2054.21,
+              "age54_58": 2557.71,
+              "age59Upper": 4090.93
+            }
+          },
+          {
+            "rawName": "AHO QP COP RM R1",
+            "ansCode": "495.737/23-7",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 717.77,
+              "age19_23": 988.49,
+              "age24_28": 1073.72,
+              "age29_33": 1274.05,
+              "age34_38": 1390,
+              "age39_43": 1538.56,
+              "age44_48": 1758.14,
+              "age49_53": 2162.34,
+              "age54_58": 2692.33,
+              "age59Upper": 4306.25
+            }
+          },
+          {
+            "rawName": "AHO QP COP RM R1",
+            "ansCode": "507.075/25-9",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 1411.16,
+              "age19_23": 1943.41,
+              "age24_28": 2110.97,
+              "age29_33": 2504.82,
+              "age34_38": 2732.79,
+              "age39_43": 3024.86,
+              "age44_48": 3456.57,
+              "age49_53": 4251.24,
+              "age54_58": 5293.2,
+              "age59Upper": 8466.25
+            }
+          }
+        ]
+      },
+      {
+        "blockLabel": "Com Coparticipação",
+        "includesCoparticipation": "WITH",
+        "products": [
+          {
+            "rawName": "Clássico 100 Adesão Trad.23 F Especial 100 Adesão Trad.23 F Especial 100 Adesão Trad.23 F Executivo Pleno Adesão Trad.23 F AHO QC COP RM",
+            "ansCode": "500.480/24-2",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 567.15,
+              "age19_23": 781.07,
+              "age24_28": 848.42,
+              "age29_33": 1006.71,
+              "age34_38": 1098.33,
+              "age39_43": 1215.72,
+              "age44_48": 1389.22,
+              "age49_53": 1708.61,
+              "age54_58": 2127.39,
+              "age59Upper": 3402.66
+            }
+          },
+          {
+            "rawName": "AHO QP COP RM RC",
+            "ansCode": "495.735/23-1",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 619.88,
+              "age19_23": 853.7,
+              "age24_28": 927.3,
+              "age29_33": 1100.31,
+              "age34_38": 1200.46,
+              "age39_43": 1328.75,
+              "age44_48": 1518.39,
+              "age49_53": 1867.47,
+              "age54_58": 2325.19,
+              "age59Upper": 3719.04
+            }
+          },
+          {
+            "rawName": "AHO QP COP RM R1",
+            "ansCode": "495.737/23-7",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 652.52,
+              "age19_23": 898.64,
+              "age24_28": 976.11,
+              "age29_33": 1158.23,
+              "age34_38": 1263.64,
+              "age39_43": 1398.7,
+              "age44_48": 1598.32,
+              "age49_53": 1965.77,
+              "age54_58": 2447.58,
+              "age59Upper": 3914.8
+            }
+          },
+          {
+            "rawName": "AHO QP COP RM R1",
+            "ansCode": "507.075/25-9",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 1282.87,
+              "age19_23": 1766.74,
+              "age24_28": 1919.07,
+              "age29_33": 2277.12,
+              "age34_38": 2484.35,
+              "age39_43": 2749.88,
+              "age44_48": 3142.33,
+              "age49_53": 3864.77,
+              "age54_58": 4812.01,
+              "age59Upper": 7696.59
+            }
+          }
+        ]
+      }
+    ],
+    "cities": [
+      {
+        "name": "Camaçari",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Candeias",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Dias d'Ávila",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Lauro de Freitas",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Madre de Deus",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Mata de São João",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Pojuca",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Salvador",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Santo Amaro",
+        "state": "BAHIA"
+      },
+      {
+        "name": "São Francisco do Conde",
+        "state": "BAHIA"
+      },
+      {
+        "name": "São Sebastião do Passé",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Simões Filho",
+        "state": "BAHIA"
+      }
+    ],
+    "refnets": [
+      {
+        "name": "Hosp. Agnus Dei",
+        "city": "Catu Ameca Atend. Méd. de Catu - PS/INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. Sta. Emilia",
+        "city": "Feira de Santana Hosp. Bambino - PS",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. Sta. Helena",
+        "city": "Itapetinga Policlin - PS/INT/MAT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. Agenor Paiva",
+        "city": "Hba - PS",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. da Cidade",
+        "city": "Hba - PS",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. Prof. Jorge Valente",
+        "city": "Hba - PS",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. Sta. Izabel",
+        "city": "Hba - PS",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. Português",
+        "city": "Hba - PS",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. Prohope",
+        "city": "Hba - PS",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. Mat Luiz Argollo",
+        "city": "Sto. Antônio de Jesus",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. do Reconcâvo",
+        "city": "Sto. Antônio de Jesus",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Alagoinhas Clila Clín. de Análise em Lab. e Meddi Lab. Alagoinhas",
+        "city": "Uroday Hosp. - INT",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Amargosa Qualitest Lab.",
+        "city": "Uroday Hosp. - INT",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Barreiras Lab. Sta. Rita e Labem",
+        "city": "Uroday Hosp. - INT",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Brumado Lapeclin Lab. de Pesq. Clín. e Pesq. Lab.",
+        "city": "Bom Jesus Da Lapa Lamer - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Camaçari Dna Lab., Lab. Sabin e Sist. de Saúde Sta. Helena",
+        "city": "Bom Jesus Da Lapa Lamer - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Candeias Lab. de Análises Clín. N. Sra. de Fátima",
+        "city": "Pesq. Análises Clín. LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Conceicao Do Coite Labol Lab. de Análise Clín. e Lab. Bioanálise",
+        "city": "Pesq. Análises Clín. LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Eunapolis Labcenter e Lab. Gontijo Guimarães",
+        "city": "Esplanada Laclimed - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Feira de Santana Biocenter, Hemocenter, Labore e Vitalab Lab. de Análise Clín.",
+        "city": "Esplanada Laclimed - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Gandu Lab. de Pesq. Clín. Ganduense",
+        "city": "Esplanada Laclimed - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Guanambi Clín. Endolab e Newlab Lab. de Análise Clín. e Toxic",
+        "city": "Esplanada Laclimed - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Ipira Plasma Lab. de Análise Clín.",
+        "city": "Ipiau Unilab - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Irece Irlab Irece Lab. de Análise Clín.",
+        "city": "Ipiau Unilab - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Itabuna Lab. Jaime Cerqueira, LapLab. e Lidi",
+        "city": "Ipiau Unilab - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Itarantim Lacro Lab.",
+        "city": "Ipiau Unilab - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Itubera Hemo Lab. e Bem Estar",
+        "city": "Ipiau Unilab - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Jacobina Labcenter Saúde Prev. e Diag. e Lapec Lab. de Análise e Pesq. Clín.",
+        "city": "Ipiau Unilab - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Jequie Checklab Lab. de Análise Clín, Diag., Humano Lab. de Análises Clín. e Iaclije",
+        "city": "Jaguaquara Laboclin - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Juazeiro Cedila e Embrio Lab.",
+        "city": "Jaguaquara Laboclin - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Lpc Lab. de Patol. Clín.",
+        "city": "Lauro de Freitas Labchecap - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Livramento de N. Sra. David Pinto Lab. de Análises Clín.",
+        "city": "Lauro de Freitas Labchecap - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Magalhães Lab. Carlos Chagas",
+        "city": "Luis Eduardo",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Maracas Gillab Lab. de Análises Clín.",
+        "city": "Luis Eduardo",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Miguel Calmon Labclin Lab. de Análises Clín.",
+        "city": "Luis Eduardo",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Paulo Afonso Bio Análises Lab. de Análises Clín. e Cliomel Lab.",
+        "city": "Nova Viçosa Unilabs - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Porto Seguro Lab. de Análises Clín. São Sebastião e Lab. Sta. Maria",
+        "city": "Nova Viçosa Unilabs - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Sta. Maria da Vitória Ldc Lab. de Diag. Clínico",
+        "city": "Labchecap - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Sto. Amaro J.c. Lab Lab. Jaime Cerqueira e Laclisa",
+        "city": "Labchecap - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Sto. Antônio de Jesus Lab. Jaime Cerqueira, Lab. Sabin e Rt Lab. de Análise Clín.",
+        "city": "Labchecap - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "S. Sebastião do Passe Vida Lab. Análise Clín.",
+        "city": "Labchecap - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Seabra Lac Lab. Análises Clín. e Laf Lab. Antunes Farias",
+        "city": "Labchecap - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Serrinha Lab. BioAnálise e Lab. Estrela",
+        "city": "Labchecap - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Simões Filho Lab. Clín. Simões Filho",
+        "city": "Labchecap - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Teixeira de Freitas Lab. Carvalho",
+        "city": "Labchecap - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Teofilandia Lab. BioAnálise",
+        "city": "Labchecap - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Ubata Lab. Controle",
+        "city": "Ubaitaba Prontanálise - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Valença Lab. Análise Clín. de Valença Epp",
+        "city": "Ubaitaba Prontanálise - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Valente Diagnose Lab. de Análises Clín.",
+        "city": "Ubaitaba Prontanálise - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Vitória da Conquista Elo Lab. Clín., Prolab Análises Clín. e Qualilab",
+        "city": "Ubaitaba Prontanálise - LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Hosp. Agnus Dei",
+        "city": "Camaçari SERMEGE INT INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. EMEC",
+        "city": "Feira de Santana",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. Sta. Emilia",
+        "city": "Feira de Santana",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. São Matheus",
+        "city": "Feira de Santana",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. São José",
+        "city": "Ilhéus Hosp. de Ilhéus PS/INT PS/INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. Sta. Helena",
+        "city": "Jequié",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. Aeroporto",
+        "city": "Juazeiro Pro Mater de Juazeiro INT INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. Agenor Paiva",
+        "city": "Clisur PS/INT PS/INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. da Cidade",
+        "city": "Clisur PS/INT PS/INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. Prof. Jorge Valente",
+        "city": "Clisur PS/INT PS/INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. Sta. Izabel",
+        "city": "Clisur PS/INT PS/INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. Aliança",
+        "city": "Clisur PS/INT PS/INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. Portugues",
+        "city": "Clisur PS/INT PS/INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. Prohope",
+        "city": "Clisur PS/INT PS/INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. Santo Amaro",
+        "city": "Clisur PS/INT PS/INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. São Rafael",
+        "city": "Clisur PS/INT PS/INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. Mat. Luiz Argollo",
+        "city": "Sto. Antonio de Jesus",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. do Reconcavo",
+        "city": "Sto. Antonio de Jesus",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. São Vicente",
+        "city": "Vitória da Conquista",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. Biosphera",
+        "city": "Clima Clín. Maria Albano PS/INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. Agnus Dei",
+        "city": "Unid. Méd. Integrada UMI CMH PS/INT/MAT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. Sta. Emília",
+        "city": "Feira de Santana",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. São José",
+        "city": "Ilhéus Hosp. de Ilhéus PS/INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. Sta. Helena",
+        "city": "Itapetinga Policlin PS/INT/MAT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. Silvestre",
+        "city": "Lauro de Freitas Hosp. Aeroporto PS/INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. Agenor Paiva",
+        "city": "Clisur PS/INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. da Cidade",
+        "city": "Clisur PS/INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. Prof. Jorge Valente",
+        "city": "Clisur PS/INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. Sta. Izabel",
+        "city": "Clisur PS/INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. Aliança",
+        "city": "Clisur PS/INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. Português",
+        "city": "Clisur PS/INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. Prohope",
+        "city": "Clisur PS/INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. Sto. Amaro",
+        "city": "Clisur PS/INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. São Rafael",
+        "city": "Clisur PS/INT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. Mat. Luiz Argollo",
+        "city": "Santo Antônio de Jesus",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. do Recôncavo",
+        "city": "Santo Antônio de Jesus",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. São Vicente",
+        "city": "Andro Hosp. Urológico PS/INT/MAT",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Alagoinhas Clila Clin. de Análises em Lab., Clín. Vida Atend. Med. e Meddi Lab.",
+        "city": "Unimec INT",
+        "kind": "LAB"
+      },
+      {
+        "name": "Amargosa Qualiteste Lab.",
+        "city": "Alagoinhas LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Barreiras Lab. Sta Rita e Labem",
+        "city": "Alagoinhas LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Brumado Lapeclin Lab. de Pesq. Clin. e Pesq Lab.",
+        "city": "Bom Jesus da Lapa Lamer LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "DNA Lab., Lab. Sabin, Pesquisa Análises Clín. e Sist. de Saúde Sta.",
+        "city": "Camaçari",
+        "kind": "LAB"
+      },
+      {
+        "name": "LPC Lab. De Patologia Clini",
+        "city": "Helena LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Candeias Lab. de A. Clín. N. Sra de Fatima e Lapec Lab Pesq Clin.",
+        "city": "Helena LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Conceição do Coite Labol Lab. de A. Clín. e Lab. Bioanálises",
+        "city": "Helena LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Eunapolis Labcenter e Lab. Gontijo Guimaraes",
+        "city": "Esplanada Laclimed LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Inst. Análises de Pesq Clín., Labocentro, Labop, Labore, Laclin Lab.",
+        "city": "Feira de Santana",
+        "kind": "HOSPITAL"
+      },
+      {
+        "name": "Análises Clín., Pro Diagnostico e Vitalab Lab. de Análises Clin",
+        "city": "Feira de Santana",
+        "kind": "LAB"
+      },
+      {
+        "name": "Gandu Lab. De Pesq Clin Ganduense",
+        "city": "Feira de Santana",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Guanambi Clin. Endolab e Newlab Lab. de Análises Clin. e Toxic.",
+        "city": "Feira de Santana",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Ipira Plasma Lab. de Análises Clin.",
+        "city": "Ipiau Unilab LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Itaberaba Adalab, Bioclínica, Hosp. da Chapada e Lab. Jaime Cerqueira",
+        "city": "Ipiau Unilab LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Itarantim Lacro Lab.",
+        "city": "Itabuna Laplab e Lidi LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Itubera Hemo Lab. E Bem Estar",
+        "city": "Itabuna Laplab e Lidi LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Jacobina Labcenter Saúde Prev. e Diag. e Lapec Lab. de Análises e Pesq Clin.",
+        "city": "Itabuna Laplab e Lidi LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Jequié Checklab Lab. de Análises Clin., Diagnóstica, Humano Lab. de",
+        "city": "Jaguaquara Laboclin LAB LAB LAB",
+        "kind": "LAB"
+      },
+      {
+        "name": "Lauro de Freitas Clin. Delfin, Image Memorial e LPC Lab. de Patologia Clín.",
+        "city": "Análises Clín. e IACLIJE LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Livramento de N. Sra. David Pinto Lab. de Análises Clín.",
+        "city": "Análises Clín. e IACLIJE LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Luis Ed. Magalhães Lab. Carlos Chagas e Lab. Exame",
+        "city": "Análises Clín. e IACLIJE LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Maracas Gillab Lab. de Análises Clin.",
+        "city": "Análises Clín. e IACLIJE LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "LPC Lab. de Patologia Clin.",
+        "city": "Análises Clín. e IACLIJE LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Miguel Calmon Labclin Lab. de Análises Clín.",
+        "city": "Análises Clín. e IACLIJE LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Paulo Afonso Bio Análises Lab. de Análises Clín. e Cliomel Lab.",
+        "city": "Nova Viçosa Unilabs LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Porto Seguro Lab. Análises Clin. São Sebastiao e Lab. Sta. Maria",
+        "city": "Nova Viçosa Unilabs LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Diag., CEPARH, DNA Lab. de Genetica, Hosp. Santo Amaro, Image",
+        "city": "Salvador",
+        "kind": "LAB"
+      },
+      {
+        "name": "Memorial, L.M. Diagnóstico, Lab. Análises Clin. e Imuno Hemat.",
+        "city": "Salvador",
+        "kind": "LAB"
+      },
+      {
+        "name": "Bahia, Lab. de Análises Clin. Spalazanni, Lab. Patol. Clin. José Carlos",
+        "city": "Salvador",
+        "kind": "LAB"
+      },
+      {
+        "name": "Lima, Labchecap, Laboclin, Lab. Sabin, LPC Lab. de Patologia Clin. e",
+        "city": "Salvador",
+        "kind": "LAB"
+      },
+      {
+        "name": "Datalab, João Pinto C. Patol. e Análises Clin., Lab. de Liquorologia da",
+        "city": "Cardio Pulmonar da Bahia LAB LAB LAB",
+        "kind": "LAB"
+      },
+      {
+        "name": "Bahia e Leme Lab. e Vacinas",
+        "city": "Cardio Pulmonar da Bahia LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Sta. Maria da Vitoria LDC Lab. de Diag Clin.",
+        "city": "Cardio Pulmonar da Bahia LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Santo Amaro J.C. Lab Lab. Jaime Cerqueira e Laclisa",
+        "city": "Cardio Pulmonar da Bahia LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Sto Antonio de Jesus Lab. Fernando Queiroz, Lab. Jaime Cerqueira, Lab. Sabin e RT Lab.",
+        "city": "Cardio Pulmonar da Bahia LAB LAB LAB",
+        "kind": "LAB"
+      },
+      {
+        "name": "S. Sebastião do Passe Vida Lab. Análises Clin.",
+        "city": "Cardio Pulmonar da Bahia LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Seabra LAC Lab Análises Clín. e LAF Lab. Antunes Farias",
+        "city": "Cardio Pulmonar da Bahia LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Senhor do Bonfim ISLAB e Lab. Análises Maria Graças F. Cardoso",
+        "city": "Cardio Pulmonar da Bahia LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Serrinha Lab. Bioanálises e Lab. Estrela",
+        "city": "Cardio Pulmonar da Bahia LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Simões Filho Lab. Clin. Simões Filho",
+        "city": "Cardio Pulmonar da Bahia LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Teixeira de Freitas Lab. Carvalho",
+        "city": "Cardio Pulmonar da Bahia LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Teofilandia Lab. Bioanálises",
+        "city": "Cardio Pulmonar da Bahia LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Ubata Lab. Controle",
+        "city": "Ubaitaba Prontanálises LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Valença Biolabor Lab. Análises Clín. e Lab. Análises Clin. de Valença",
+        "city": "Ubaitaba Prontanálises LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Vitoria da Conquista Elo Lab. Clin., IBR Inst. Brandão Reabilitação, Prolab Análises e Clín.",
+        "city": "Ubaitaba Prontanálises LAB LAB LAB",
+        "kind": "LAB"
+      }
+    ],
+    "stats": {
+      "pages": 25,
+      "textLength": 61642,
+      "tableBlocks": 6,
+      "products": 16,
+      "citiesCount": 12,
+      "refnetsCount": 133,
+      "warnings": []
+    }
+  }
+}

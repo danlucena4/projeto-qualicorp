@@ -1,0 +1,547 @@
+{
+  "meta": {
+    "qcTableId": 118,
+    "operator": "SEGUROS UNIMED",
+    "uf": "BA",
+    "entity": "ABM",
+    "pdfUrl": "https://tabelasdevendas.qualicorp.com.br/tabelas/QUALIPRO_SEG_UNIMED_BA_ABM_26_NP.pdf"
+  },
+  "extraction": {
+    "operatorHint": "SEGUROS UNIMED",
+    "planNameHint": "Apto II Adesão Superior Plus Apto II Adesão Sênior Apto II",
+    "validityBaseMonth": "Abril",
+    "validityPeriod": "Abril/2026 até Março/2027",
+    "entities": [
+      {
+        "code": "ABM",
+        "name": "Associação Bahiana de Medicina"
+      }
+    ],
+    "tables": [
+      {
+        "blockLabel": "Sem Coparticipação",
+        "includesCoparticipation": "WITHOUT",
+        "products": [
+          {
+            "rawName": "Apto II Adesão Superior Plus Apto II Adesão Sênior Apto II",
+            "ansCode": "494.590/23-5",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Grupo de municípios",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 637.49,
+              "age19_23": 780.28,
+              "age24_28": 976.98,
+              "age29_33": 1079.66,
+              "age34_38": 1149.92,
+              "age39_43": 1333.9,
+              "age44_48": 1594.54,
+              "age49_53": 1912.4,
+              "age54_58": 2270.48,
+              "age59Upper": 3824.82
+            }
+          },
+          {
+            "rawName": "Apto II Adesão Superior Plus Apto II Adesão Sênior Apto II",
+            "ansCode": "494.599/23-9",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 713.28,
+              "age19_23": 873.02,
+              "age24_28": 1093.13,
+              "age29_33": 1208.02,
+              "age34_38": 1286.68,
+              "age39_43": 1492.52,
+              "age44_48": 1784.2,
+              "age49_53": 2139.81,
+              "age54_58": 2540.45,
+              "age59Upper": 4279.25
+            }
+          },
+          {
+            "rawName": "Apto II Adesão Superior Plus Apto II Adesão Sênior Apto II",
+            "ansCode": "477.998/17-3",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 690.07,
+              "age19_23": 844.64,
+              "age24_28": 1057.55,
+              "age29_33": 1168.71,
+              "age34_38": 1244.77,
+              "age39_43": 1443.91,
+              "age44_48": 1726.06,
+              "age49_53": 2070.14,
+              "age54_58": 2457.73,
+              "age59Upper": 4140.28
+            }
+          },
+          {
+            "rawName": "Apto II Adesão Superior Plus Apto II Adesão Sênior Apto II",
+            "ansCode": "477.999/17-1",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 772.14,
+              "age19_23": 945.07,
+              "age24_28": 1183.34,
+              "age29_33": 1307.71,
+              "age34_38": 1392.83,
+              "age39_43": 1615.67,
+              "age44_48": 1931.4,
+              "age49_53": 2316.4,
+              "age54_58": 2750.06,
+              "age59Upper": 4632.79
+            }
+          },
+          {
+            "rawName": "Apto II Adesão Superior Plus Apto II Adesão Sênior Apto II",
+            "ansCode": "478.001/17-9",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 976.69,
+              "age19_23": 1195.46,
+              "age24_28": 1496.86,
+              "age29_33": 1654.18,
+              "age34_38": 1761.82,
+              "age39_43": 2043.68,
+              "age44_48": 2443.05,
+              "age49_53": 2930.01,
+              "age54_58": 3478.65,
+              "age59Upper": 5860.09
+            }
+          },
+          {
+            "rawName": "Apto II Adesão Superior Plus Apto II Adesão Sênior Apto II",
+            "ansCode": "478.000/17-1",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 1086.5,
+              "age19_23": 1329.88,
+              "age24_28": 1665.13,
+              "age29_33": 1840.14,
+              "age34_38": 1959.93,
+              "age39_43": 2273.52,
+              "age44_48": 2717.73,
+              "age49_53": 3259.45,
+              "age54_58": 3869.72,
+              "age59Upper": 6518.83
+            }
+          },
+          {
+            "rawName": "Apto II Adesão Superior Plus Apto II Adesão Sênior Apto II",
+            "ansCode": "499.046/24-3",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 1216.66,
+              "age19_23": 1489.14,
+              "age24_28": 1864.62,
+              "age29_33": 2060.59,
+              "age34_38": 2194.72,
+              "age39_43": 2545.78,
+              "age44_48": 3043.3,
+              "age49_53": 3649.9,
+              "age54_58": 4333.27,
+              "age59Upper": 7299.76
+            }
+          },
+          {
+            "rawName": "Apto II Adesão Superior Plus Apto II Adesão Sênior Apto II",
+            "ansCode": "478.002/17-7",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 2333.77,
+              "age19_23": 2856.56,
+              "age24_28": 3576.76,
+              "age29_33": 3952.68,
+              "age34_38": 4209.89,
+              "age39_43": 4883.39,
+              "age44_48": 5837.69,
+              "age49_53": 7001.31,
+              "age54_58": 8312.2,
+              "age59Upper": 14002.57
+            }
+          }
+        ]
+      },
+      {
+        "blockLabel": "Com Coparticipação",
+        "includesCoparticipation": "WITH",
+        "products": [
+          {
+            "rawName": "Adesão Superior Plus Apto CP II Adesão Sênior Apto CP II",
+            "ansCode": "494.600/23-6",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Grupo de municípios",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 538.66,
+              "age19_23": 659.32,
+              "age24_28": 825.54,
+              "age29_33": 912.32,
+              "age34_38": 971.69,
+              "age39_43": 1127.14,
+              "age44_48": 1347.39,
+              "age49_53": 1615.99,
+              "age54_58": 1918.54,
+              "age59Upper": 3231.65
+            }
+          },
+          {
+            "rawName": "Adesão Superior Plus Apto CP II Adesão Sênior Apto CP II",
+            "ansCode": "494.601/23-4",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 602.76,
+              "age19_23": 737.78,
+              "age24_28": 923.77,
+              "age29_33": 1020.85,
+              "age34_38": 1087.28,
+              "age39_43": 1261.22,
+              "age44_48": 1507.7,
+              "age49_53": 1808.2,
+              "age54_58": 2146.74,
+              "age59Upper": 3616.45
+            }
+          },
+          {
+            "rawName": "Adesão Superior Plus Apto CP II Adesão Sênior Apto CP II",
+            "ansCode": "483.088/19-1",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 583.09,
+              "age19_23": 713.71,
+              "age24_28": 893.64,
+              "age29_33": 987.56,
+              "age34_38": 1051.86,
+              "age39_43": 1220.11,
+              "age44_48": 1458.52,
+              "age49_53": 1749.2,
+              "age54_58": 2076.64,
+              "age59Upper": 3498.31
+            }
+          },
+          {
+            "rawName": "Adesão Superior Plus Apto CP II Adesão Sênior Apto CP II",
+            "ansCode": "483.089/19-0",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 652.47,
+              "age19_23": 798.62,
+              "age24_28": 999.93,
+              "age29_33": 1105.01,
+              "age34_38": 1176.95,
+              "age39_43": 1365.22,
+              "age44_48": 1632.04,
+              "age49_53": 1957.34,
+              "age54_58": 2323.82,
+              "age59Upper": 3914.72
+            }
+          },
+          {
+            "rawName": "Adesão Superior Plus Apto CP II Adesão Sênior Apto CP II",
+            "ansCode": "491.510/22-1",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 825.29,
+              "age19_23": 1010.15,
+              "age24_28": 1264.84,
+              "age29_33": 1397.79,
+              "age34_38": 1488.76,
+              "age39_43": 1726.9,
+              "age44_48": 2064.36,
+              "age49_53": 2475.85,
+              "age54_58": 2939.44,
+              "age59Upper": 4951.28
+            }
+          },
+          {
+            "rawName": "Adesão Superior Plus Apto CP II Adesão Sênior Apto CP II",
+            "ansCode": "491.513/22-5",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 918.08,
+              "age19_23": 1123.71,
+              "age24_28": 1407.05,
+              "age29_33": 1554.93,
+              "age34_38": 1656.14,
+              "age39_43": 1921.12,
+              "age44_48": 2296.46,
+              "age49_53": 2754.22,
+              "age54_58": 3269.91,
+              "age59Upper": 5508.41
+            }
+          },
+          {
+            "rawName": "Adesão Superior Plus Apto CP II Adesão Sênior Apto CP II",
+            "ansCode": "499.047/24-1",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 1028.07,
+              "age19_23": 1258.33,
+              "age24_28": 1575.61,
+              "age29_33": 1741.18,
+              "age34_38": 1854.53,
+              "age39_43": 2151.25,
+              "age44_48": 2571.57,
+              "age49_53": 3084.17,
+              "age54_58": 3661.63,
+              "age59Upper": 6168.28
+            }
+          },
+          {
+            "rawName": "Adesão Superior Plus Apto CP II Adesão Sênior Apto CP II",
+            "ansCode": "491.515/22-1",
+            "segment": "Ambulatorial + Hospitalar com obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 1972.03,
+              "age19_23": 2413.8,
+              "age24_28": 3022.35,
+              "age29_33": 3340.02,
+              "age34_38": 3557.35,
+              "age39_43": 4126.46,
+              "age44_48": 4932.84,
+              "age49_53": 5916.11,
+              "age54_58": 7023.8,
+              "age59Upper": 11832.17
+            }
+          }
+        ]
+      }
+    ],
+    "cities": [
+      {
+        "name": "Camaçari",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Candeias",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Lauro de Freitas",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Mata de São João",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Salvador",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Santo Amaro",
+        "state": "BAHIA"
+      },
+      {
+        "name": "Simões Filho",
+        "state": "BAHIA"
+      }
+    ],
+    "refnets": [
+      {
+        "name": "Hospital Santa Helena",
+        "city": "Climege PS/INT - - - - - -",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. Agenor Paiva",
+        "city": "Probaby PS - - - - - -",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. Aliança",
+        "city": "Probaby PS - - - - - -",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. da Bahia HBA",
+        "city": "Probaby PS - - - - - -",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. da Cidade",
+        "city": "Probaby PS - - - - - -",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. da Sagrada Família",
+        "city": "Probaby PS - - - - - -",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. Jorge Valente",
+        "city": "Probaby PS - - - - - -",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. Português",
+        "city": "Probaby PS - - - - - -",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT",
+          "MAT"
+        ]
+      },
+      {
+        "name": "Hosp. ProHope",
+        "city": "Probaby PS - - - - - -",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. Sta. Izabel",
+        "city": "Probaby PS - - - - - -",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "INT"
+        ]
+      },
+      {
+        "name": "Hosp. Sto. Amaro",
+        "city": "Probaby PS - - - - - -",
+        "kind": "HOSPITAL",
+        "specialties": [
+          "PS",
+          "MAT",
+          "INT"
+        ]
+      },
+      {
+        "name": "Alagoinhas Bioensaio Lab. de Análises Clín.",
+        "city": "Probaby PS - - - - - -",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Camaçari DNA Lab. e Pesq. Análises Clín.",
+        "city": "Probaby PS - - - - - -",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Catu Diagnóstica Lab. de Análises Clín.",
+        "city": "Probaby PS - - - - - -",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "Cto. de Imagem Diagnósticos",
+        "city": "Datalab - - - - LAB LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "DNA Lab., Image Memorial Salvador e Lab.",
+        "city": "Datalab - - - - LAB LAB LAB",
+        "kind": "LAB"
+      },
+      {
+        "name": "Diagnósticos",
+        "city": "Salvador",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      },
+      {
+        "name": "CDI, DNA Lab., Image Memorial Salvador, Lab.",
+        "city": "Salvador",
+        "kind": "LAB"
+      },
+      {
+        "name": "Laboclin, Lab. Leme, Lab. Sabin e LIP Lab. de",
+        "city": "Salvador",
+        "kind": "LAB"
+      },
+      {
+        "name": "S. Sebastião do Passe Vida Lab.",
+        "city": "Labchecap - - - - - LAB LAB",
+        "kind": "LAB",
+        "specialties": [
+          "LAB"
+        ]
+      }
+    ],
+    "stats": {
+      "pages": 17,
+      "textLength": 32992,
+      "tableBlocks": 2,
+      "products": 16,
+      "citiesCount": 7,
+      "refnetsCount": 20,
+      "warnings": []
+    }
+  }
+}
