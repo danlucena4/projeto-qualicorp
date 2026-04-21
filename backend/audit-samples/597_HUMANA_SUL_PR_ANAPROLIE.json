@@ -49,6 +49,7 @@
       {
         "blockLabel": "Planos COM Coparticipação Parcial",
         "includesCoparticipation": "PARTIAL",
+        "copartInferred": false,
         "products": [
           {
             "rawName": "CP Vital MCR com Obs QP CA CP Ideal MCR com Obs QC CA CP Ideal MCR com Obs QP CA",
@@ -148,8 +149,9 @@
         ]
       },
       {
-        "blockLabel": "Coparticipação Parcial (inferido)",
+        "blockLabel": "Planos COM Coparticipação Parcial",
         "includesCoparticipation": "PARTIAL",
+        "copartInferred": true,
         "products": [
           {
             "rawName": "CP Premium Nacional OPR com Obs QC CA CP Premium Nacional OPR com Obs QP CA",
@@ -230,8 +232,9 @@
         ]
       },
       {
-        "blockLabel": "Planos COM Coparticipação Total",
+        "blockLabel": "Planos COM Coparticipação",
         "includesCoparticipation": "WITH",
+        "copartInferred": false,
         "products": [
           {
             "rawName": "CP Vital MCR com Obs QP CA CP Ideal MCR com Obs QC CA CP Ideal MCR com Obs QP CA",
@@ -331,8 +334,9 @@
         ]
       },
       {
-        "blockLabel": "Com Coparticipação (inferido)",
+        "blockLabel": "Planos COM Coparticipação",
         "includesCoparticipation": "WITH",
+        "copartInferred": true,
         "products": [
           {
             "rawName": "CP Premium Nacional OPR com Obs QC CA CP Premium Nacional OPR com Obs QP CA",
@@ -618,7 +622,7 @@
       },
       {
         "name": "CP Premium Nacional OPR",
-        "sourceLabel": "Coparticipação Parcial (inferido)",
+        "sourceLabel": "Planos COM Coparticipação Parcial",
         "includesCoparticipation": "PARTIAL",
         "contractType": "NOT_APPLICABLE",
         "lpts": [],
@@ -638,7 +642,7 @@
         "isRefundable": false,
         "inferred": {
           "name": true,
-          "includesCoparticipation": false,
+          "includesCoparticipation": true,
           "contractType": true
         },
         "products": [
@@ -758,7 +762,7 @@
       },
       {
         "name": "CP Vital MCR com",
-        "sourceLabel": "Planos COM Coparticipação Total",
+        "sourceLabel": "Planos COM Coparticipação",
         "includesCoparticipation": "WITH",
         "contractType": "NOT_APPLICABLE",
         "lpts": [],
@@ -926,7 +930,7 @@
       },
       {
         "name": "CP Premium Nacional OPR",
-        "sourceLabel": "Com Coparticipação (inferido)",
+        "sourceLabel": "Planos COM Coparticipação",
         "includesCoparticipation": "WITH",
         "contractType": "NOT_APPLICABLE",
         "lpts": [],
@@ -946,7 +950,7 @@
         "isRefundable": false,
         "inferred": {
           "name": true,
-          "includesCoparticipation": false,
+          "includesCoparticipation": true,
           "contractType": true
         },
         "products": [

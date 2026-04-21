@@ -19,8 +19,9 @@
     ],
     "tables": [
       {
-        "blockLabel": "PLANOS SEM COPARTICIPAÇÃO",
+        "blockLabel": "Planos SEM Coparticipação",
         "includesCoparticipation": "WITHOUT",
+        "copartInferred": false,
         "products": [
           {
             "rawName": "Apto II Adesão Superior Plus Apto II Adesão Sênior Apto II",
@@ -179,6 +180,7 @@
       {
         "blockLabel": "Planos COM Coparticipação",
         "includesCoparticipation": "WITH",
+        "copartInferred": false,
         "products": [
           {
             "rawName": "Adesão Superior Plus Apto CP II Adesão Sênior Apto CP II",
@@ -558,7 +560,7 @@
     "tables": [
       {
         "name": "Apto II",
-        "sourceLabel": "PLANOS SEM COPARTICIPAÇÃO",
+        "sourceLabel": "Planos SEM Coparticipação",
         "includesCoparticipation": "WITHOUT",
         "contractType": "NOT_APPLICABLE",
         "lpts": [],

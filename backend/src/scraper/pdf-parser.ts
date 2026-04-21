@@ -55,10 +55,12 @@ export interface ExtractedProduct {
 }
 
 export interface ExtractedTable {
-  /** Identificador humano do bloco (ex.: "Coparticipação Parcial", "Sem Coparticipação"). */
+  /** Identificador humano do bloco (ex.: "Planos COM Coparticipação Parcial"). */
   blockLabel: string;
   /** Resolução de `includesCoparticipation` no Koter. */
   includesCoparticipation: 'WITH' | 'WITHOUT' | 'PARTIAL' | null;
+  /** True quando o copart foi herdado do bloco anterior (não tinha marker próprio). */
+  copartInferred: boolean;
   /** Produtos extraídos do bloco. */
   products: ExtractedProduct[];
 }
@@ -252,55 +254,16 @@ function detectVariation(pricesSection: string): VariationInfo {
   return { labels: [] };
 }
 
-// Verifica se um label é coerente com o copart resolvido. Útil porque em
-// alguns PDFs (ex.: ONMED) aparece "Planos SEM Coparticipação" e "Planos COM
-// Coparticipação" lado a lado como uma linha de transição entre blocos, e o
-// parser precisa escolher o que bate com o copart real do bloco atual.
-function labelMatchesCopart(
-  label: string,
-  copart: ExtractedTable['includesCoparticipation'],
-): boolean {
-  if (!copart) return true;
-  const lower = label.toLowerCase();
-  if (copart === 'WITH')
-    return /(com\s+coparticipação|coparticipação\s+total)/i.test(lower);
-  if (copart === 'WITHOUT') return /(sem\s+coparticipação)/i.test(lower);
-  if (copart === 'PARTIAL')
-    return /(coparticipação\s+parcial|parcial.*coparticipação)/i.test(lower);
-  return true;
-}
-
+// Retorna o blockLabel padronizado, derivado do copart resolvido. Ignora o
+// texto específico do PDF — a informação de "foi extraído ou inferido" fica
+// em `KoterTable.inferred.includesCoparticipation`.
 function sniffBlockLabel(
-  block: string,
+  _block: string,
   copart: ExtractedTable['includesCoparticipation'],
 ): string {
-  const normalized = block.replace(/\t+/g, ' ').replace(/\s+/g, ' ');
-
-  // Padrões em ordem de especificidade — mais específicos primeiro.
-  const patterns: RegExp[] = [
-    /PLANOS\s*\|\s*COPARTICIPAÇÃO\s+\w+/gi,
-    /Planos\s+COM\s+Coparticipação\s+(Parcial|Total)/gi,
-    /Planos\s+(SEM|COM)\s+COPARTICIPAÇÃO/gi,
-    /Planos?\s+(SEM|COM)\s+Coparticipação/gi,
-    /COM\s+COPARTICIPAÇÃO/gi,
-    /SEM\s+COPARTICIPAÇÃO/gi,
-  ];
-
-  // Tenta achar um label do PDF que bata com o copart resolvido.
-  for (const re of patterns) {
-    const matches = [...normalized.matchAll(re)].map((m) =>
-      m[0].replace(/\s+/g, ' ').trim(),
-    );
-    if (matches.length === 0) continue;
-    const coherent = matches.find((m) => labelMatchesCopart(m, copart));
-    if (coherent) return coherent;
-  }
-
-  // Fallback: rótulo derivado do copart (label "inferido" deixa claro que o
-  // texto original do PDF não tinha título próprio pra esse bloco).
-  if (copart === 'WITH') return 'Com Coparticipação (inferido)';
-  if (copart === 'WITHOUT') return 'Sem Coparticipação (inferido)';
-  if (copart === 'PARTIAL') return 'Coparticipação Parcial (inferido)';
+  if (copart === 'WITH') return 'Planos COM Coparticipação';
+  if (copart === 'WITHOUT') return 'Planos SEM Coparticipação';
+  if (copart === 'PARTIAL') return 'Planos COM Coparticipação Parcial';
   return 'Tabela (sem marcador)';
 }
 
@@ -816,15 +779,12 @@ export async function parseQualicorpPdf(data: Uint8Array): Promise<ExtractedPDF>
     // Anexa o sub-label da variação (SEM ODONTO, COM ODONTO, TITULAR+2+, ...)
     // se detectamos esse padrão e há um label pra essa posição.
     const subLabel = variation.labels[twinIdx];
-    if (subLabel) {
-      // Tira o "(inferido)" quando adicionamos uma sub-etiqueta concreta.
-      label = label.replace(/\s*\(inferido\)\s*$/i, '').trim();
-      label = `${label} (${subLabel})`;
-    }
+    if (subLabel) label = `${label} (${subLabel})`;
 
     tables.push({
       blockLabel: label,
       includesCoparticipation: resolvedCopart,
+      copartInferred: blockCopart === null && resolvedCopart !== null,
       products,
     });
   }

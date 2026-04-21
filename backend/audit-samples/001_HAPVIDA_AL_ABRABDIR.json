@@ -63,8 +63,9 @@
     ],
     "tables": [
       {
-        "blockLabel": "PLANOS | COPARTICIPAÇÃO PARCIAL (SEM ODONTO)",
+        "blockLabel": "Planos COM Coparticipação Parcial (SEM ODONTO)",
         "includesCoparticipation": "PARTIAL",
+        "copartInferred": false,
         "products": [
           {
             "rawName": "Nosso Plano A CA MUN CC QC 207 Nosso Plano AHO CA MUN Enf CC QC 166 Nosso Plano AHO CA MUN Apt CC QC 188",
@@ -126,8 +127,9 @@
         ]
       },
       {
-        "blockLabel": "Coparticipação Parcial (COM ODONTO)",
+        "blockLabel": "Planos COM Coparticipação Parcial (COM ODONTO)",
         "includesCoparticipation": "PARTIAL",
+        "copartInferred": false,
         "products": [
           {
             "rawName": "Nosso Plano A CA MUN CC QC 207 Nosso Plano AHO CA MUN Enf CC QC 166 Nosso Plano AHO CA MUN Apt CC QC 188",
@@ -189,8 +191,9 @@
         ]
       },
       {
-        "blockLabel": "PLANOS | COPARTICIPAÇÃO TOTAL (SEM ODONTO)",
+        "blockLabel": "Planos COM Coparticipação (SEM ODONTO)",
         "includesCoparticipation": "WITH",
+        "copartInferred": false,
         "products": [
           {
             "rawName": "Nosso Plano A CA MUN CC QC 207 Nosso Plano AHO CA MUN Enf CC QC 166 Nosso Plano AHO CA MUN Apt CC QC 188",
@@ -252,8 +255,9 @@
         ]
       },
       {
-        "blockLabel": "Com Coparticipação (COM ODONTO)",
+        "blockLabel": "Planos COM Coparticipação (COM ODONTO)",
         "includesCoparticipation": "WITH",
+        "copartInferred": false,
         "products": [
           {
             "rawName": "Nosso Plano A CA MUN CC QC 207 Nosso Plano AHO CA MUN Enf CC QC 166 Nosso Plano AHO CA MUN Apt CC QC 188",
@@ -365,7 +369,7 @@
     "tables": [
       {
         "name": "Nosso Plano",
-        "sourceLabel": "PLANOS | COPARTICIPAÇÃO PARCIAL (SEM ODONTO)",
+        "sourceLabel": "Planos COM Coparticipação Parcial (SEM ODONTO)",
         "includesCoparticipation": "PARTIAL",
         "contractType": "NOT_APPLICABLE",
         "lpts": [],
@@ -520,7 +524,7 @@
       },
       {
         "name": "Nosso Plano",
-        "sourceLabel": "Coparticipação Parcial (COM ODONTO)",
+        "sourceLabel": "Planos COM Coparticipação Parcial (COM ODONTO)",
         "includesCoparticipation": "PARTIAL",
         "contractType": "NOT_APPLICABLE",
         "lpts": [],
@@ -675,7 +679,7 @@
       },
       {
         "name": "Nosso Plano",
-        "sourceLabel": "PLANOS | COPARTICIPAÇÃO TOTAL (SEM ODONTO)",
+        "sourceLabel": "Planos COM Coparticipação (SEM ODONTO)",
         "includesCoparticipation": "WITH",
         "contractType": "NOT_APPLICABLE",
         "lpts": [],
@@ -830,7 +834,7 @@
       },
       {
         "name": "Nosso Plano",
-        "sourceLabel": "Com Coparticipação (COM ODONTO)",
+        "sourceLabel": "Planos COM Coparticipação (COM ODONTO)",
         "includesCoparticipation": "WITH",
         "contractType": "NOT_APPLICABLE",
         "lpts": [],

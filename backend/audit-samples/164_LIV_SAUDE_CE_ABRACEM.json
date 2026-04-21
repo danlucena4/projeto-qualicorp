@@ -29,6 +29,7 @@
       {
         "blockLabel": "Planos COM Coparticipação Parcial",
         "includesCoparticipation": "PARTIAL",
+        "copartInferred": false,
         "products": [
           {
             "rawName": "Saúde por adesão rede 250 A+H+Obs Copart Bem Estar por adesão rede 550 A+H+Obs Copart",
@@ -71,8 +72,9 @@
         ]
       },
       {
-        "blockLabel": "Planos COM Coparticipação Total",
+        "blockLabel": "Planos COM Coparticipação",
         "includesCoparticipation": "WITH",
+        "copartInferred": false,
         "products": [
           {
             "rawName": "Saúde por adesão rede 250 A+H+Obs Copart Bem Estar por adesão rede 550 A+H+Obs Copart",
@@ -267,7 +269,7 @@
       },
       {
         "name": "Saúde",
-        "sourceLabel": "Planos COM Coparticipação Total",
+        "sourceLabel": "Planos COM Coparticipação",
         "includesCoparticipation": "WITH",
         "contractType": "NOT_APPLICABLE",
         "lpts": [],

@@ -115,8 +115,9 @@
     ],
     "tables": [
       {
-        "blockLabel": "COM COPARTICIPAÇÃO (TITULAR OU +1 DEP)",
+        "blockLabel": "Planos COM Coparticipação (TITULAR OU +1 DEP)",
         "includesCoparticipation": "WITH",
+        "copartInferred": false,
         "products": [
           {
             "rawName": "Direto Salvador Adesão Trad. 23 F AHO QC COP",
@@ -159,8 +160,9 @@
         ]
       },
       {
-        "blockLabel": "Com Coparticipação (TITULAR +2 DEPs)",
+        "blockLabel": "Planos COM Coparticipação (TITULAR +2 DEPs)",
         "includesCoparticipation": "WITH",
+        "copartInferred": true,
         "products": [
           {
             "rawName": "Direto Salvador Adesão Trad. 23 F AHO QC COP",
@@ -203,8 +205,9 @@
         ]
       },
       {
-        "blockLabel": "COM COPARTICIPAÇÃO (TITULAR OU +1 DEP)",
+        "blockLabel": "Planos COM Coparticipação (TITULAR OU +1 DEP)",
         "includesCoparticipation": "WITH",
+        "copartInferred": false,
         "products": [
           {
             "rawName": "Direto Nacional Adesão Trad. 23 F AHO QC COP RM",
@@ -247,8 +250,9 @@
         ]
       },
       {
-        "blockLabel": "Com Coparticipação (TITULAR +2 DEPs)",
+        "blockLabel": "Planos COM Coparticipação (TITULAR +2 DEPs)",
         "includesCoparticipation": "WITH",
+        "copartInferred": true,
         "products": [
           {
             "rawName": "Direto Nacional Adesão Trad. 23 F AHO QC COP RM",
@@ -291,8 +295,9 @@
         ]
       },
       {
-        "blockLabel": "PLANOS COM COPARTICIPAÇÃO (TITULAR OU +1 DEP)",
+        "blockLabel": "Planos COM Coparticipação (TITULAR OU +1 DEP)",
         "includesCoparticipation": "WITH",
+        "copartInferred": false,
         "products": [
           {
             "rawName": "Clássico 100 Adesão Trad.23 F Especial 100 Adesão Trad.23 F Especial 100 Adesão Trad.23 F Executivo Pleno Adesão Trad.23 F AHO QC COP RM",
@@ -373,8 +378,9 @@
         ]
       },
       {
-        "blockLabel": "Com Coparticipação (TITULAR +2 DEPs)",
+        "blockLabel": "Planos COM Coparticipação (TITULAR +2 DEPs)",
         "includesCoparticipation": "WITH",
+        "copartInferred": true,
         "products": [
           {
             "rawName": "Clássico 100 Adesão Trad.23 F Especial 100 Adesão Trad.23 F Especial 100 Adesão Trad.23 F Executivo Pleno Adesão Trad.23 F AHO QC COP RM",
@@ -1616,7 +1622,7 @@
     "tables": [
       {
         "name": "Direto Salvador",
-        "sourceLabel": "COM COPARTICIPAÇÃO (TITULAR OU +1 DEP)",
+        "sourceLabel": "Planos COM Coparticipação (TITULAR OU +1 DEP)",
         "includesCoparticipation": "WITH",
         "contractType": "NOT_APPLICABLE",
         "lpts": [],
@@ -3703,7 +3709,7 @@
       },
       {
         "name": "Direto Salvador",
-        "sourceLabel": "Com Coparticipação (TITULAR +2 DEPs)",
+        "sourceLabel": "Planos COM Coparticipação (TITULAR +2 DEPs)",
         "includesCoparticipation": "WITH",
         "contractType": "NOT_APPLICABLE",
         "lpts": [],
@@ -3740,7 +3746,7 @@
         "isRefundable": false,
         "inferred": {
           "name": true,
-          "includesCoparticipation": false,
+          "includesCoparticipation": true,
           "contractType": true
         },
         "products": [
@@ -5790,7 +5796,7 @@
       },
       {
         "name": "Direto Nacional",
-        "sourceLabel": "COM COPARTICIPAÇÃO (TITULAR OU +1 DEP)",
+        "sourceLabel": "Planos COM Coparticipação (TITULAR OU +1 DEP)",
         "includesCoparticipation": "WITH",
         "contractType": "NOT_APPLICABLE",
         "lpts": [],
@@ -7877,7 +7883,7 @@
       },
       {
         "name": "Direto Nacional",
-        "sourceLabel": "Com Coparticipação (TITULAR +2 DEPs)",
+        "sourceLabel": "Planos COM Coparticipação (TITULAR +2 DEPs)",
         "includesCoparticipation": "WITH",
         "contractType": "NOT_APPLICABLE",
         "lpts": [],
@@ -7914,7 +7920,7 @@
         "isRefundable": false,
         "inferred": {
           "name": true,
-          "includesCoparticipation": false,
+          "includesCoparticipation": true,
           "contractType": true
         },
         "products": [
@@ -9964,7 +9970,7 @@
       },
       {
         "name": "Clássico",
-        "sourceLabel": "PLANOS COM COPARTICIPAÇÃO (TITULAR OU +1 DEP)",
+        "sourceLabel": "Planos COM Coparticipação (TITULAR OU +1 DEP)",
         "includesCoparticipation": "WITH",
         "contractType": "NOT_APPLICABLE",
         "lpts": [],
@@ -14093,7 +14099,7 @@
       },
       {
         "name": "Clássico",
-        "sourceLabel": "Com Coparticipação (TITULAR +2 DEPs)",
+        "sourceLabel": "Planos COM Coparticipação (TITULAR +2 DEPs)",
         "includesCoparticipation": "WITH",
         "contractType": "NOT_APPLICABLE",
         "lpts": [],
@@ -14130,7 +14136,7 @@
         "isRefundable": false,
         "inferred": {
           "name": true,
-          "includesCoparticipation": false,
+          "includesCoparticipation": true,
           "contractType": true
         },
         "products": [

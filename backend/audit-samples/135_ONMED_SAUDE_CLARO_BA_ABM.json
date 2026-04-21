@@ -63,8 +63,9 @@
     ],
     "tables": [
       {
-        "blockLabel": "Sem Coparticipação (inferido)",
+        "blockLabel": "Planos SEM Coparticipação",
         "includesCoparticipation": "WITHOUT",
+        "copartInferred": false,
         "products": [
           {
             "rawName": "Classic BA CA Enf",
@@ -166,6 +167,7 @@
       {
         "blockLabel": "Planos COM Coparticipação",
         "includesCoparticipation": "WITH",
+        "copartInferred": false,
         "products": [
           {
             "rawName": "Classic BA CA Enf Copart Classic BA CA Apto Copart Life BA CA Enf Copart Life BA CA Apto Copart Comfort BA CA Apto Copart",
@@ -420,7 +422,7 @@
     "tables": [
       {
         "name": "Classic",
-        "sourceLabel": "Sem Coparticipação (inferido)",
+        "sourceLabel": "Planos SEM Coparticipação",
         "includesCoparticipation": "WITHOUT",
         "contractType": "NOT_APPLICABLE",
         "lpts": [],

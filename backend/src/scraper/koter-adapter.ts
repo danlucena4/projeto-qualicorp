@@ -280,7 +280,7 @@ export function toKoterPayload(
       isRefundable: false,
       inferred: {
         name: true, // nome da tabela é sempre heurístico
-        includesCoparticipation: t.includesCoparticipation === null,
+        includesCoparticipation: t.copartInferred,
         contractType: true, // implícito pela categoria
       },
       products,
