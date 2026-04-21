@@ -1,0 +1,1103 @@
+{
+  "meta": {
+    "qcTableId": 597,
+    "operator": "HUMANA_SUL",
+    "uf": "PR",
+    "entity": "ANAPROLIE",
+    "pdfUrl": "https://tabelasdevendas.qualicorp.com.br/tabelas/QUALIPRO_HUM_SAUDE_FC_M_RONDON_PR_SV_26.pdf"
+  },
+  "extraction": {
+    "operatorHint": "HUMANA_SUL",
+    "planNameHint": "CP Vital MCR com Obs QP CA CP Ideal MCR com Obs QC CA CP Ideal MCR com Obs QP CA",
+    "validityBaseMonth": "Março",
+    "validityPeriod": "Abril/2026 até Fevereiro/2027",
+    "entities": [
+      {
+        "code": "ABRABDIR",
+        "name": "Associação Brasileira de Advogados e Bacharéis em Direito"
+      },
+      {
+        "code": "AFB",
+        "name": "Associação de Fisioterapeutas do Brasil"
+      },
+      {
+        "code": "ANADEF",
+        "name": "Associação Nacional dos Defensores Públicos Federais"
+      },
+      {
+        "code": "ANAPROLIE",
+        "name": "Associação Nacional dos Profissionais Liberais"
+      },
+      {
+        "code": "ANPR",
+        "name": "Associação Nacional dos Procuradores da República"
+      },
+      {
+        "code": "CREF-9",
+        "name": "Conselho Regional de Educação Física da 9ª Região"
+      },
+      {
+        "code": "GASP",
+        "name": "Grupo Associativo dos Servidores Públicos"
+      },
+      {
+        "code": "MÚTUA",
+        "name": "Mútua de Assistência dos profissionais da Engenharia, Arquitetura e Agronomia"
+      }
+    ],
+    "tables": [
+      {
+        "blockLabel": "Planos COM Coparticipação Parcial",
+        "includesCoparticipation": "PARTIAL",
+        "products": [
+          {
+            "rawName": "CP Vital MCR com Obs QP CA CP Ideal MCR com Obs QC CA CP Ideal MCR com Obs QP CA",
+            "ansCode": "495.076/23-3",
+            "segment": "Ambulatorial",
+            "coverage": "Grupo de Municípios",
+            "accommodation": null,
+            "prices": {
+              "age0_18": 107.17,
+              "age19_23": 135.78,
+              "age24_28": 147.13,
+              "age29_33": 158.04,
+              "age34_38": 163.29,
+              "age39_43": 191.05,
+              "age44_48": 273.65,
+              "age49_53": 375.06,
+              "age54_58": 446.1,
+              "age59Upper": 641.59
+            }
+          },
+          {
+            "rawName": "CP Vital MCR com Obs QP CA CP Ideal MCR com Obs QC CA CP Ideal MCR com Obs QP CA",
+            "ansCode": "495.079/23-8",
+            "segment": "Ambulatorial + Hospitalar COM obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 141.88,
+              "age19_23": 179.77,
+              "age24_28": 194.8,
+              "age29_33": 209.23,
+              "age34_38": 216.2,
+              "age39_43": 252.95,
+              "age44_48": 362.3,
+              "age49_53": 496.57,
+              "age54_58": 590.62,
+              "age59Upper": 849.43
+            }
+          },
+          {
+            "rawName": "CP Vital MCR com Obs QP CA CP Ideal MCR com Obs QC CA CP Ideal MCR com Obs QP CA",
+            "ansCode": "495.072/23-1",
+            "segment": "Ambulatorial + Hospitalar COM obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 158.07,
+              "age19_23": 200.28,
+              "age24_28": 217.02,
+              "age29_33": 233.1,
+              "age34_38": 240.86,
+              "age39_43": 281.81,
+              "age44_48": 403.64,
+              "age49_53": 553.22,
+              "age54_58": 658.01,
+              "age59Upper": 946.35
+            }
+          },
+          {
+            "rawName": "CP Vital MCR com Obs QP CA CP Ideal MCR com Obs QC CA CP Ideal MCR com Obs QP CA",
+            "ansCode": "495.069/23-1",
+            "segment": "Ambulatorial + Hospitalar COM obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 159.2,
+              "age19_23": 201.71,
+              "age24_28": 218.57,
+              "age29_33": 234.77,
+              "age34_38": 242.59,
+              "age39_43": 283.84,
+              "age44_48": 406.54,
+              "age49_53": 557.21,
+              "age54_58": 662.74,
+              "age59Upper": 953.16
+            }
+          },
+          {
+            "rawName": "CP Vital MCR com Obs QP CA CP Ideal MCR com Obs QC CA CP Ideal MCR com Obs QP CA",
+            "ansCode": "495.057/23-7",
+            "segment": "Ambulatorial + Hospitalar COM obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 177.48,
+              "age19_23": 224.85,
+              "age24_28": 243.65,
+              "age29_33": 261.7,
+              "age34_38": 270.42,
+              "age39_43": 316.39,
+              "age44_48": 453.16,
+              "age49_53": 621.11,
+              "age54_58": 738.75,
+              "age59Upper": 1062.46
+            }
+          }
+        ]
+      },
+      {
+        "blockLabel": "Coparticipação Parcial (inferido)",
+        "includesCoparticipation": "PARTIAL",
+        "products": [
+          {
+            "rawName": "CP Premium Nacional OPR com Obs QC CA CP Premium Nacional OPR com Obs QP CA",
+            "ansCode": "495.064/23-0",
+            "segment": "Ambulatorial + Hospitalar COM obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 206.58,
+              "age19_23": 261.75,
+              "age24_28": 283.62,
+              "age29_33": 304.64,
+              "age34_38": 314.79,
+              "age39_43": 368.3,
+              "age44_48": 527.51,
+              "age49_53": 723,
+              "age54_58": 859.95,
+              "age59Upper": 1236.78
+            }
+          },
+          {
+            "rawName": "CP Premium Nacional OPR com Obs QC CA CP Premium Nacional OPR com Obs QP CA",
+            "ansCode": "495.062/23-3",
+            "segment": "Ambulatorial + Hospitalar COM obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 230.38,
+              "age19_23": 291.89,
+              "age24_28": 316.29,
+              "age29_33": 339.73,
+              "age34_38": 351.04,
+              "age39_43": 410.72,
+              "age44_48": 588.27,
+              "age49_53": 806.28,
+              "age54_58": 958.99,
+              "age59Upper": 1379.22
+            }
+          },
+          {
+            "rawName": "CP Premium Nacional OPR com Obs QC CA CP Premium Nacional OPR com Obs QP CA",
+            "ansCode": "495.060/23-7",
+            "segment": "Ambulatorial + Hospitalar COM obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 363.83,
+              "age19_23": 460.98,
+              "age24_28": 499.53,
+              "age29_33": 536.54,
+              "age34_38": 554.41,
+              "age39_43": 648.67,
+              "age44_48": 929.09,
+              "age49_53": 1273.41,
+              "age54_58": 1514.59,
+              "age59Upper": 2178.29
+            }
+          },
+          {
+            "rawName": "CP Premium Nacional OPR com Obs QC CA CP Premium Nacional OPR com Obs QP CA",
+            "ansCode": "495.058/23-5",
+            "segment": "Ambulatorial + Hospitalar COM obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 406.66,
+              "age19_23": 515.23,
+              "age24_28": 558.31,
+              "age29_33": 599.68,
+              "age34_38": 619.65,
+              "age39_43": 725,
+              "age44_48": 1038.42,
+              "age49_53": 1423.25,
+              "age54_58": 1692.82,
+              "age59Upper": 2434.62
+            }
+          }
+        ]
+      },
+      {
+        "blockLabel": "Planos COM Coparticipação Total",
+        "includesCoparticipation": "WITH",
+        "products": [
+          {
+            "rawName": "CP Vital MCR com Obs QP CA CP Ideal MCR com Obs QC CA CP Ideal MCR com Obs QP CA",
+            "ansCode": "495.076/23-3",
+            "segment": "Ambulatorial",
+            "coverage": "Grupo de Municípios",
+            "accommodation": null,
+            "prices": {
+              "age0_18": 97,
+              "age19_23": 122.9,
+              "age24_28": 133.17,
+              "age29_33": 143.04,
+              "age34_38": 147.8,
+              "age39_43": 172.92,
+              "age44_48": 247.66,
+              "age49_53": 339.45,
+              "age54_58": 403.74,
+              "age59Upper": 580.67
+            }
+          },
+          {
+            "rawName": "CP Vital MCR com Obs QP CA CP Ideal MCR com Obs QC CA CP Ideal MCR com Obs QP CA",
+            "ansCode": "495.079/23-8",
+            "segment": "Ambulatorial + Hospitalar COM obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 128.01,
+              "age19_23": 162.18,
+              "age24_28": 175.74,
+              "age29_33": 188.76,
+              "age34_38": 195.05,
+              "age39_43": 228.21,
+              "age44_48": 326.86,
+              "age49_53": 448,
+              "age54_58": 532.85,
+              "age59Upper": 766.35
+            }
+          },
+          {
+            "rawName": "CP Vital MCR com Obs QP CA CP Ideal MCR com Obs QC CA CP Ideal MCR com Obs QP CA",
+            "ansCode": "495.072/23-1",
+            "segment": "Ambulatorial + Hospitalar COM obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 142.44,
+              "age19_23": 180.48,
+              "age24_28": 195.56,
+              "age29_33": 210.05,
+              "age34_38": 217.05,
+              "age39_43": 253.94,
+              "age44_48": 363.73,
+              "age49_53": 498.53,
+              "age54_58": 592.95,
+              "age59Upper": 852.78
+            }
+          },
+          {
+            "rawName": "CP Vital MCR com Obs QP CA CP Ideal MCR com Obs QC CA CP Ideal MCR com Obs QP CA",
+            "ansCode": "495.069/23-1",
+            "segment": "Ambulatorial + Hospitalar COM obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 143.47,
+              "age19_23": 181.78,
+              "age24_28": 196.98,
+              "age29_33": 211.58,
+              "age34_38": 218.63,
+              "age39_43": 255.79,
+              "age44_48": 366.37,
+              "age49_53": 502.14,
+              "age54_58": 597.25,
+              "age59Upper": 858.96
+            }
+          },
+          {
+            "rawName": "CP Vital MCR com Obs QP CA CP Ideal MCR com Obs QC CA CP Ideal MCR com Obs QP CA",
+            "ansCode": "495.057/23-7",
+            "segment": "Ambulatorial + Hospitalar COM obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 159.78,
+              "age19_23": 202.45,
+              "age24_28": 219.38,
+              "age29_33": 235.64,
+              "age34_38": 243.48,
+              "age39_43": 284.88,
+              "age44_48": 408.03,
+              "age49_53": 559.25,
+              "age54_58": 665.17,
+              "age59Upper": 956.65
+            }
+          }
+        ]
+      },
+      {
+        "blockLabel": "Com Coparticipação (inferido)",
+        "includesCoparticipation": "WITH",
+        "products": [
+          {
+            "rawName": "CP Premium Nacional OPR com Obs QC CA CP Premium Nacional OPR com Obs QP CA",
+            "ansCode": "495.064/23-0",
+            "segment": "Ambulatorial + Hospitalar COM obstetrícia",
+            "coverage": "Grupo de Municípios",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 185.77,
+              "age19_23": 235.36,
+              "age24_28": 255.04,
+              "age29_33": 273.94,
+              "age34_38": 283.06,
+              "age39_43": 331.19,
+              "age44_48": 474.36,
+              "age49_53": 650.16,
+              "age54_58": 773.3,
+              "age59Upper": 1112.16
+            }
+          },
+          {
+            "rawName": "CP Premium Nacional OPR com Obs QC CA CP Premium Nacional OPR com Obs QP CA",
+            "ansCode": "495.062/23-3",
+            "segment": "Ambulatorial + Hospitalar COM obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 207.03,
+              "age19_23": 262.31,
+              "age24_28": 284.24,
+              "age29_33": 305.3,
+              "age34_38": 315.47,
+              "age39_43": 369.09,
+              "age44_48": 528.65,
+              "age49_53": 724.57,
+              "age54_58": 861.81,
+              "age59Upper": 1239.46
+            }
+          },
+          {
+            "rawName": "CP Premium Nacional OPR com Obs QC CA CP Premium Nacional OPR com Obs QP CA",
+            "ansCode": "495.060/23-7",
+            "segment": "Ambulatorial + Hospitalar COM obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Enfermaria",
+            "prices": {
+              "age0_18": 326.16,
+              "age19_23": 413.25,
+              "age24_28": 447.8,
+              "age29_33": 480.98,
+              "age34_38": 496.99,
+              "age39_43": 581.48,
+              "age44_48": 832.86,
+              "age49_53": 1141.52,
+              "age54_58": 1357.73,
+              "age59Upper": 1952.69
+            }
+          },
+          {
+            "rawName": "CP Premium Nacional OPR com Obs QC CA CP Premium Nacional OPR com Obs QP CA",
+            "ansCode": "495.058/23-5",
+            "segment": "Ambulatorial + Hospitalar COM obstetrícia",
+            "coverage": "Nacional",
+            "accommodation": "Apartamento",
+            "prices": {
+              "age0_18": 364.41,
+              "age19_23": 461.7,
+              "age24_28": 500.3,
+              "age29_33": 537.37,
+              "age34_38": 555.26,
+              "age39_43": 649.65,
+              "age44_48": 930.5,
+              "age49_53": 1275.34,
+              "age54_58": 1516.89,
+              "age59Upper": 2181.6
+            }
+          }
+        ]
+      }
+    ],
+    "cities": [
+      {
+        "name": "Marechal Cândido Rondon",
+        "state": "PARANÁ"
+      },
+      {
+        "name": "Toledo",
+        "state": "PARANÁ"
+      }
+    ],
+    "refnets": [],
+    "stats": {
+      "pages": 18,
+      "textLength": 29663,
+      "tableBlocks": 4,
+      "products": 18,
+      "citiesCount": 2,
+      "refnetsCount": 0,
+      "warnings": [
+        "Nenhuma refnet extraída (é possível que o PDF só remeta ao site)"
+      ]
+    }
+  },
+  "koterPayload": {
+    "planId": null,
+    "category": "ADHESION",
+    "operatorName": "HUMANA_SUL",
+    "uf": "PR",
+    "pdfUrl": "https://tabelasdevendas.qualicorp.com.br/tabelas/QUALIPRO_HUM_SAUDE_FC_M_RONDON_PR_SV_26.pdf",
+    "planName": "CP Vital MCR com",
+    "validity": {
+      "baseMonth": "Março",
+      "period": "Abril/2026 até Fevereiro/2027"
+    },
+    "tables": [
+      {
+        "name": "CP Vital MCR com",
+        "sourceLabel": "Planos COM Coparticipação Parcial",
+        "includesCoparticipation": "PARTIAL",
+        "contractType": "NOT_APPLICABLE",
+        "lpts": [],
+        "associations": [
+          "ABRABDIR",
+          "AFB",
+          "ANADEF",
+          "ANAPROLIE",
+          "ANPR",
+          "CREF-9",
+          "GASP",
+          "MÚTUA"
+        ],
+        "minCoveredLives": null,
+        "maxCoveredLives": null,
+        "includesIOF": false,
+        "isRefundable": false,
+        "inferred": {
+          "name": true,
+          "includesCoparticipation": false,
+          "contractType": true
+        },
+        "products": [
+          {
+            "name": "Grupo de Municípios Amb",
+            "accommodationName": null,
+            "coverageName": "Grupo de Municípios",
+            "segmentName": "Ambulatorial",
+            "ansCode": "495.076/23-3",
+            "priceAgeGroup018": 107.17,
+            "priceAgeGroup1923": 135.78,
+            "priceAgeGroup2428": 147.13,
+            "priceAgeGroup2933": 158.04,
+            "priceAgeGroup3438": 163.29,
+            "priceAgeGroup3943": 191.05,
+            "priceAgeGroup4448": 273.65,
+            "priceAgeGroup4953": 375.06,
+            "priceAgeGroup5458": 446.1,
+            "priceAgeGroup59Upper": 641.59,
+            "cities": [
+              {
+                "name": "Marechal Cândido Rondon",
+                "state": "PARANÁ"
+              },
+              {
+                "name": "Toledo",
+                "state": "PARANÁ"
+              }
+            ],
+            "refnets": []
+          },
+          {
+            "name": "Enfermaria Grupo de Municípios Amb+Hosp+Obst",
+            "accommodationName": "Enfermaria",
+            "coverageName": "Grupo de Municípios",
+            "segmentName": "Ambulatorial + Hospitalar COM obstetrícia",
+            "ansCode": "495.079/23-8",
+            "priceAgeGroup018": 141.88,
+            "priceAgeGroup1923": 179.77,
+            "priceAgeGroup2428": 194.8,
+            "priceAgeGroup2933": 209.23,
+            "priceAgeGroup3438": 216.2,
+            "priceAgeGroup3943": 252.95,
+            "priceAgeGroup4448": 362.3,
+            "priceAgeGroup4953": 496.57,
+            "priceAgeGroup5458": 590.62,
+            "priceAgeGroup59Upper": 849.43,
+            "cities": [
+              {
+                "name": "Marechal Cândido Rondon",
+                "state": "PARANÁ"
+              },
+              {
+                "name": "Toledo",
+                "state": "PARANÁ"
+              }
+            ],
+            "refnets": []
+          },
+          {
+            "name": "Apartamento Grupo de Municípios Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Grupo de Municípios",
+            "segmentName": "Ambulatorial + Hospitalar COM obstetrícia",
+            "ansCode": "495.072/23-1",
+            "priceAgeGroup018": 158.07,
+            "priceAgeGroup1923": 200.28,
+            "priceAgeGroup2428": 217.02,
+            "priceAgeGroup2933": 233.1,
+            "priceAgeGroup3438": 240.86,
+            "priceAgeGroup3943": 281.81,
+            "priceAgeGroup4448": 403.64,
+            "priceAgeGroup4953": 553.22,
+            "priceAgeGroup5458": 658.01,
+            "priceAgeGroup59Upper": 946.35,
+            "cities": [
+              {
+                "name": "Marechal Cândido Rondon",
+                "state": "PARANÁ"
+              },
+              {
+                "name": "Toledo",
+                "state": "PARANÁ"
+              }
+            ],
+            "refnets": []
+          },
+          {
+            "name": "Enfermaria Grupo de Municípios Amb+Hosp+Obst",
+            "accommodationName": "Enfermaria",
+            "coverageName": "Grupo de Municípios",
+            "segmentName": "Ambulatorial + Hospitalar COM obstetrícia",
+            "ansCode": "495.069/23-1",
+            "priceAgeGroup018": 159.2,
+            "priceAgeGroup1923": 201.71,
+            "priceAgeGroup2428": 218.57,
+            "priceAgeGroup2933": 234.77,
+            "priceAgeGroup3438": 242.59,
+            "priceAgeGroup3943": 283.84,
+            "priceAgeGroup4448": 406.54,
+            "priceAgeGroup4953": 557.21,
+            "priceAgeGroup5458": 662.74,
+            "priceAgeGroup59Upper": 953.16,
+            "cities": [
+              {
+                "name": "Marechal Cândido Rondon",
+                "state": "PARANÁ"
+              },
+              {
+                "name": "Toledo",
+                "state": "PARANÁ"
+              }
+            ],
+            "refnets": []
+          },
+          {
+            "name": "Apartamento Grupo de Municípios Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Grupo de Municípios",
+            "segmentName": "Ambulatorial + Hospitalar COM obstetrícia",
+            "ansCode": "495.057/23-7",
+            "priceAgeGroup018": 177.48,
+            "priceAgeGroup1923": 224.85,
+            "priceAgeGroup2428": 243.65,
+            "priceAgeGroup2933": 261.7,
+            "priceAgeGroup3438": 270.42,
+            "priceAgeGroup3943": 316.39,
+            "priceAgeGroup4448": 453.16,
+            "priceAgeGroup4953": 621.11,
+            "priceAgeGroup5458": 738.75,
+            "priceAgeGroup59Upper": 1062.46,
+            "cities": [
+              {
+                "name": "Marechal Cândido Rondon",
+                "state": "PARANÁ"
+              },
+              {
+                "name": "Toledo",
+                "state": "PARANÁ"
+              }
+            ],
+            "refnets": []
+          }
+        ]
+      },
+      {
+        "name": "CP Premium Nacional OPR",
+        "sourceLabel": "Coparticipação Parcial (inferido)",
+        "includesCoparticipation": "PARTIAL",
+        "contractType": "NOT_APPLICABLE",
+        "lpts": [],
+        "associations": [
+          "ABRABDIR",
+          "AFB",
+          "ANADEF",
+          "ANAPROLIE",
+          "ANPR",
+          "CREF-9",
+          "GASP",
+          "MÚTUA"
+        ],
+        "minCoveredLives": null,
+        "maxCoveredLives": null,
+        "includesIOF": false,
+        "isRefundable": false,
+        "inferred": {
+          "name": true,
+          "includesCoparticipation": false,
+          "contractType": true
+        },
+        "products": [
+          {
+            "name": "Enfermaria Grupo de Municípios Amb+Hosp+Obst",
+            "accommodationName": "Enfermaria",
+            "coverageName": "Grupo de Municípios",
+            "segmentName": "Ambulatorial + Hospitalar COM obstetrícia",
+            "ansCode": "495.064/23-0",
+            "priceAgeGroup018": 206.58,
+            "priceAgeGroup1923": 261.75,
+            "priceAgeGroup2428": 283.62,
+            "priceAgeGroup2933": 304.64,
+            "priceAgeGroup3438": 314.79,
+            "priceAgeGroup3943": 368.3,
+            "priceAgeGroup4448": 527.51,
+            "priceAgeGroup4953": 723,
+            "priceAgeGroup5458": 859.95,
+            "priceAgeGroup59Upper": 1236.78,
+            "cities": [
+              {
+                "name": "Marechal Cândido Rondon",
+                "state": "PARANÁ"
+              },
+              {
+                "name": "Toledo",
+                "state": "PARANÁ"
+              }
+            ],
+            "refnets": []
+          },
+          {
+            "name": "Apartamento Nacional Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Nacional",
+            "segmentName": "Ambulatorial + Hospitalar COM obstetrícia",
+            "ansCode": "495.062/23-3",
+            "priceAgeGroup018": 230.38,
+            "priceAgeGroup1923": 291.89,
+            "priceAgeGroup2428": 316.29,
+            "priceAgeGroup2933": 339.73,
+            "priceAgeGroup3438": 351.04,
+            "priceAgeGroup3943": 410.72,
+            "priceAgeGroup4448": 588.27,
+            "priceAgeGroup4953": 806.28,
+            "priceAgeGroup5458": 958.99,
+            "priceAgeGroup59Upper": 1379.22,
+            "cities": [
+              {
+                "name": "Marechal Cândido Rondon",
+                "state": "PARANÁ"
+              },
+              {
+                "name": "Toledo",
+                "state": "PARANÁ"
+              }
+            ],
+            "refnets": []
+          },
+          {
+            "name": "Enfermaria Nacional Amb+Hosp+Obst",
+            "accommodationName": "Enfermaria",
+            "coverageName": "Nacional",
+            "segmentName": "Ambulatorial + Hospitalar COM obstetrícia",
+            "ansCode": "495.060/23-7",
+            "priceAgeGroup018": 363.83,
+            "priceAgeGroup1923": 460.98,
+            "priceAgeGroup2428": 499.53,
+            "priceAgeGroup2933": 536.54,
+            "priceAgeGroup3438": 554.41,
+            "priceAgeGroup3943": 648.67,
+            "priceAgeGroup4448": 929.09,
+            "priceAgeGroup4953": 1273.41,
+            "priceAgeGroup5458": 1514.59,
+            "priceAgeGroup59Upper": 2178.29,
+            "cities": [
+              {
+                "name": "Marechal Cândido Rondon",
+                "state": "PARANÁ"
+              },
+              {
+                "name": "Toledo",
+                "state": "PARANÁ"
+              }
+            ],
+            "refnets": []
+          },
+          {
+            "name": "Apartamento Nacional Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Nacional",
+            "segmentName": "Ambulatorial + Hospitalar COM obstetrícia",
+            "ansCode": "495.058/23-5",
+            "priceAgeGroup018": 406.66,
+            "priceAgeGroup1923": 515.23,
+            "priceAgeGroup2428": 558.31,
+            "priceAgeGroup2933": 599.68,
+            "priceAgeGroup3438": 619.65,
+            "priceAgeGroup3943": 725,
+            "priceAgeGroup4448": 1038.42,
+            "priceAgeGroup4953": 1423.25,
+            "priceAgeGroup5458": 1692.82,
+            "priceAgeGroup59Upper": 2434.62,
+            "cities": [
+              {
+                "name": "Marechal Cândido Rondon",
+                "state": "PARANÁ"
+              },
+              {
+                "name": "Toledo",
+                "state": "PARANÁ"
+              }
+            ],
+            "refnets": []
+          }
+        ]
+      },
+      {
+        "name": "CP Vital MCR com",
+        "sourceLabel": "Planos COM Coparticipação Total",
+        "includesCoparticipation": "WITH",
+        "contractType": "NOT_APPLICABLE",
+        "lpts": [],
+        "associations": [
+          "ABRABDIR",
+          "AFB",
+          "ANADEF",
+          "ANAPROLIE",
+          "ANPR",
+          "CREF-9",
+          "GASP",
+          "MÚTUA"
+        ],
+        "minCoveredLives": null,
+        "maxCoveredLives": null,
+        "includesIOF": false,
+        "isRefundable": false,
+        "inferred": {
+          "name": true,
+          "includesCoparticipation": false,
+          "contractType": true
+        },
+        "products": [
+          {
+            "name": "Grupo de Municípios Amb",
+            "accommodationName": null,
+            "coverageName": "Grupo de Municípios",
+            "segmentName": "Ambulatorial",
+            "ansCode": "495.076/23-3",
+            "priceAgeGroup018": 97,
+            "priceAgeGroup1923": 122.9,
+            "priceAgeGroup2428": 133.17,
+            "priceAgeGroup2933": 143.04,
+            "priceAgeGroup3438": 147.8,
+            "priceAgeGroup3943": 172.92,
+            "priceAgeGroup4448": 247.66,
+            "priceAgeGroup4953": 339.45,
+            "priceAgeGroup5458": 403.74,
+            "priceAgeGroup59Upper": 580.67,
+            "cities": [
+              {
+                "name": "Marechal Cândido Rondon",
+                "state": "PARANÁ"
+              },
+              {
+                "name": "Toledo",
+                "state": "PARANÁ"
+              }
+            ],
+            "refnets": []
+          },
+          {
+            "name": "Enfermaria Grupo de Municípios Amb+Hosp+Obst",
+            "accommodationName": "Enfermaria",
+            "coverageName": "Grupo de Municípios",
+            "segmentName": "Ambulatorial + Hospitalar COM obstetrícia",
+            "ansCode": "495.079/23-8",
+            "priceAgeGroup018": 128.01,
+            "priceAgeGroup1923": 162.18,
+            "priceAgeGroup2428": 175.74,
+            "priceAgeGroup2933": 188.76,
+            "priceAgeGroup3438": 195.05,
+            "priceAgeGroup3943": 228.21,
+            "priceAgeGroup4448": 326.86,
+            "priceAgeGroup4953": 448,
+            "priceAgeGroup5458": 532.85,
+            "priceAgeGroup59Upper": 766.35,
+            "cities": [
+              {
+                "name": "Marechal Cândido Rondon",
+                "state": "PARANÁ"
+              },
+              {
+                "name": "Toledo",
+                "state": "PARANÁ"
+              }
+            ],
+            "refnets": []
+          },
+          {
+            "name": "Apartamento Grupo de Municípios Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Grupo de Municípios",
+            "segmentName": "Ambulatorial + Hospitalar COM obstetrícia",
+            "ansCode": "495.072/23-1",
+            "priceAgeGroup018": 142.44,
+            "priceAgeGroup1923": 180.48,
+            "priceAgeGroup2428": 195.56,
+            "priceAgeGroup2933": 210.05,
+            "priceAgeGroup3438": 217.05,
+            "priceAgeGroup3943": 253.94,
+            "priceAgeGroup4448": 363.73,
+            "priceAgeGroup4953": 498.53,
+            "priceAgeGroup5458": 592.95,
+            "priceAgeGroup59Upper": 852.78,
+            "cities": [
+              {
+                "name": "Marechal Cândido Rondon",
+                "state": "PARANÁ"
+              },
+              {
+                "name": "Toledo",
+                "state": "PARANÁ"
+              }
+            ],
+            "refnets": []
+          },
+          {
+            "name": "Enfermaria Grupo de Municípios Amb+Hosp+Obst",
+            "accommodationName": "Enfermaria",
+            "coverageName": "Grupo de Municípios",
+            "segmentName": "Ambulatorial + Hospitalar COM obstetrícia",
+            "ansCode": "495.069/23-1",
+            "priceAgeGroup018": 143.47,
+            "priceAgeGroup1923": 181.78,
+            "priceAgeGroup2428": 196.98,
+            "priceAgeGroup2933": 211.58,
+            "priceAgeGroup3438": 218.63,
+            "priceAgeGroup3943": 255.79,
+            "priceAgeGroup4448": 366.37,
+            "priceAgeGroup4953": 502.14,
+            "priceAgeGroup5458": 597.25,
+            "priceAgeGroup59Upper": 858.96,
+            "cities": [
+              {
+                "name": "Marechal Cândido Rondon",
+                "state": "PARANÁ"
+              },
+              {
+                "name": "Toledo",
+                "state": "PARANÁ"
+              }
+            ],
+            "refnets": []
+          },
+          {
+            "name": "Apartamento Grupo de Municípios Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Grupo de Municípios",
+            "segmentName": "Ambulatorial + Hospitalar COM obstetrícia",
+            "ansCode": "495.057/23-7",
+            "priceAgeGroup018": 159.78,
+            "priceAgeGroup1923": 202.45,
+            "priceAgeGroup2428": 219.38,
+            "priceAgeGroup2933": 235.64,
+            "priceAgeGroup3438": 243.48,
+            "priceAgeGroup3943": 284.88,
+            "priceAgeGroup4448": 408.03,
+            "priceAgeGroup4953": 559.25,
+            "priceAgeGroup5458": 665.17,
+            "priceAgeGroup59Upper": 956.65,
+            "cities": [
+              {
+                "name": "Marechal Cândido Rondon",
+                "state": "PARANÁ"
+              },
+              {
+                "name": "Toledo",
+                "state": "PARANÁ"
+              }
+            ],
+            "refnets": []
+          }
+        ]
+      },
+      {
+        "name": "CP Premium Nacional OPR",
+        "sourceLabel": "Com Coparticipação (inferido)",
+        "includesCoparticipation": "WITH",
+        "contractType": "NOT_APPLICABLE",
+        "lpts": [],
+        "associations": [
+          "ABRABDIR",
+          "AFB",
+          "ANADEF",
+          "ANAPROLIE",
+          "ANPR",
+          "CREF-9",
+          "GASP",
+          "MÚTUA"
+        ],
+        "minCoveredLives": null,
+        "maxCoveredLives": null,
+        "includesIOF": false,
+        "isRefundable": false,
+        "inferred": {
+          "name": true,
+          "includesCoparticipation": false,
+          "contractType": true
+        },
+        "products": [
+          {
+            "name": "Enfermaria Grupo de Municípios Amb+Hosp+Obst",
+            "accommodationName": "Enfermaria",
+            "coverageName": "Grupo de Municípios",
+            "segmentName": "Ambulatorial + Hospitalar COM obstetrícia",
+            "ansCode": "495.064/23-0",
+            "priceAgeGroup018": 185.77,
+            "priceAgeGroup1923": 235.36,
+            "priceAgeGroup2428": 255.04,
+            "priceAgeGroup2933": 273.94,
+            "priceAgeGroup3438": 283.06,
+            "priceAgeGroup3943": 331.19,
+            "priceAgeGroup4448": 474.36,
+            "priceAgeGroup4953": 650.16,
+            "priceAgeGroup5458": 773.3,
+            "priceAgeGroup59Upper": 1112.16,
+            "cities": [
+              {
+                "name": "Marechal Cândido Rondon",
+                "state": "PARANÁ"
+              },
+              {
+                "name": "Toledo",
+                "state": "PARANÁ"
+              }
+            ],
+            "refnets": []
+          },
+          {
+            "name": "Apartamento Nacional Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Nacional",
+            "segmentName": "Ambulatorial + Hospitalar COM obstetrícia",
+            "ansCode": "495.062/23-3",
+            "priceAgeGroup018": 207.03,
+            "priceAgeGroup1923": 262.31,
+            "priceAgeGroup2428": 284.24,
+            "priceAgeGroup2933": 305.3,
+            "priceAgeGroup3438": 315.47,
+            "priceAgeGroup3943": 369.09,
+            "priceAgeGroup4448": 528.65,
+            "priceAgeGroup4953": 724.57,
+            "priceAgeGroup5458": 861.81,
+            "priceAgeGroup59Upper": 1239.46,
+            "cities": [
+              {
+                "name": "Marechal Cândido Rondon",
+                "state": "PARANÁ"
+              },
+              {
+                "name": "Toledo",
+                "state": "PARANÁ"
+              }
+            ],
+            "refnets": []
+          },
+          {
+            "name": "Enfermaria Nacional Amb+Hosp+Obst",
+            "accommodationName": "Enfermaria",
+            "coverageName": "Nacional",
+            "segmentName": "Ambulatorial + Hospitalar COM obstetrícia",
+            "ansCode": "495.060/23-7",
+            "priceAgeGroup018": 326.16,
+            "priceAgeGroup1923": 413.25,
+            "priceAgeGroup2428": 447.8,
+            "priceAgeGroup2933": 480.98,
+            "priceAgeGroup3438": 496.99,
+            "priceAgeGroup3943": 581.48,
+            "priceAgeGroup4448": 832.86,
+            "priceAgeGroup4953": 1141.52,
+            "priceAgeGroup5458": 1357.73,
+            "priceAgeGroup59Upper": 1952.69,
+            "cities": [
+              {
+                "name": "Marechal Cândido Rondon",
+                "state": "PARANÁ"
+              },
+              {
+                "name": "Toledo",
+                "state": "PARANÁ"
+              }
+            ],
+            "refnets": []
+          },
+          {
+            "name": "Apartamento Nacional Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Nacional",
+            "segmentName": "Ambulatorial + Hospitalar COM obstetrícia",
+            "ansCode": "495.058/23-5",
+            "priceAgeGroup018": 364.41,
+            "priceAgeGroup1923": 461.7,
+            "priceAgeGroup2428": 500.3,
+            "priceAgeGroup2933": 537.37,
+            "priceAgeGroup3438": 555.26,
+            "priceAgeGroup3943": 649.65,
+            "priceAgeGroup4448": 930.5,
+            "priceAgeGroup4953": 1275.34,
+            "priceAgeGroup5458": 1516.89,
+            "priceAgeGroup59Upper": 2181.6,
+            "cities": [
+              {
+                "name": "Marechal Cândido Rondon",
+                "state": "PARANÁ"
+              },
+              {
+                "name": "Toledo",
+                "state": "PARANÁ"
+              }
+            ],
+            "refnets": []
+          }
+        ]
+      }
+    ],
+    "lookupsPending": {
+      "associationsByName": [
+        "ABRABDIR",
+        "AFB",
+        "ANADEF",
+        "ANAPROLIE",
+        "ANPR",
+        "CREF-9",
+        "GASP",
+        "MÚTUA"
+      ],
+      "accommodationsByName": [
+        "Enfermaria",
+        "Apartamento"
+      ],
+      "coveragesByName": [
+        "Grupo de Municípios",
+        "Nacional"
+      ],
+      "segmentsByName": [
+        "Ambulatorial",
+        "Ambulatorial + Hospitalar COM obstetrícia"
+      ],
+      "citiesByName": [
+        {
+          "state": "PARANÁ",
+          "name": "Marechal Cândido Rondon"
+        },
+        {
+          "state": "PARANÁ",
+          "name": "Toledo"
+        }
+      ]
+    }
+  }
+}

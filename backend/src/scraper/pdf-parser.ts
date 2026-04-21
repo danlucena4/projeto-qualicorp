@@ -778,12 +778,15 @@ export async function parseQualicorpPdf(data: Uint8Array): Promise<ExtractedPDF>
   // assume o N-ésimo sub-label.
   const variation = detectVariation(pricesSection);
 
-  // Herança contextual pra bloco-gêmeos (mesmos ANS do bloco anterior).
+  // Herança contextual: quando um bloco não tem marker próprio de copart, ele
+  // herda do último bloco que teve marker. Isso cobre casos como:
+  //  - Hapvida: bloco 2 (COM ODONTO) é "gêmeo" do bloco 1 — herda PARCIAL/TOTAL.
+  //  - Humana Sul: 2 blocos de produtos diferentes sob um header compartilhado
+  //    "Planos COM Coparticipação Parcial" — todos herdam PARCIAL até aparecer
+  //    um novo marker.
+  //  - SulAmérica TITULAR+2+: herda do TITULAR+1.
+  // A herança só reseta quando um novo marker aparece no bloco.
   let lastCopart: ExtractedTable['includesCoparticipation'] = null;
-  let lastAnsKey = '';
-  // Contador de posição dentro de cada grupo de (copart, ANS). Reseta ao
-  // mudar a coparticipação — é o que permite que Hapvida "COPARTICIPAÇÃO
-  // TOTAL" comece novamente SEM ODONTO → COM ODONTO.
   const twinPositionByGroup = new Map<string, number>();
 
   for (const block of blocks) {
@@ -799,12 +802,9 @@ export async function parseQualicorpPdf(data: Uint8Array): Promise<ExtractedPDF>
       .sort()
       .join('|');
 
-    // Resolve copart (herdando do gêmeo anterior se não houver marker).
-    const sameAsPrevious = ansKey !== '' && ansKey === lastAnsKey;
-    const resolvedCopart = blockCopart ?? (sameAsPrevious ? lastCopart : null);
+    // Resolve copart: herda enquanto não houver marker novo.
+    const resolvedCopart = blockCopart ?? lastCopart;
     if (blockCopart) lastCopart = blockCopart;
-    else if (!sameAsPrevious) lastCopart = null;
-    lastAnsKey = ansKey;
 
     // Chave de agrupamento inclui copart pra que mudar PARCIAL → TOTAL reinicie
     // o contador de variações (SEM ODONTO/COM ODONTO).

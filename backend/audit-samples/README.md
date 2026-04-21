@@ -13,3 +13,4 @@ Cada arquivo tem 3 seções:
 | 118 | SEGUROS UNIMED · BA · ABM | [PDF](https://tabelasdevendas.qualicorp.com.br/tabelas/QUALIPRO_SEG_UNIMED_BA_ABM_26_NP.pdf) | `118_SEGUROS_UNIMED_BA_ABM.json` |
 | 135 | ONMED_SAUDE_CLARO · BA · ABM | [PDF](https://tabelasdevendas.qualicorp.com.br/tabelas/QUALIPRO_ONMED_BA_F_25.pdf) | `135_ONMED_SAUDE_CLARO_BA_ABM.json` |
 | 164 | LIV SAUDE · CE · ABRACEM | [PDF](https://tabelasdevendas.qualicorp.com.br/tabelas/QUALIPRO_LIV_SAUDE_FC_CE_25.pdf) | `164_LIV_SAUDE_CE_ABRACEM.json` |
+| 597 | HUMANA_SUL · PR · ANAPROLIE | [PDF](https://tabelasdevendas.qualicorp.com.br/tabelas/QUALIPRO_HUM_SAUDE_FC_M_RONDON_PR_SV_26.pdf) | `597_HUMANA_SUL_PR_ANAPROLIE.json` |
