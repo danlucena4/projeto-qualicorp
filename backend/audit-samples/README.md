@@ -1,8 +1,12 @@
 # Amostras para validação manual
 
-Abra cada JSON ao lado do PDF original e confira os campos.
+Cada arquivo tem 3 seções:
 
-| # | Operadora · UF · Entidade | PDF original | JSON |
+- **meta** — identificação da tabela (operadora, UF, entidade, URL do PDF)
+- **extraction** — JSON raw produzido pelo parser (camada crua, fiel ao PDF)
+- **koterPayload** — payload no formato que o Koter consome em `create_table_with_products_cadastro`
+
+| # | Operadora · UF · Entidade | PDF original | Arquivo |
 |---|---|---|---|
 | 1 | HAPVIDA · AL · ABRABDIR | [PDF](https://tabelasdevendas.qualicorp.com.br/tabelas/QUALIPRO_CS_HAPVIDA_AL_NP_25.pdf) | `001_HAPVIDA_AL_ABRABDIR.json` |
 | 115 | SULAMÉRICA HOSPITALAR · BA · ABM | [PDF](https://tabelasdevendas.qualicorp.com.br/tabelas/QUALIPRO_SAS_BA_F_25_NP.pdf) | `115_SULAM_RICA_HOSPITALAR_BA_ABM.json` |

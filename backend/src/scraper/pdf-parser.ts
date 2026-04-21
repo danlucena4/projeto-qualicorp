@@ -329,10 +329,15 @@ function parsePriceBlock(block: string): ExtractedProduct[] {
     // Para quando encontra cabeçalho claro de outro bloco ou linha ANS anterior.
     if (ANS_CODE_RE.test(l)) break;
     if (/^Planos\s+(SEM|COM)/i.test(l)) break;
-    if (/^PLANOS\s*\|/i.test(l)) break;
-    if (/^(PLANOS|QualiPRO)$/i.test(l)) break;
+    if (/^PLANOS\b/i.test(l)) break;
+    if (/^QualiPRO\b/i.test(l)) break;
+    if (/^qualicorp\b/i.test(l)) break;
     if (/^Data\s+(base|de)/i.test(l)) break;
-    if (/Valores mensais expressos/i.test(l)) break;
+    if (/^Valores\s+mensais/i.test(l)) break;
+    if (/^Coparticipação/i.test(l)) break;
+    if (/^TITULAR\b/.test(l)) break; // marcador TITULAR OU +1 / TITULAR +2 é tier, não nome
+    if (/^\*/.test(l)) break; // rodapé de nota
+    if (/^Reembolso\b/i.test(l)) break;
     namesRaw.unshift(l);
     if (namesRaw.length >= 6) break;
   }

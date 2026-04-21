@@ -543,5 +543,3243 @@
       "refnetsCount": 20,
       "warnings": []
     }
+  },
+  "koterPayload": {
+    "planId": null,
+    "category": "ADHESION",
+    "operatorName": "SEGUROS UNIMED",
+    "uf": "BA",
+    "pdfUrl": "https://tabelasdevendas.qualicorp.com.br/tabelas/QUALIPRO_SEG_UNIMED_BA_ABM_26_NP.pdf",
+    "planName": "Apto II",
+    "validity": {
+      "baseMonth": "Abril",
+      "period": "Abril/2026 até Março/2027"
+    },
+    "tables": [
+      {
+        "name": "Apto II",
+        "sourceLabel": "PLANOS SEM COPARTICIPAÇÃO",
+        "includesCoparticipation": "WITHOUT",
+        "contractType": "NOT_APPLICABLE",
+        "lpts": [],
+        "associations": [
+          "ABM"
+        ],
+        "minCoveredLives": null,
+        "maxCoveredLives": null,
+        "includesIOF": false,
+        "isRefundable": false,
+        "inferred": {
+          "name": true,
+          "includesCoparticipation": false,
+          "contractType": true
+        },
+        "products": [
+          {
+            "name": "Enfermaria Grupo de municípios Amb+Hosp+Obst",
+            "accommodationName": "Enfermaria",
+            "coverageName": "Grupo de municípios",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "494.590/23-5",
+            "priceAgeGroup018": 637.49,
+            "priceAgeGroup1923": 780.28,
+            "priceAgeGroup2428": 976.98,
+            "priceAgeGroup2933": 1079.66,
+            "priceAgeGroup3438": 1149.92,
+            "priceAgeGroup3943": 1333.9,
+            "priceAgeGroup4448": 1594.54,
+            "priceAgeGroup4953": 1912.4,
+            "priceAgeGroup5458": 2270.48,
+            "priceAgeGroup59Upper": 3824.82,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Hospital Santa Helena",
+                "city": "Climege PS/INT - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Agenor Paiva",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Aliança",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. da Bahia HBA",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Cidade",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Sagrada Família",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. ProHope",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sta. Izabel",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sto. Amaro",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "MAT",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Alagoinhas Bioensaio Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Camaçari DNA Lab. e Pesq. Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Catu Diagnóstica Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Cto. de Imagem Diagnósticos",
+                "city": "Datalab - - - - LAB LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "DNA Lab., Image Memorial Salvador e Lab.",
+                "city": "Datalab - - - - LAB LAB LAB"
+              },
+              {
+                "name": "Diagnósticos",
+                "city": "Salvador",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "CDI, DNA Lab., Image Memorial Salvador, Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "Laboclin, Lab. Leme, Lab. Sabin e LIP Lab. de",
+                "city": "Salvador"
+              },
+              {
+                "name": "S. Sebastião do Passe Vida Lab.",
+                "city": "Labchecap - - - - - LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Apartamento Nacional Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Nacional",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "494.599/23-9",
+            "priceAgeGroup018": 713.28,
+            "priceAgeGroup1923": 873.02,
+            "priceAgeGroup2428": 1093.13,
+            "priceAgeGroup2933": 1208.02,
+            "priceAgeGroup3438": 1286.68,
+            "priceAgeGroup3943": 1492.52,
+            "priceAgeGroup4448": 1784.2,
+            "priceAgeGroup4953": 2139.81,
+            "priceAgeGroup5458": 2540.45,
+            "priceAgeGroup59Upper": 4279.25,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Hospital Santa Helena",
+                "city": "Climege PS/INT - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Agenor Paiva",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Aliança",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. da Bahia HBA",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Cidade",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Sagrada Família",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. ProHope",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sta. Izabel",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sto. Amaro",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "MAT",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Alagoinhas Bioensaio Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Camaçari DNA Lab. e Pesq. Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Catu Diagnóstica Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Cto. de Imagem Diagnósticos",
+                "city": "Datalab - - - - LAB LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "DNA Lab., Image Memorial Salvador e Lab.",
+                "city": "Datalab - - - - LAB LAB LAB"
+              },
+              {
+                "name": "Diagnósticos",
+                "city": "Salvador",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "CDI, DNA Lab., Image Memorial Salvador, Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "Laboclin, Lab. Leme, Lab. Sabin e LIP Lab. de",
+                "city": "Salvador"
+              },
+              {
+                "name": "S. Sebastião do Passe Vida Lab.",
+                "city": "Labchecap - - - - - LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Enfermaria Nacional Amb+Hosp+Obst",
+            "accommodationName": "Enfermaria",
+            "coverageName": "Nacional",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "477.998/17-3",
+            "priceAgeGroup018": 690.07,
+            "priceAgeGroup1923": 844.64,
+            "priceAgeGroup2428": 1057.55,
+            "priceAgeGroup2933": 1168.71,
+            "priceAgeGroup3438": 1244.77,
+            "priceAgeGroup3943": 1443.91,
+            "priceAgeGroup4448": 1726.06,
+            "priceAgeGroup4953": 2070.14,
+            "priceAgeGroup5458": 2457.73,
+            "priceAgeGroup59Upper": 4140.28,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Hospital Santa Helena",
+                "city": "Climege PS/INT - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Agenor Paiva",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Aliança",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. da Bahia HBA",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Cidade",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Sagrada Família",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. ProHope",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sta. Izabel",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sto. Amaro",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "MAT",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Alagoinhas Bioensaio Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Camaçari DNA Lab. e Pesq. Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Catu Diagnóstica Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Cto. de Imagem Diagnósticos",
+                "city": "Datalab - - - - LAB LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "DNA Lab., Image Memorial Salvador e Lab.",
+                "city": "Datalab - - - - LAB LAB LAB"
+              },
+              {
+                "name": "Diagnósticos",
+                "city": "Salvador",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "CDI, DNA Lab., Image Memorial Salvador, Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "Laboclin, Lab. Leme, Lab. Sabin e LIP Lab. de",
+                "city": "Salvador"
+              },
+              {
+                "name": "S. Sebastião do Passe Vida Lab.",
+                "city": "Labchecap - - - - - LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Apartamento Nacional Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Nacional",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "477.999/17-1",
+            "priceAgeGroup018": 772.14,
+            "priceAgeGroup1923": 945.07,
+            "priceAgeGroup2428": 1183.34,
+            "priceAgeGroup2933": 1307.71,
+            "priceAgeGroup3438": 1392.83,
+            "priceAgeGroup3943": 1615.67,
+            "priceAgeGroup4448": 1931.4,
+            "priceAgeGroup4953": 2316.4,
+            "priceAgeGroup5458": 2750.06,
+            "priceAgeGroup59Upper": 4632.79,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Hospital Santa Helena",
+                "city": "Climege PS/INT - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Agenor Paiva",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Aliança",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. da Bahia HBA",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Cidade",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Sagrada Família",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. ProHope",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sta. Izabel",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sto. Amaro",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "MAT",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Alagoinhas Bioensaio Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Camaçari DNA Lab. e Pesq. Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Catu Diagnóstica Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Cto. de Imagem Diagnósticos",
+                "city": "Datalab - - - - LAB LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "DNA Lab., Image Memorial Salvador e Lab.",
+                "city": "Datalab - - - - LAB LAB LAB"
+              },
+              {
+                "name": "Diagnósticos",
+                "city": "Salvador",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "CDI, DNA Lab., Image Memorial Salvador, Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "Laboclin, Lab. Leme, Lab. Sabin e LIP Lab. de",
+                "city": "Salvador"
+              },
+              {
+                "name": "S. Sebastião do Passe Vida Lab.",
+                "city": "Labchecap - - - - - LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Apartamento Nacional Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Nacional",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "478.001/17-9",
+            "priceAgeGroup018": 976.69,
+            "priceAgeGroup1923": 1195.46,
+            "priceAgeGroup2428": 1496.86,
+            "priceAgeGroup2933": 1654.18,
+            "priceAgeGroup3438": 1761.82,
+            "priceAgeGroup3943": 2043.68,
+            "priceAgeGroup4448": 2443.05,
+            "priceAgeGroup4953": 2930.01,
+            "priceAgeGroup5458": 3478.65,
+            "priceAgeGroup59Upper": 5860.09,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Hospital Santa Helena",
+                "city": "Climege PS/INT - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Agenor Paiva",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Aliança",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. da Bahia HBA",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Cidade",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Sagrada Família",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. ProHope",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sta. Izabel",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sto. Amaro",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "MAT",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Alagoinhas Bioensaio Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Camaçari DNA Lab. e Pesq. Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Catu Diagnóstica Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Cto. de Imagem Diagnósticos",
+                "city": "Datalab - - - - LAB LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "DNA Lab., Image Memorial Salvador e Lab.",
+                "city": "Datalab - - - - LAB LAB LAB"
+              },
+              {
+                "name": "Diagnósticos",
+                "city": "Salvador",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "CDI, DNA Lab., Image Memorial Salvador, Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "Laboclin, Lab. Leme, Lab. Sabin e LIP Lab. de",
+                "city": "Salvador"
+              },
+              {
+                "name": "S. Sebastião do Passe Vida Lab.",
+                "city": "Labchecap - - - - - LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Apartamento Nacional Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Nacional",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "478.000/17-1",
+            "priceAgeGroup018": 1086.5,
+            "priceAgeGroup1923": 1329.88,
+            "priceAgeGroup2428": 1665.13,
+            "priceAgeGroup2933": 1840.14,
+            "priceAgeGroup3438": 1959.93,
+            "priceAgeGroup3943": 2273.52,
+            "priceAgeGroup4448": 2717.73,
+            "priceAgeGroup4953": 3259.45,
+            "priceAgeGroup5458": 3869.72,
+            "priceAgeGroup59Upper": 6518.83,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Hospital Santa Helena",
+                "city": "Climege PS/INT - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Agenor Paiva",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Aliança",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. da Bahia HBA",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Cidade",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Sagrada Família",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. ProHope",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sta. Izabel",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sto. Amaro",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "MAT",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Alagoinhas Bioensaio Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Camaçari DNA Lab. e Pesq. Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Catu Diagnóstica Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Cto. de Imagem Diagnósticos",
+                "city": "Datalab - - - - LAB LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "DNA Lab., Image Memorial Salvador e Lab.",
+                "city": "Datalab - - - - LAB LAB LAB"
+              },
+              {
+                "name": "Diagnósticos",
+                "city": "Salvador",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "CDI, DNA Lab., Image Memorial Salvador, Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "Laboclin, Lab. Leme, Lab. Sabin e LIP Lab. de",
+                "city": "Salvador"
+              },
+              {
+                "name": "S. Sebastião do Passe Vida Lab.",
+                "city": "Labchecap - - - - - LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Apartamento Nacional Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Nacional",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "499.046/24-3",
+            "priceAgeGroup018": 1216.66,
+            "priceAgeGroup1923": 1489.14,
+            "priceAgeGroup2428": 1864.62,
+            "priceAgeGroup2933": 2060.59,
+            "priceAgeGroup3438": 2194.72,
+            "priceAgeGroup3943": 2545.78,
+            "priceAgeGroup4448": 3043.3,
+            "priceAgeGroup4953": 3649.9,
+            "priceAgeGroup5458": 4333.27,
+            "priceAgeGroup59Upper": 7299.76,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Hospital Santa Helena",
+                "city": "Climege PS/INT - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Agenor Paiva",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Aliança",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. da Bahia HBA",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Cidade",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Sagrada Família",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. ProHope",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sta. Izabel",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sto. Amaro",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "MAT",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Alagoinhas Bioensaio Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Camaçari DNA Lab. e Pesq. Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Catu Diagnóstica Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Cto. de Imagem Diagnósticos",
+                "city": "Datalab - - - - LAB LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "DNA Lab., Image Memorial Salvador e Lab.",
+                "city": "Datalab - - - - LAB LAB LAB"
+              },
+              {
+                "name": "Diagnósticos",
+                "city": "Salvador",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "CDI, DNA Lab., Image Memorial Salvador, Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "Laboclin, Lab. Leme, Lab. Sabin e LIP Lab. de",
+                "city": "Salvador"
+              },
+              {
+                "name": "S. Sebastião do Passe Vida Lab.",
+                "city": "Labchecap - - - - - LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Apartamento Nacional Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Nacional",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "478.002/17-7",
+            "priceAgeGroup018": 2333.77,
+            "priceAgeGroup1923": 2856.56,
+            "priceAgeGroup2428": 3576.76,
+            "priceAgeGroup2933": 3952.68,
+            "priceAgeGroup3438": 4209.89,
+            "priceAgeGroup3943": 4883.39,
+            "priceAgeGroup4448": 5837.69,
+            "priceAgeGroup4953": 7001.31,
+            "priceAgeGroup5458": 8312.2,
+            "priceAgeGroup59Upper": 14002.57,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Hospital Santa Helena",
+                "city": "Climege PS/INT - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Agenor Paiva",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Aliança",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. da Bahia HBA",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Cidade",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Sagrada Família",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. ProHope",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sta. Izabel",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sto. Amaro",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "MAT",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Alagoinhas Bioensaio Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Camaçari DNA Lab. e Pesq. Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Catu Diagnóstica Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Cto. de Imagem Diagnósticos",
+                "city": "Datalab - - - - LAB LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "DNA Lab., Image Memorial Salvador e Lab.",
+                "city": "Datalab - - - - LAB LAB LAB"
+              },
+              {
+                "name": "Diagnósticos",
+                "city": "Salvador",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "CDI, DNA Lab., Image Memorial Salvador, Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "Laboclin, Lab. Leme, Lab. Sabin e LIP Lab. de",
+                "city": "Salvador"
+              },
+              {
+                "name": "S. Sebastião do Passe Vida Lab.",
+                "city": "Labchecap - - - - - LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Adesão Superior",
+        "sourceLabel": "Planos COM Coparticipação",
+        "includesCoparticipation": "WITH",
+        "contractType": "NOT_APPLICABLE",
+        "lpts": [],
+        "associations": [
+          "ABM"
+        ],
+        "minCoveredLives": null,
+        "maxCoveredLives": null,
+        "includesIOF": false,
+        "isRefundable": false,
+        "inferred": {
+          "name": true,
+          "includesCoparticipation": false,
+          "contractType": true
+        },
+        "products": [
+          {
+            "name": "Enfermaria Grupo de municípios Amb+Hosp+Obst",
+            "accommodationName": "Enfermaria",
+            "coverageName": "Grupo de municípios",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "494.600/23-6",
+            "priceAgeGroup018": 538.66,
+            "priceAgeGroup1923": 659.32,
+            "priceAgeGroup2428": 825.54,
+            "priceAgeGroup2933": 912.32,
+            "priceAgeGroup3438": 971.69,
+            "priceAgeGroup3943": 1127.14,
+            "priceAgeGroup4448": 1347.39,
+            "priceAgeGroup4953": 1615.99,
+            "priceAgeGroup5458": 1918.54,
+            "priceAgeGroup59Upper": 3231.65,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Hospital Santa Helena",
+                "city": "Climege PS/INT - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Agenor Paiva",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Aliança",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. da Bahia HBA",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Cidade",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Sagrada Família",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. ProHope",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sta. Izabel",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sto. Amaro",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "MAT",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Alagoinhas Bioensaio Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Camaçari DNA Lab. e Pesq. Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Catu Diagnóstica Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Cto. de Imagem Diagnósticos",
+                "city": "Datalab - - - - LAB LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "DNA Lab., Image Memorial Salvador e Lab.",
+                "city": "Datalab - - - - LAB LAB LAB"
+              },
+              {
+                "name": "Diagnósticos",
+                "city": "Salvador",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "CDI, DNA Lab., Image Memorial Salvador, Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "Laboclin, Lab. Leme, Lab. Sabin e LIP Lab. de",
+                "city": "Salvador"
+              },
+              {
+                "name": "S. Sebastião do Passe Vida Lab.",
+                "city": "Labchecap - - - - - LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Apartamento Nacional Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Nacional",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "494.601/23-4",
+            "priceAgeGroup018": 602.76,
+            "priceAgeGroup1923": 737.78,
+            "priceAgeGroup2428": 923.77,
+            "priceAgeGroup2933": 1020.85,
+            "priceAgeGroup3438": 1087.28,
+            "priceAgeGroup3943": 1261.22,
+            "priceAgeGroup4448": 1507.7,
+            "priceAgeGroup4953": 1808.2,
+            "priceAgeGroup5458": 2146.74,
+            "priceAgeGroup59Upper": 3616.45,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Hospital Santa Helena",
+                "city": "Climege PS/INT - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Agenor Paiva",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Aliança",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. da Bahia HBA",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Cidade",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Sagrada Família",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. ProHope",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sta. Izabel",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sto. Amaro",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "MAT",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Alagoinhas Bioensaio Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Camaçari DNA Lab. e Pesq. Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Catu Diagnóstica Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Cto. de Imagem Diagnósticos",
+                "city": "Datalab - - - - LAB LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "DNA Lab., Image Memorial Salvador e Lab.",
+                "city": "Datalab - - - - LAB LAB LAB"
+              },
+              {
+                "name": "Diagnósticos",
+                "city": "Salvador",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "CDI, DNA Lab., Image Memorial Salvador, Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "Laboclin, Lab. Leme, Lab. Sabin e LIP Lab. de",
+                "city": "Salvador"
+              },
+              {
+                "name": "S. Sebastião do Passe Vida Lab.",
+                "city": "Labchecap - - - - - LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Enfermaria Nacional Amb+Hosp+Obst",
+            "accommodationName": "Enfermaria",
+            "coverageName": "Nacional",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "483.088/19-1",
+            "priceAgeGroup018": 583.09,
+            "priceAgeGroup1923": 713.71,
+            "priceAgeGroup2428": 893.64,
+            "priceAgeGroup2933": 987.56,
+            "priceAgeGroup3438": 1051.86,
+            "priceAgeGroup3943": 1220.11,
+            "priceAgeGroup4448": 1458.52,
+            "priceAgeGroup4953": 1749.2,
+            "priceAgeGroup5458": 2076.64,
+            "priceAgeGroup59Upper": 3498.31,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Hospital Santa Helena",
+                "city": "Climege PS/INT - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Agenor Paiva",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Aliança",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. da Bahia HBA",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Cidade",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Sagrada Família",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. ProHope",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sta. Izabel",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sto. Amaro",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "MAT",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Alagoinhas Bioensaio Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Camaçari DNA Lab. e Pesq. Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Catu Diagnóstica Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Cto. de Imagem Diagnósticos",
+                "city": "Datalab - - - - LAB LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "DNA Lab., Image Memorial Salvador e Lab.",
+                "city": "Datalab - - - - LAB LAB LAB"
+              },
+              {
+                "name": "Diagnósticos",
+                "city": "Salvador",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "CDI, DNA Lab., Image Memorial Salvador, Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "Laboclin, Lab. Leme, Lab. Sabin e LIP Lab. de",
+                "city": "Salvador"
+              },
+              {
+                "name": "S. Sebastião do Passe Vida Lab.",
+                "city": "Labchecap - - - - - LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Apartamento Nacional Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Nacional",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "483.089/19-0",
+            "priceAgeGroup018": 652.47,
+            "priceAgeGroup1923": 798.62,
+            "priceAgeGroup2428": 999.93,
+            "priceAgeGroup2933": 1105.01,
+            "priceAgeGroup3438": 1176.95,
+            "priceAgeGroup3943": 1365.22,
+            "priceAgeGroup4448": 1632.04,
+            "priceAgeGroup4953": 1957.34,
+            "priceAgeGroup5458": 2323.82,
+            "priceAgeGroup59Upper": 3914.72,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Hospital Santa Helena",
+                "city": "Climege PS/INT - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Agenor Paiva",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Aliança",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. da Bahia HBA",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Cidade",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Sagrada Família",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. ProHope",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sta. Izabel",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sto. Amaro",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "MAT",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Alagoinhas Bioensaio Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Camaçari DNA Lab. e Pesq. Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Catu Diagnóstica Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Cto. de Imagem Diagnósticos",
+                "city": "Datalab - - - - LAB LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "DNA Lab., Image Memorial Salvador e Lab.",
+                "city": "Datalab - - - - LAB LAB LAB"
+              },
+              {
+                "name": "Diagnósticos",
+                "city": "Salvador",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "CDI, DNA Lab., Image Memorial Salvador, Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "Laboclin, Lab. Leme, Lab. Sabin e LIP Lab. de",
+                "city": "Salvador"
+              },
+              {
+                "name": "S. Sebastião do Passe Vida Lab.",
+                "city": "Labchecap - - - - - LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Apartamento Nacional Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Nacional",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "491.510/22-1",
+            "priceAgeGroup018": 825.29,
+            "priceAgeGroup1923": 1010.15,
+            "priceAgeGroup2428": 1264.84,
+            "priceAgeGroup2933": 1397.79,
+            "priceAgeGroup3438": 1488.76,
+            "priceAgeGroup3943": 1726.9,
+            "priceAgeGroup4448": 2064.36,
+            "priceAgeGroup4953": 2475.85,
+            "priceAgeGroup5458": 2939.44,
+            "priceAgeGroup59Upper": 4951.28,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Hospital Santa Helena",
+                "city": "Climege PS/INT - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Agenor Paiva",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Aliança",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. da Bahia HBA",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Cidade",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Sagrada Família",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. ProHope",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sta. Izabel",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sto. Amaro",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "MAT",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Alagoinhas Bioensaio Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Camaçari DNA Lab. e Pesq. Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Catu Diagnóstica Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Cto. de Imagem Diagnósticos",
+                "city": "Datalab - - - - LAB LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "DNA Lab., Image Memorial Salvador e Lab.",
+                "city": "Datalab - - - - LAB LAB LAB"
+              },
+              {
+                "name": "Diagnósticos",
+                "city": "Salvador",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "CDI, DNA Lab., Image Memorial Salvador, Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "Laboclin, Lab. Leme, Lab. Sabin e LIP Lab. de",
+                "city": "Salvador"
+              },
+              {
+                "name": "S. Sebastião do Passe Vida Lab.",
+                "city": "Labchecap - - - - - LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Apartamento Nacional Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Nacional",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "491.513/22-5",
+            "priceAgeGroup018": 918.08,
+            "priceAgeGroup1923": 1123.71,
+            "priceAgeGroup2428": 1407.05,
+            "priceAgeGroup2933": 1554.93,
+            "priceAgeGroup3438": 1656.14,
+            "priceAgeGroup3943": 1921.12,
+            "priceAgeGroup4448": 2296.46,
+            "priceAgeGroup4953": 2754.22,
+            "priceAgeGroup5458": 3269.91,
+            "priceAgeGroup59Upper": 5508.41,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Hospital Santa Helena",
+                "city": "Climege PS/INT - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Agenor Paiva",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Aliança",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. da Bahia HBA",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Cidade",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Sagrada Família",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. ProHope",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sta. Izabel",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sto. Amaro",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "MAT",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Alagoinhas Bioensaio Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Camaçari DNA Lab. e Pesq. Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Catu Diagnóstica Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Cto. de Imagem Diagnósticos",
+                "city": "Datalab - - - - LAB LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "DNA Lab., Image Memorial Salvador e Lab.",
+                "city": "Datalab - - - - LAB LAB LAB"
+              },
+              {
+                "name": "Diagnósticos",
+                "city": "Salvador",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "CDI, DNA Lab., Image Memorial Salvador, Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "Laboclin, Lab. Leme, Lab. Sabin e LIP Lab. de",
+                "city": "Salvador"
+              },
+              {
+                "name": "S. Sebastião do Passe Vida Lab.",
+                "city": "Labchecap - - - - - LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Apartamento Nacional Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Nacional",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "499.047/24-1",
+            "priceAgeGroup018": 1028.07,
+            "priceAgeGroup1923": 1258.33,
+            "priceAgeGroup2428": 1575.61,
+            "priceAgeGroup2933": 1741.18,
+            "priceAgeGroup3438": 1854.53,
+            "priceAgeGroup3943": 2151.25,
+            "priceAgeGroup4448": 2571.57,
+            "priceAgeGroup4953": 3084.17,
+            "priceAgeGroup5458": 3661.63,
+            "priceAgeGroup59Upper": 6168.28,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Hospital Santa Helena",
+                "city": "Climege PS/INT - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Agenor Paiva",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Aliança",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. da Bahia HBA",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Cidade",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Sagrada Família",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. ProHope",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sta. Izabel",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sto. Amaro",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "MAT",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Alagoinhas Bioensaio Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Camaçari DNA Lab. e Pesq. Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Catu Diagnóstica Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Cto. de Imagem Diagnósticos",
+                "city": "Datalab - - - - LAB LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "DNA Lab., Image Memorial Salvador e Lab.",
+                "city": "Datalab - - - - LAB LAB LAB"
+              },
+              {
+                "name": "Diagnósticos",
+                "city": "Salvador",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "CDI, DNA Lab., Image Memorial Salvador, Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "Laboclin, Lab. Leme, Lab. Sabin e LIP Lab. de",
+                "city": "Salvador"
+              },
+              {
+                "name": "S. Sebastião do Passe Vida Lab.",
+                "city": "Labchecap - - - - - LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Apartamento Nacional Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Nacional",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "491.515/22-1",
+            "priceAgeGroup018": 1972.03,
+            "priceAgeGroup1923": 2413.8,
+            "priceAgeGroup2428": 3022.35,
+            "priceAgeGroup2933": 3340.02,
+            "priceAgeGroup3438": 3557.35,
+            "priceAgeGroup3943": 4126.46,
+            "priceAgeGroup4448": 4932.84,
+            "priceAgeGroup4953": 5916.11,
+            "priceAgeGroup5458": 7023.8,
+            "priceAgeGroup59Upper": 11832.17,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Hospital Santa Helena",
+                "city": "Climege PS/INT - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Agenor Paiva",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Aliança",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. da Bahia HBA",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Cidade",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. da Sagrada Família",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. ProHope",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sta. Izabel",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Hosp. Sto. Amaro",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "PS",
+                  "MAT",
+                  "INT"
+                ]
+              },
+              {
+                "name": "Alagoinhas Bioensaio Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Camaçari DNA Lab. e Pesq. Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Catu Diagnóstica Lab. de Análises Clín.",
+                "city": "Probaby PS - - - - - -",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Cto. de Imagem Diagnósticos",
+                "city": "Datalab - - - - LAB LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "DNA Lab., Image Memorial Salvador e Lab.",
+                "city": "Datalab - - - - LAB LAB LAB"
+              },
+              {
+                "name": "Diagnósticos",
+                "city": "Salvador",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "CDI, DNA Lab., Image Memorial Salvador, Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "Laboclin, Lab. Leme, Lab. Sabin e LIP Lab. de",
+                "city": "Salvador"
+              },
+              {
+                "name": "S. Sebastião do Passe Vida Lab.",
+                "city": "Labchecap - - - - - LAB LAB",
+                "specialties": [
+                  "LAB"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "lookupsPending": {
+      "associationsByName": [
+        "ABM"
+      ],
+      "accommodationsByName": [
+        "Enfermaria",
+        "Apartamento"
+      ],
+      "coveragesByName": [
+        "Grupo de municípios",
+        "Nacional"
+      ],
+      "segmentsByName": [
+        "Ambulatorial + Hospitalar com obstetrícia"
+      ],
+      "citiesByName": [
+        {
+          "state": "BAHIA",
+          "name": "Camaçari"
+        },
+        {
+          "state": "BAHIA",
+          "name": "Candeias"
+        },
+        {
+          "state": "BAHIA",
+          "name": "Lauro de Freitas"
+        },
+        {
+          "state": "BAHIA",
+          "name": "Mata de São João"
+        },
+        {
+          "state": "BAHIA",
+          "name": "Salvador"
+        },
+        {
+          "state": "BAHIA",
+          "name": "Santo Amaro"
+        },
+        {
+          "state": "BAHIA",
+          "name": "Simões Filho"
+        }
+      ]
+    }
   }
 }

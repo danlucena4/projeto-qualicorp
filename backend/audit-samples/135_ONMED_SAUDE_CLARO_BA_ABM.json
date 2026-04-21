@@ -405,5 +405,1565 @@
       "refnetsCount": 9,
       "warnings": []
     }
+  },
+  "koterPayload": {
+    "planId": null,
+    "category": "ADHESION",
+    "operatorName": "ONMED_SAUDE_CLARO",
+    "uf": "BA",
+    "pdfUrl": "https://tabelasdevendas.qualicorp.com.br/tabelas/QUALIPRO_ONMED_BA_F_25.pdf",
+    "planName": "Classic",
+    "validity": {
+      "baseMonth": "Outubro",
+      "period": "Dezembro/2025 até Setembro/2026"
+    },
+    "tables": [
+      {
+        "name": "Classic",
+        "sourceLabel": "Sem Coparticipação (inferido)",
+        "includesCoparticipation": "WITHOUT",
+        "contractType": "NOT_APPLICABLE",
+        "lpts": [],
+        "associations": [
+          "ABM",
+          "ABO-BA",
+          "ABRABDIR",
+          "ACRESP",
+          "AFB",
+          "AJUFE",
+          "CRA-BA",
+          "CRECI-BA",
+          "CREFONO-4",
+          "GASP",
+          "MÚTUA",
+          "UNASP"
+        ],
+        "minCoveredLives": null,
+        "maxCoveredLives": null,
+        "includesIOF": false,
+        "isRefundable": false,
+        "inferred": {
+          "name": true,
+          "includesCoparticipation": false,
+          "contractType": true
+        },
+        "products": [
+          {
+            "name": "Enfermaria Grupo de Municípios Amb+Hosp+Obst",
+            "accommodationName": "Enfermaria",
+            "coverageName": "Grupo de Municípios",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "505.281/25-5",
+            "priceAgeGroup018": 348.7,
+            "priceAgeGroup1923": 424.71,
+            "priceAgeGroup2428": 488.42,
+            "priceAgeGroup2933": 552.41,
+            "priceAgeGroup3438": 613.72,
+            "priceAgeGroup3943": 702.71,
+            "priceAgeGroup4448": 872.77,
+            "priceAgeGroup4953": 1091.83,
+            "priceAgeGroup5458": 1394.27,
+            "priceAgeGroup59Upper": 2013.33,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Conde",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Dias d'Ávila",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Itaparica",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Madre de Deus",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Pojuca",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "São Francisco do Conde",
+                "state": "BAHIA"
+              },
+              {
+                "name": "São Sebastião do Passé",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Saubara",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Vera Cruz",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Camaçari Lab. Pesquisa Matriz e Meddi Labor Camaçari",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Feira de Santana Análises Lab. de Patologia Clínica, Cedapi – Cto. Diagnóstico Pires,"
+              },
+              {
+                "name": "Hemocenter, Labore e Lade Lab.",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Bio Exames, Clab, Clilab, Diagnostlabora, Imagepat, J.C. Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "– Lab. Jaime Cerqueira, JPC Lab., Labchecap Imbuí, Laboclin,",
+                "city": "Salvador"
+              },
+              {
+                "name": "Hosp. Bambino",
+                "city": "Feira de Santana",
+                "specialties": [
+                  "PS"
+                ]
+              },
+              {
+                "name": "Hosp. Ortopédico",
+                "city": "Feira de Santana",
+                "specialties": [
+                  "PS"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Clisur INT INT INT",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Clisur INT INT INT",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Apartamento Grupo de Municípios Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Grupo de Municípios",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "505.282/25-3",
+            "priceAgeGroup018": 435.9,
+            "priceAgeGroup1923": 530.92,
+            "priceAgeGroup2428": 610.56,
+            "priceAgeGroup2933": 690.54,
+            "priceAgeGroup3438": 767.19,
+            "priceAgeGroup3943": 878.44,
+            "priceAgeGroup4448": 1091.02,
+            "priceAgeGroup4953": 1364.86,
+            "priceAgeGroup5458": 1742.93,
+            "priceAgeGroup59Upper": 2516.79,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Conde",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Dias d'Ávila",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Itaparica",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Madre de Deus",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Pojuca",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "São Francisco do Conde",
+                "state": "BAHIA"
+              },
+              {
+                "name": "São Sebastião do Passé",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Saubara",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Vera Cruz",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Camaçari Lab. Pesquisa Matriz e Meddi Labor Camaçari",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Feira de Santana Análises Lab. de Patologia Clínica, Cedapi – Cto. Diagnóstico Pires,"
+              },
+              {
+                "name": "Hemocenter, Labore e Lade Lab.",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Bio Exames, Clab, Clilab, Diagnostlabora, Imagepat, J.C. Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "– Lab. Jaime Cerqueira, JPC Lab., Labchecap Imbuí, Laboclin,",
+                "city": "Salvador"
+              },
+              {
+                "name": "Hosp. Bambino",
+                "city": "Feira de Santana",
+                "specialties": [
+                  "PS"
+                ]
+              },
+              {
+                "name": "Hosp. Ortopédico",
+                "city": "Feira de Santana",
+                "specialties": [
+                  "PS"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Clisur INT INT INT",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Clisur INT INT INT",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Enfermaria Grupo de Municípios Amb+Hosp+Obst",
+            "accommodationName": "Enfermaria",
+            "coverageName": "Grupo de Municípios",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "505.285/25-8",
+            "priceAgeGroup018": 357.84,
+            "priceAgeGroup1923": 435.84,
+            "priceAgeGroup2428": 501.22,
+            "priceAgeGroup2933": 566.88,
+            "priceAgeGroup3438": 629.8,
+            "priceAgeGroup3943": 721.13,
+            "priceAgeGroup4448": 895.64,
+            "priceAgeGroup4953": 1120.44,
+            "priceAgeGroup5458": 1430.81,
+            "priceAgeGroup59Upper": 2066.09,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Conde",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Dias d'Ávila",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Itaparica",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Madre de Deus",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Pojuca",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "São Francisco do Conde",
+                "state": "BAHIA"
+              },
+              {
+                "name": "São Sebastião do Passé",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Saubara",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Vera Cruz",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Camaçari Lab. Pesquisa Matriz e Meddi Labor Camaçari",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Feira de Santana Análises Lab. de Patologia Clínica, Cedapi – Cto. Diagnóstico Pires,"
+              },
+              {
+                "name": "Hemocenter, Labore e Lade Lab.",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Bio Exames, Clab, Clilab, Diagnostlabora, Imagepat, J.C. Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "– Lab. Jaime Cerqueira, JPC Lab., Labchecap Imbuí, Laboclin,",
+                "city": "Salvador"
+              },
+              {
+                "name": "Hosp. Bambino",
+                "city": "Feira de Santana",
+                "specialties": [
+                  "PS"
+                ]
+              },
+              {
+                "name": "Hosp. Ortopédico",
+                "city": "Feira de Santana",
+                "specialties": [
+                  "PS"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Clisur INT INT INT",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Clisur INT INT INT",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Apartamento Grupo de Municípios Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Grupo de Municípios",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "505.287/25-4",
+            "priceAgeGroup018": 447.29,
+            "priceAgeGroup1923": 544.8,
+            "priceAgeGroup2428": 626.52,
+            "priceAgeGroup2933": 708.6,
+            "priceAgeGroup3438": 787.25,
+            "priceAgeGroup3943": 901.4,
+            "priceAgeGroup4448": 1119.54,
+            "priceAgeGroup4953": 1400.55,
+            "priceAgeGroup5458": 1788.5,
+            "priceAgeGroup59Upper": 2582.59,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Conde",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Dias d'Ávila",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Itaparica",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Madre de Deus",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Pojuca",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "São Francisco do Conde",
+                "state": "BAHIA"
+              },
+              {
+                "name": "São Sebastião do Passé",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Saubara",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Vera Cruz",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Camaçari Lab. Pesquisa Matriz e Meddi Labor Camaçari",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Feira de Santana Análises Lab. de Patologia Clínica, Cedapi – Cto. Diagnóstico Pires,"
+              },
+              {
+                "name": "Hemocenter, Labore e Lade Lab.",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Bio Exames, Clab, Clilab, Diagnostlabora, Imagepat, J.C. Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "– Lab. Jaime Cerqueira, JPC Lab., Labchecap Imbuí, Laboclin,",
+                "city": "Salvador"
+              },
+              {
+                "name": "Hosp. Bambino",
+                "city": "Feira de Santana",
+                "specialties": [
+                  "PS"
+                ]
+              },
+              {
+                "name": "Hosp. Ortopédico",
+                "city": "Feira de Santana",
+                "specialties": [
+                  "PS"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Clisur INT INT INT",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Clisur INT INT INT",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Apartamento Grupo de Municípios Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Grupo de Municípios",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "505.289/25-1",
+            "priceAgeGroup018": 592.51,
+            "priceAgeGroup1923": 721.68,
+            "priceAgeGroup2428": 829.93,
+            "priceAgeGroup2933": 938.65,
+            "priceAgeGroup3438": 1042.84,
+            "priceAgeGroup3943": 1194.05,
+            "priceAgeGroup4448": 1483.01,
+            "priceAgeGroup4953": 1855.25,
+            "priceAgeGroup5458": 2369.15,
+            "priceAgeGroup59Upper": 3421.06,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Conde",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Dias d'Ávila",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Itaparica",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Madre de Deus",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Pojuca",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "São Francisco do Conde",
+                "state": "BAHIA"
+              },
+              {
+                "name": "São Sebastião do Passé",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Saubara",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Vera Cruz",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Camaçari Lab. Pesquisa Matriz e Meddi Labor Camaçari",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Feira de Santana Análises Lab. de Patologia Clínica, Cedapi – Cto. Diagnóstico Pires,"
+              },
+              {
+                "name": "Hemocenter, Labore e Lade Lab.",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Bio Exames, Clab, Clilab, Diagnostlabora, Imagepat, J.C. Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "– Lab. Jaime Cerqueira, JPC Lab., Labchecap Imbuí, Laboclin,",
+                "city": "Salvador"
+              },
+              {
+                "name": "Hosp. Bambino",
+                "city": "Feira de Santana",
+                "specialties": [
+                  "PS"
+                ]
+              },
+              {
+                "name": "Hosp. Ortopédico",
+                "city": "Feira de Santana",
+                "specialties": [
+                  "PS"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Clisur INT INT INT",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Clisur INT INT INT",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Classic",
+        "sourceLabel": "Planos COM Coparticipação",
+        "includesCoparticipation": "WITH",
+        "contractType": "NOT_APPLICABLE",
+        "lpts": [],
+        "associations": [
+          "ABM",
+          "ABO-BA",
+          "ABRABDIR",
+          "ACRESP",
+          "AFB",
+          "AJUFE",
+          "CRA-BA",
+          "CRECI-BA",
+          "CREFONO-4",
+          "GASP",
+          "MÚTUA",
+          "UNASP"
+        ],
+        "minCoveredLives": null,
+        "maxCoveredLives": null,
+        "includesIOF": false,
+        "isRefundable": false,
+        "inferred": {
+          "name": true,
+          "includesCoparticipation": false,
+          "contractType": true
+        },
+        "products": [
+          {
+            "name": "Enfermaria Grupo de Municípios Amb+Hosp+Obst",
+            "accommodationName": "Enfermaria",
+            "coverageName": "Grupo de Municípios",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "505.283/25-1",
+            "priceAgeGroup018": 290.58,
+            "priceAgeGroup1923": 353.93,
+            "priceAgeGroup2428": 407.02,
+            "priceAgeGroup2933": 460.34,
+            "priceAgeGroup3438": 511.44,
+            "priceAgeGroup3943": 585.59,
+            "priceAgeGroup4448": 727.31,
+            "priceAgeGroup4953": 909.86,
+            "priceAgeGroup5458": 1161.89,
+            "priceAgeGroup59Upper": 1677.77,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Conde",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Dias d'Ávila",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Itaparica",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Madre de Deus",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Pojuca",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "São Francisco do Conde",
+                "state": "BAHIA"
+              },
+              {
+                "name": "São Sebastião do Passé",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Saubara",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Vera Cruz",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Camaçari Lab. Pesquisa Matriz e Meddi Labor Camaçari",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Feira de Santana Análises Lab. de Patologia Clínica, Cedapi – Cto. Diagnóstico Pires,"
+              },
+              {
+                "name": "Hemocenter, Labore e Lade Lab.",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Bio Exames, Clab, Clilab, Diagnostlabora, Imagepat, J.C. Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "– Lab. Jaime Cerqueira, JPC Lab., Labchecap Imbuí, Laboclin,",
+                "city": "Salvador"
+              },
+              {
+                "name": "Hosp. Bambino",
+                "city": "Feira de Santana",
+                "specialties": [
+                  "PS"
+                ]
+              },
+              {
+                "name": "Hosp. Ortopédico",
+                "city": "Feira de Santana",
+                "specialties": [
+                  "PS"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Clisur INT INT INT",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Clisur INT INT INT",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Apartamento Grupo de Municípios Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Grupo de Municípios",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "505.284/25-0",
+            "priceAgeGroup018": 363.25,
+            "priceAgeGroup1923": 442.44,
+            "priceAgeGroup2428": 508.81,
+            "priceAgeGroup2933": 575.46,
+            "priceAgeGroup3438": 639.34,
+            "priceAgeGroup3943": 732.04,
+            "priceAgeGroup4448": 909.2,
+            "priceAgeGroup4953": 1137.41,
+            "priceAgeGroup5458": 1452.47,
+            "priceAgeGroup59Upper": 2097.36,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Conde",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Dias d'Ávila",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Itaparica",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Madre de Deus",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Pojuca",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "São Francisco do Conde",
+                "state": "BAHIA"
+              },
+              {
+                "name": "São Sebastião do Passé",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Saubara",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Vera Cruz",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Camaçari Lab. Pesquisa Matriz e Meddi Labor Camaçari",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Feira de Santana Análises Lab. de Patologia Clínica, Cedapi – Cto. Diagnóstico Pires,"
+              },
+              {
+                "name": "Hemocenter, Labore e Lade Lab.",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Bio Exames, Clab, Clilab, Diagnostlabora, Imagepat, J.C. Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "– Lab. Jaime Cerqueira, JPC Lab., Labchecap Imbuí, Laboclin,",
+                "city": "Salvador"
+              },
+              {
+                "name": "Hosp. Bambino",
+                "city": "Feira de Santana",
+                "specialties": [
+                  "PS"
+                ]
+              },
+              {
+                "name": "Hosp. Ortopédico",
+                "city": "Feira de Santana",
+                "specialties": [
+                  "PS"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Clisur INT INT INT",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Clisur INT INT INT",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Enfermaria Grupo de Municípios Amb+Hosp+Obst",
+            "accommodationName": "Enfermaria",
+            "coverageName": "Grupo de Municípios",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "505.286/25-6",
+            "priceAgeGroup018": 298.2,
+            "priceAgeGroup1923": 363.2,
+            "priceAgeGroup2428": 417.68,
+            "priceAgeGroup2933": 472.4,
+            "priceAgeGroup3438": 524.83,
+            "priceAgeGroup3943": 600.94,
+            "priceAgeGroup4448": 746.36,
+            "priceAgeGroup4953": 933.7,
+            "priceAgeGroup5458": 1192.33,
+            "priceAgeGroup59Upper": 1721.73,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Conde",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Dias d'Ávila",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Itaparica",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Madre de Deus",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Pojuca",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "São Francisco do Conde",
+                "state": "BAHIA"
+              },
+              {
+                "name": "São Sebastião do Passé",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Saubara",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Vera Cruz",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Camaçari Lab. Pesquisa Matriz e Meddi Labor Camaçari",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Feira de Santana Análises Lab. de Patologia Clínica, Cedapi – Cto. Diagnóstico Pires,"
+              },
+              {
+                "name": "Hemocenter, Labore e Lade Lab.",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Bio Exames, Clab, Clilab, Diagnostlabora, Imagepat, J.C. Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "– Lab. Jaime Cerqueira, JPC Lab., Labchecap Imbuí, Laboclin,",
+                "city": "Salvador"
+              },
+              {
+                "name": "Hosp. Bambino",
+                "city": "Feira de Santana",
+                "specialties": [
+                  "PS"
+                ]
+              },
+              {
+                "name": "Hosp. Ortopédico",
+                "city": "Feira de Santana",
+                "specialties": [
+                  "PS"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Clisur INT INT INT",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Clisur INT INT INT",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Apartamento Grupo de Municípios Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Grupo de Municípios",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "505.288/25-2",
+            "priceAgeGroup018": 372.74,
+            "priceAgeGroup1923": 454,
+            "priceAgeGroup2428": 522.1,
+            "priceAgeGroup2933": 590.5,
+            "priceAgeGroup3438": 656.04,
+            "priceAgeGroup3943": 751.17,
+            "priceAgeGroup4448": 932.95,
+            "priceAgeGroup4953": 1167.12,
+            "priceAgeGroup5458": 1490.42,
+            "priceAgeGroup59Upper": 2152.16,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Conde",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Dias d'Ávila",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Itaparica",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Madre de Deus",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Pojuca",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "São Francisco do Conde",
+                "state": "BAHIA"
+              },
+              {
+                "name": "São Sebastião do Passé",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Saubara",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Vera Cruz",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Camaçari Lab. Pesquisa Matriz e Meddi Labor Camaçari",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Feira de Santana Análises Lab. de Patologia Clínica, Cedapi – Cto. Diagnóstico Pires,"
+              },
+              {
+                "name": "Hemocenter, Labore e Lade Lab.",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Bio Exames, Clab, Clilab, Diagnostlabora, Imagepat, J.C. Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "– Lab. Jaime Cerqueira, JPC Lab., Labchecap Imbuí, Laboclin,",
+                "city": "Salvador"
+              },
+              {
+                "name": "Hosp. Bambino",
+                "city": "Feira de Santana",
+                "specialties": [
+                  "PS"
+                ]
+              },
+              {
+                "name": "Hosp. Ortopédico",
+                "city": "Feira de Santana",
+                "specialties": [
+                  "PS"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Clisur INT INT INT",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Clisur INT INT INT",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Apartamento Grupo de Municípios Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Grupo de Municípios",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "505.290/25-4",
+            "priceAgeGroup018": 493.76,
+            "priceAgeGroup1923": 601.4,
+            "priceAgeGroup2428": 691.61,
+            "priceAgeGroup2933": 782.22,
+            "priceAgeGroup3438": 869.04,
+            "priceAgeGroup3943": 995.05,
+            "priceAgeGroup4448": 1235.86,
+            "priceAgeGroup4953": 1546.05,
+            "priceAgeGroup5458": 1974.31,
+            "priceAgeGroup59Upper": 2850.91,
+            "cities": [
+              {
+                "name": "Camaçari",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Candeias",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Conde",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Dias d'Ávila",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Itaparica",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Lauro de Freitas",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Madre de Deus",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Mata de São João",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Pojuca",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Salvador",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Santo Amaro",
+                "state": "BAHIA"
+              },
+              {
+                "name": "São Francisco do Conde",
+                "state": "BAHIA"
+              },
+              {
+                "name": "São Sebastião do Passé",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Saubara",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Simões Filho",
+                "state": "BAHIA"
+              },
+              {
+                "name": "Vera Cruz",
+                "state": "BAHIA"
+              }
+            ],
+            "refnets": [
+              {
+                "name": "Camaçari Lab. Pesquisa Matriz e Meddi Labor Camaçari",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Feira de Santana Análises Lab. de Patologia Clínica, Cedapi – Cto. Diagnóstico Pires,"
+              },
+              {
+                "name": "Hemocenter, Labore e Lade Lab.",
+                "specialties": [
+                  "LAB"
+                ]
+              },
+              {
+                "name": "Bio Exames, Clab, Clilab, Diagnostlabora, Imagepat, J.C. Lab.",
+                "city": "Salvador"
+              },
+              {
+                "name": "– Lab. Jaime Cerqueira, JPC Lab., Labchecap Imbuí, Laboclin,",
+                "city": "Salvador"
+              },
+              {
+                "name": "Hosp. Bambino",
+                "city": "Feira de Santana",
+                "specialties": [
+                  "PS"
+                ]
+              },
+              {
+                "name": "Hosp. Ortopédico",
+                "city": "Feira de Santana",
+                "specialties": [
+                  "PS"
+                ]
+              },
+              {
+                "name": "Hosp. Jorge Valente",
+                "city": "Clisur INT INT INT",
+                "specialties": [
+                  "PS",
+                  "INT",
+                  "MAT"
+                ]
+              },
+              {
+                "name": "Hosp. Português",
+                "city": "Clisur INT INT INT",
+                "specialties": [
+                  "INT",
+                  "MAT"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "lookupsPending": {
+      "associationsByName": [
+        "ABM",
+        "ABO-BA",
+        "ABRABDIR",
+        "ACRESP",
+        "AFB",
+        "AJUFE",
+        "CRA-BA",
+        "CRECI-BA",
+        "CREFONO-4",
+        "GASP",
+        "MÚTUA",
+        "UNASP"
+      ],
+      "accommodationsByName": [
+        "Enfermaria",
+        "Apartamento"
+      ],
+      "coveragesByName": [
+        "Grupo de Municípios"
+      ],
+      "segmentsByName": [
+        "Ambulatorial + Hospitalar com obstetrícia"
+      ],
+      "citiesByName": [
+        {
+          "state": "BAHIA",
+          "name": "Camaçari"
+        },
+        {
+          "state": "BAHIA",
+          "name": "Candeias"
+        },
+        {
+          "state": "BAHIA",
+          "name": "Conde"
+        },
+        {
+          "state": "BAHIA",
+          "name": "Dias d'Ávila"
+        },
+        {
+          "state": "BAHIA",
+          "name": "Itaparica"
+        },
+        {
+          "state": "BAHIA",
+          "name": "Lauro de Freitas"
+        },
+        {
+          "state": "BAHIA",
+          "name": "Madre de Deus"
+        },
+        {
+          "state": "BAHIA",
+          "name": "Mata de São João"
+        },
+        {
+          "state": "BAHIA",
+          "name": "Pojuca"
+        },
+        {
+          "state": "BAHIA",
+          "name": "Salvador"
+        },
+        {
+          "state": "BAHIA",
+          "name": "Santo Amaro"
+        },
+        {
+          "state": "BAHIA",
+          "name": "São Francisco do Conde"
+        },
+        {
+          "state": "BAHIA",
+          "name": "São Sebastião do Passé"
+        },
+        {
+          "state": "BAHIA",
+          "name": "Saubara"
+        },
+        {
+          "state": "BAHIA",
+          "name": "Simões Filho"
+        },
+        {
+          "state": "BAHIA",
+          "name": "Vera Cruz"
+        }
+      ]
+    }
   }
 }

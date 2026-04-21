@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import { extractQcTable, extractBatch, getExtraction } from '../scraper/pdf-extractor.js';
+import { toKoterPayload } from '../scraper/koter-adapter.js';
 import { db } from '../db/index.js';
 
 export const extractionRouter = Router();
@@ -28,6 +29,37 @@ extractionRouter.get('/:id/extraction', (req, res) => {
     return;
   }
   res.json(extraction);
+});
+
+// Retorna o payload NO FORMATO KOTER (após adaptação).
+extractionRouter.get('/:id/koter-payload', (req, res) => {
+  const id = Number(req.params.id);
+  const extraction = getExtraction(id);
+  if (!extraction) {
+    res.status(404).json({ error: 'Extração ainda não rodada pra essa tabela' });
+    return;
+  }
+  const meta = db
+    .prepare(
+      `SELECT t.uf, t.link_tabela, o.name AS operator, e.name AS entity
+       FROM qc_tables t
+       JOIN qc_operators o ON o.id = t.operator_id
+       JOIN qc_entities e ON e.id = t.entity_id
+       WHERE t.id = ?`,
+    )
+    .get(id) as { uf: string; link_tabela: string | null; operator: string; entity: string } | undefined;
+  if (!meta) {
+    res.status(404).json({ error: 'qc_table não existe' });
+    return;
+  }
+  const payload = toKoterPayload(extraction, {
+    operatorName: meta.operator,
+    uf: meta.uf,
+    category: 'ADHESION',
+    entityName: meta.entity,
+    pdfUrl: meta.link_tabela ?? undefined,
+  });
+  res.json(payload);
 });
 
 // Lista agregada de status de extração por qc_table.

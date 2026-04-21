@@ -350,5 +350,689 @@
         "Nenhuma refnet extraída (é possível que o PDF só remeta ao site)"
       ]
     }
+  },
+  "koterPayload": {
+    "planId": null,
+    "category": "ADHESION",
+    "operatorName": "HAPVIDA",
+    "uf": "AL",
+    "pdfUrl": "https://tabelasdevendas.qualicorp.com.br/tabelas/QUALIPRO_CS_HAPVIDA_AL_NP_25.pdf",
+    "planName": "Nosso Plano",
+    "validity": {
+      "baseMonth": "Junho",
+      "period": "Agosto 2025 até Maio 2026"
+    },
+    "tables": [
+      {
+        "name": "Nosso Plano",
+        "sourceLabel": "PLANOS | COPARTICIPAÇÃO PARCIAL (SEM ODONTO)",
+        "includesCoparticipation": "PARTIAL",
+        "contractType": "NOT_APPLICABLE",
+        "lpts": [],
+        "associations": [
+          "ABRABDIR",
+          "ABRACEM",
+          "AFB",
+          "AJUFE",
+          "AMB",
+          "ANAPROLIE",
+          "FNA",
+          "GASP",
+          "MÚTUA",
+          "UBE",
+          "UBES",
+          "UNE"
+        ],
+        "minCoveredLives": null,
+        "maxCoveredLives": null,
+        "includesIOF": false,
+        "isRefundable": false,
+        "inferred": {
+          "name": true,
+          "includesCoparticipation": false,
+          "contractType": true
+        },
+        "products": [
+          {
+            "name": "Municipal Amb",
+            "accommodationName": null,
+            "coverageName": "Municipal",
+            "segmentName": "Ambulatorial",
+            "ansCode": "485.741/20-1",
+            "priceAgeGroup018": 211.28,
+            "priceAgeGroup1923": 279.52,
+            "priceAgeGroup2428": 319.21,
+            "priceAgeGroup2933": 356.56,
+            "priceAgeGroup3438": 375.46,
+            "priceAgeGroup3943": 422.02,
+            "priceAgeGroup4448": 516.97,
+            "priceAgeGroup4953": 718.59,
+            "priceAgeGroup5458": 970.1,
+            "priceAgeGroup59Upper": 1261.13,
+            "cities": [
+              {
+                "name": "Coqueiro Seco"
+              },
+              {
+                "name": "Maceió"
+              },
+              {
+                "name": "Marechal Deodoro"
+              },
+              {
+                "name": "Paripueira"
+              },
+              {
+                "name": "Rio Largo"
+              },
+              {
+                "name": "Santa Luzia do Norte"
+              },
+              {
+                "name": "Satuba"
+              }
+            ],
+            "refnets": []
+          },
+          {
+            "name": "Enfermaria Municipal Amb+Hosp+Obst",
+            "accommodationName": "Enfermaria",
+            "coverageName": "Municipal",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "485.699/20-6",
+            "priceAgeGroup018": 287.66,
+            "priceAgeGroup1923": 379.71,
+            "priceAgeGroup2428": 436.67,
+            "priceAgeGroup2933": 489.07,
+            "priceAgeGroup3438": 513.52,
+            "priceAgeGroup3943": 580.28,
+            "priceAgeGroup4448": 707.94,
+            "priceAgeGroup4953": 976.96,
+            "priceAgeGroup5458": 1318.9,
+            "priceAgeGroup59Upper": 1714.57,
+            "cities": [
+              {
+                "name": "Coqueiro Seco"
+              },
+              {
+                "name": "Maceió"
+              },
+              {
+                "name": "Marechal Deodoro"
+              },
+              {
+                "name": "Paripueira"
+              },
+              {
+                "name": "Rio Largo"
+              },
+              {
+                "name": "Santa Luzia do Norte"
+              },
+              {
+                "name": "Satuba"
+              }
+            ],
+            "refnets": []
+          },
+          {
+            "name": "Apartamento Municipal Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Municipal",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "485.711/20-9",
+            "priceAgeGroup018": 427.35,
+            "priceAgeGroup1923": 564.1,
+            "priceAgeGroup2428": 648.72,
+            "priceAgeGroup2933": 726.57,
+            "priceAgeGroup3438": 762.9,
+            "priceAgeGroup3943": 862.08,
+            "priceAgeGroup4448": 1051.74,
+            "priceAgeGroup4953": 1451.4,
+            "priceAgeGroup5458": 1959.39,
+            "priceAgeGroup59Upper": 2547.21,
+            "cities": [
+              {
+                "name": "Coqueiro Seco"
+              },
+              {
+                "name": "Maceió"
+              },
+              {
+                "name": "Marechal Deodoro"
+              },
+              {
+                "name": "Paripueira"
+              },
+              {
+                "name": "Rio Largo"
+              },
+              {
+                "name": "Santa Luzia do Norte"
+              },
+              {
+                "name": "Satuba"
+              }
+            ],
+            "refnets": []
+          }
+        ]
+      },
+      {
+        "name": "Nosso Plano",
+        "sourceLabel": "Coparticipação Parcial (COM ODONTO)",
+        "includesCoparticipation": "PARTIAL",
+        "contractType": "NOT_APPLICABLE",
+        "lpts": [],
+        "associations": [
+          "ABRABDIR",
+          "ABRACEM",
+          "AFB",
+          "AJUFE",
+          "AMB",
+          "ANAPROLIE",
+          "FNA",
+          "GASP",
+          "MÚTUA",
+          "UBE",
+          "UBES",
+          "UNE"
+        ],
+        "minCoveredLives": null,
+        "maxCoveredLives": null,
+        "includesIOF": false,
+        "isRefundable": false,
+        "inferred": {
+          "name": true,
+          "includesCoparticipation": false,
+          "contractType": true
+        },
+        "products": [
+          {
+            "name": "Municipal Amb",
+            "accommodationName": null,
+            "coverageName": "Municipal",
+            "segmentName": "Ambulatorial",
+            "ansCode": "485.741/20-1",
+            "priceAgeGroup018": 210.28,
+            "priceAgeGroup1923": 277.15,
+            "priceAgeGroup2428": 316.05,
+            "priceAgeGroup2933": 352.65,
+            "priceAgeGroup3438": 371.16,
+            "priceAgeGroup3943": 416.78,
+            "priceAgeGroup4448": 509.82,
+            "priceAgeGroup4953": 707.38,
+            "priceAgeGroup5458": 953.83,
+            "priceAgeGroup59Upper": 1239,
+            "cities": [
+              {
+                "name": "Coqueiro Seco"
+              },
+              {
+                "name": "Maceió"
+              },
+              {
+                "name": "Marechal Deodoro"
+              },
+              {
+                "name": "Paripueira"
+              },
+              {
+                "name": "Rio Largo"
+              },
+              {
+                "name": "Santa Luzia do Norte"
+              },
+              {
+                "name": "Satuba"
+              }
+            ],
+            "refnets": []
+          },
+          {
+            "name": "Enfermaria Municipal Amb+Hosp+Obst",
+            "accommodationName": "Enfermaria",
+            "coverageName": "Municipal",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "485.699/20-6",
+            "priceAgeGroup018": 282.66,
+            "priceAgeGroup1923": 372.07,
+            "priceAgeGroup2428": 427.39,
+            "priceAgeGroup2933": 478.29,
+            "priceAgeGroup3438": 502.04,
+            "priceAgeGroup3943": 566.88,
+            "priceAgeGroup4448": 690.88,
+            "priceAgeGroup4953": 952.18,
+            "priceAgeGroup5458": 1284.3,
+            "priceAgeGroup59Upper": 1668.62,
+            "cities": [
+              {
+                "name": "Coqueiro Seco"
+              },
+              {
+                "name": "Maceió"
+              },
+              {
+                "name": "Marechal Deodoro"
+              },
+              {
+                "name": "Paripueira"
+              },
+              {
+                "name": "Rio Largo"
+              },
+              {
+                "name": "Santa Luzia do Norte"
+              },
+              {
+                "name": "Satuba"
+              }
+            ],
+            "refnets": []
+          },
+          {
+            "name": "Apartamento Municipal Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Municipal",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "485.711/20-9",
+            "priceAgeGroup018": 422.35,
+            "priceAgeGroup1923": 556.46,
+            "priceAgeGroup2428": 639.45,
+            "priceAgeGroup2933": 715.79,
+            "priceAgeGroup3438": 751.41,
+            "priceAgeGroup3943": 848.67,
+            "priceAgeGroup4448": 1034.66,
+            "priceAgeGroup4953": 1426.59,
+            "priceAgeGroup5458": 1924.76,
+            "priceAgeGroup59Upper": 2501.21,
+            "cities": [
+              {
+                "name": "Coqueiro Seco"
+              },
+              {
+                "name": "Maceió"
+              },
+              {
+                "name": "Marechal Deodoro"
+              },
+              {
+                "name": "Paripueira"
+              },
+              {
+                "name": "Rio Largo"
+              },
+              {
+                "name": "Santa Luzia do Norte"
+              },
+              {
+                "name": "Satuba"
+              }
+            ],
+            "refnets": []
+          }
+        ]
+      },
+      {
+        "name": "Nosso Plano",
+        "sourceLabel": "PLANOS | COPARTICIPAÇÃO TOTAL (SEM ODONTO)",
+        "includesCoparticipation": "WITH",
+        "contractType": "NOT_APPLICABLE",
+        "lpts": [],
+        "associations": [
+          "ABRABDIR",
+          "ABRACEM",
+          "AFB",
+          "AJUFE",
+          "AMB",
+          "ANAPROLIE",
+          "FNA",
+          "GASP",
+          "MÚTUA",
+          "UBE",
+          "UBES",
+          "UNE"
+        ],
+        "minCoveredLives": null,
+        "maxCoveredLives": null,
+        "includesIOF": false,
+        "isRefundable": false,
+        "inferred": {
+          "name": true,
+          "includesCoparticipation": false,
+          "contractType": true
+        },
+        "products": [
+          {
+            "name": "Municipal Amb",
+            "accommodationName": null,
+            "coverageName": "Municipal",
+            "segmentName": "Ambulatorial",
+            "ansCode": "485.741/20-1",
+            "priceAgeGroup018": 125.25,
+            "priceAgeGroup1923": 165.71,
+            "priceAgeGroup2428": 189.24,
+            "priceAgeGroup2933": 211.38,
+            "priceAgeGroup3438": 222.58,
+            "priceAgeGroup3943": 250.18,
+            "priceAgeGroup4448": 306.47,
+            "priceAgeGroup4953": 425.99,
+            "priceAgeGroup5458": 575.09,
+            "priceAgeGroup59Upper": 747.62,
+            "cities": [
+              {
+                "name": "Coqueiro Seco"
+              },
+              {
+                "name": "Maceió"
+              },
+              {
+                "name": "Marechal Deodoro"
+              },
+              {
+                "name": "Paripueira"
+              },
+              {
+                "name": "Rio Largo"
+              },
+              {
+                "name": "Santa Luzia do Norte"
+              },
+              {
+                "name": "Satuba"
+              }
+            ],
+            "refnets": []
+          },
+          {
+            "name": "Enfermaria Municipal Amb+Hosp+Obst",
+            "accommodationName": "Enfermaria",
+            "coverageName": "Municipal",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "485.699/20-6",
+            "priceAgeGroup018": 208.23,
+            "priceAgeGroup1923": 274.86,
+            "priceAgeGroup2428": 316.09,
+            "priceAgeGroup2933": 354.02,
+            "priceAgeGroup3438": 371.72,
+            "priceAgeGroup3943": 420.04,
+            "priceAgeGroup4448": 512.45,
+            "priceAgeGroup4953": 707.18,
+            "priceAgeGroup5458": 954.69,
+            "priceAgeGroup59Upper": 1241.1,
+            "cities": [
+              {
+                "name": "Coqueiro Seco"
+              },
+              {
+                "name": "Maceió"
+              },
+              {
+                "name": "Marechal Deodoro"
+              },
+              {
+                "name": "Paripueira"
+              },
+              {
+                "name": "Rio Largo"
+              },
+              {
+                "name": "Santa Luzia do Norte"
+              },
+              {
+                "name": "Satuba"
+              }
+            ],
+            "refnets": []
+          },
+          {
+            "name": "Apartamento Municipal Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Municipal",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "485.711/20-9",
+            "priceAgeGroup018": 310.15,
+            "priceAgeGroup1923": 409.4,
+            "priceAgeGroup2428": 470.81,
+            "priceAgeGroup2933": 527.31,
+            "priceAgeGroup3438": 553.68,
+            "priceAgeGroup3943": 625.66,
+            "priceAgeGroup4448": 763.31,
+            "priceAgeGroup4953": 1053.37,
+            "priceAgeGroup5458": 1422.05,
+            "priceAgeGroup59Upper": 1848.67,
+            "cities": [
+              {
+                "name": "Coqueiro Seco"
+              },
+              {
+                "name": "Maceió"
+              },
+              {
+                "name": "Marechal Deodoro"
+              },
+              {
+                "name": "Paripueira"
+              },
+              {
+                "name": "Rio Largo"
+              },
+              {
+                "name": "Santa Luzia do Norte"
+              },
+              {
+                "name": "Satuba"
+              }
+            ],
+            "refnets": []
+          }
+        ]
+      },
+      {
+        "name": "Nosso Plano",
+        "sourceLabel": "Com Coparticipação (COM ODONTO)",
+        "includesCoparticipation": "WITH",
+        "contractType": "NOT_APPLICABLE",
+        "lpts": [],
+        "associations": [
+          "ABRABDIR",
+          "ABRACEM",
+          "AFB",
+          "AJUFE",
+          "AMB",
+          "ANAPROLIE",
+          "FNA",
+          "GASP",
+          "MÚTUA",
+          "UBE",
+          "UBES",
+          "UNE"
+        ],
+        "minCoveredLives": null,
+        "maxCoveredLives": null,
+        "includesIOF": false,
+        "isRefundable": false,
+        "inferred": {
+          "name": true,
+          "includesCoparticipation": false,
+          "contractType": true
+        },
+        "products": [
+          {
+            "name": "Municipal Amb",
+            "accommodationName": null,
+            "coverageName": "Municipal",
+            "segmentName": "Ambulatorial",
+            "ansCode": "485.741/20-1",
+            "priceAgeGroup018": 124.25,
+            "priceAgeGroup1923": 163.33,
+            "priceAgeGroup2428": 186.06,
+            "priceAgeGroup2933": 207.45,
+            "priceAgeGroup3438": 218.27,
+            "priceAgeGroup3943": 244.93,
+            "priceAgeGroup4448": 299.31,
+            "priceAgeGroup4953": 414.77,
+            "priceAgeGroup5458": 558.8,
+            "priceAgeGroup59Upper": 725.46,
+            "cities": [
+              {
+                "name": "Coqueiro Seco"
+              },
+              {
+                "name": "Maceió"
+              },
+              {
+                "name": "Marechal Deodoro"
+              },
+              {
+                "name": "Paripueira"
+              },
+              {
+                "name": "Rio Largo"
+              },
+              {
+                "name": "Santa Luzia do Norte"
+              },
+              {
+                "name": "Satuba"
+              }
+            ],
+            "refnets": []
+          },
+          {
+            "name": "Enfermaria Municipal Amb+Hosp+Obst",
+            "accommodationName": "Enfermaria",
+            "coverageName": "Municipal",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "485.699/20-6",
+            "priceAgeGroup018": 207.23,
+            "priceAgeGroup1923": 272.5,
+            "priceAgeGroup2428": 312.88,
+            "priceAgeGroup2933": 350.03,
+            "priceAgeGroup3438": 367.37,
+            "priceAgeGroup3943": 414.7,
+            "priceAgeGroup4448": 505.22,
+            "priceAgeGroup4953": 695.97,
+            "priceAgeGroup5458": 938.42,
+            "priceAgeGroup59Upper": 1218.96,
+            "cities": [
+              {
+                "name": "Coqueiro Seco"
+              },
+              {
+                "name": "Maceió"
+              },
+              {
+                "name": "Marechal Deodoro"
+              },
+              {
+                "name": "Paripueira"
+              },
+              {
+                "name": "Rio Largo"
+              },
+              {
+                "name": "Santa Luzia do Norte"
+              },
+              {
+                "name": "Satuba"
+              }
+            ],
+            "refnets": []
+          },
+          {
+            "name": "Apartamento Municipal Amb+Hosp+Obst",
+            "accommodationName": "Apartamento",
+            "coverageName": "Municipal",
+            "segmentName": "Ambulatorial + Hospitalar com obstetrícia",
+            "ansCode": "485.711/20-9",
+            "priceAgeGroup018": 309.15,
+            "priceAgeGroup1923": 407.03,
+            "priceAgeGroup2428": 467.59,
+            "priceAgeGroup2933": 523.31,
+            "priceAgeGroup3438": 549.32,
+            "priceAgeGroup3943": 620.31,
+            "priceAgeGroup4448": 756.06,
+            "priceAgeGroup4953": 1042.12,
+            "priceAgeGroup5458": 1405.72,
+            "priceAgeGroup59Upper": 1826.45,
+            "cities": [
+              {
+                "name": "Coqueiro Seco"
+              },
+              {
+                "name": "Maceió"
+              },
+              {
+                "name": "Marechal Deodoro"
+              },
+              {
+                "name": "Paripueira"
+              },
+              {
+                "name": "Rio Largo"
+              },
+              {
+                "name": "Santa Luzia do Norte"
+              },
+              {
+                "name": "Satuba"
+              }
+            ],
+            "refnets": []
+          }
+        ]
+      }
+    ],
+    "lookupsPending": {
+      "associationsByName": [
+        "ABRABDIR",
+        "ABRACEM",
+        "AFB",
+        "AJUFE",
+        "AMB",
+        "ANAPROLIE",
+        "FNA",
+        "GASP",
+        "MÚTUA",
+        "UBE",
+        "UBES",
+        "UNE"
+      ],
+      "accommodationsByName": [
+        "Enfermaria",
+        "Apartamento"
+      ],
+      "coveragesByName": [
+        "Municipal"
+      ],
+      "segmentsByName": [
+        "Ambulatorial",
+        "Ambulatorial + Hospitalar com obstetrícia"
+      ],
+      "citiesByName": [
+        {
+          "name": "Coqueiro Seco"
+        },
+        {
+          "name": "Maceió"
+        },
+        {
+          "name": "Marechal Deodoro"
+        },
+        {
+          "name": "Paripueira"
+        },
+        {
+          "name": "Rio Largo"
+        },
+        {
+          "name": "Santa Luzia do Norte"
+        },
+        {
+          "name": "Satuba"
+        }
+      ]
+    }
   }
 }

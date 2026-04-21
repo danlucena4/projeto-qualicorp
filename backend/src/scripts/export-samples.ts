@@ -1,12 +1,16 @@
-// Exporta N JSONs de amostra pra validação manual.
-// Cria pasta audit-samples/ com um arquivo por id + um README com os links
-// originais dos PDFs pra comparação lado-a-lado.
+// Exporta N samples pra validação manual. Cada sample vira um arquivo JSON
+// contendo:
+//   - meta: dados da qc_table (ids, operador, UF, entidade, URL do PDF)
+//   - extraction: JSON raw produzido pelo parser (camada crua)
+//   - koterPayload: payload NO FORMATO Koter (pronto pro cadastro)
 //
 // Uso: npx tsx src/scripts/export-samples.ts <id1> <id2> ...
 
 import fs from 'node:fs';
 import path from 'node:path';
 import { db } from '../db/index.js';
+import { toKoterPayload } from '../scraper/koter-adapter.js';
+import type { ExtractedPDF } from '../scraper/pdf-parser.js';
 
 const ids = process.argv.slice(2).map(Number).filter(Number.isInteger);
 if (ids.length === 0) {
@@ -20,9 +24,13 @@ fs.mkdirSync(OUT, { recursive: true });
 const readme: string[] = [];
 readme.push('# Amostras para validação manual');
 readme.push('');
-readme.push('Abra cada JSON ao lado do PDF original e confira os campos.');
+readme.push('Cada arquivo tem 3 seções:');
 readme.push('');
-readme.push('| # | Operadora · UF · Entidade | PDF original | JSON |');
+readme.push('- **meta** — identificação da tabela (operadora, UF, entidade, URL do PDF)');
+readme.push('- **extraction** — JSON raw produzido pelo parser (camada crua, fiel ao PDF)');
+readme.push('- **koterPayload** — payload no formato que o Koter consome em `create_table_with_products_cadastro`');
+readme.push('');
+readme.push('| # | Operadora · UF · Entidade | PDF original | Arquivo |');
 readme.push('|---|---|---|---|');
 
 for (const id of ids) {
@@ -51,7 +59,15 @@ for (const id of ids) {
     continue;
   }
 
-  const extraction = JSON.parse(row.pdf_extraction_json);
+  const extraction = JSON.parse(row.pdf_extraction_json) as ExtractedPDF;
+  const koterPayload = toKoterPayload(extraction, {
+    operatorName: row.operator,
+    uf: row.uf,
+    category: 'ADHESION',
+    entityName: row.entity,
+    pdfUrl: row.link_tabela ?? undefined,
+  });
+
   const fname = `${String(id).padStart(3, '0')}_${row.operator.replace(/[^\w]+/g, '_')}_${row.uf}_${row.entity.replace(/[^\w]+/g, '_')}.json`;
   const payload = {
     meta: {
@@ -62,6 +78,7 @@ for (const id of ids) {
       pdfUrl: row.link_tabela,
     },
     extraction,
+    koterPayload,
   };
   fs.writeFileSync(path.join(OUT, fname), JSON.stringify(payload, null, 2), 'utf-8');
   readme.push(
