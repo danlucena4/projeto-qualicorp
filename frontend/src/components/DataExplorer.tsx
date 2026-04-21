@@ -6,7 +6,9 @@ import {
   type QcState,
   type QcTable,
   type Stats,
+  type ExtractionCounts,
 } from '../api/client';
+import { ExtractionDrawer } from './ExtractionDrawer';
 
 const PAGE_SIZE_OPTIONS = [24, 48, 96, 200];
 
@@ -22,6 +24,11 @@ export function DataExplorer({ refreshKey }: { refreshKey: number }) {
   const [total, setTotal] = useState(0);
   const [page, setPage] = useState(0);
   const [pageSize, setPageSize] = useState(48);
+  const [selectedTable, setSelectedTable] = useState<QcTable | null>(null);
+  const [extractionCounts, setExtractionCounts] = useState<ExtractionCounts | null>(null);
+  const [extractingId, setExtractingId] = useState<number | null>(null);
+  const [bulkRunning, setBulkRunning] = useState(false);
+  const [bulkProgress, setBulkProgress] = useState<string | null>(null);
 
   useEffect(() => {
     Promise.all([
@@ -29,15 +36,68 @@ export function DataExplorer({ refreshKey }: { refreshKey: number }) {
       api.listStates(),
       api.listOperators(),
       api.listEntities(),
+      api.extractionCounts(),
     ])
-      .then(([s, st, o, e]) => {
+      .then(([s, st, o, e, ec]) => {
         setStats(s);
         setStates(st);
         setOperators(o);
         setEntities(e);
+        setExtractionCounts(ec);
       })
       .catch(() => {});
   }, [refreshKey]);
+
+  async function refreshExtractionState() {
+    try {
+      const ec = await api.extractionCounts();
+      setExtractionCounts(ec);
+    } catch {}
+  }
+
+  async function extractOne(id: number) {
+    setExtractingId(id);
+    try {
+      await api.extractPdf(id);
+      // refresca a página atual
+      const r = await api.listTables({
+        uf: filterUf || undefined,
+        operatorId: filterOp ? Number(filterOp) : undefined,
+        entityId: filterEnt ? Number(filterEnt) : undefined,
+        limit: pageSize,
+        offset: page * pageSize,
+      });
+      setTables(r.items);
+      await refreshExtractionState();
+    } finally {
+      setExtractingId(null);
+    }
+  }
+
+  async function extractVisible() {
+    const ids = tables.filter((t) => !t.pdf_extracted_at && t.link_tabela).map((t) => t.id);
+    if (ids.length === 0) return;
+    setBulkRunning(true);
+    setBulkProgress(`Extraindo ${ids.length} PDFs...`);
+    try {
+      const r = await api.extractBatch(ids, 4);
+      setBulkProgress(`${r.ok} ok, ${r.errors.length} erro(s).`);
+      const fresh = await api.listTables({
+        uf: filterUf || undefined,
+        operatorId: filterOp ? Number(filterOp) : undefined,
+        entityId: filterEnt ? Number(filterEnt) : undefined,
+        limit: pageSize,
+        offset: page * pageSize,
+      });
+      setTables(fresh.items);
+      await refreshExtractionState();
+    } catch (err) {
+      setBulkProgress(`Erro: ${(err as Error).message}`);
+    } finally {
+      setBulkRunning(false);
+      setTimeout(() => setBulkProgress(null), 5000);
+    }
+  }
 
   // Reseta a página quando os filtros ou o pageSize mudam.
   useEffect(() => {
@@ -73,6 +133,37 @@ export function DataExplorer({ refreshKey }: { refreshKey: number }) {
         <Stat label="Profissões" value={stats?.professions ?? 0} />
         <Stat label="Tabelas (PDFs)" value={stats?.tables ?? 0} />
       </div>
+
+      {extractionCounts && extractionCounts.total > 0 && (
+        <div
+          style={{
+            marginTop: 14,
+            padding: 12,
+            background: 'var(--panel-light)',
+            borderRadius: 6,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: 12,
+            flexWrap: 'wrap',
+          }}
+        >
+          <div style={{ fontSize: 13 }}>
+            📑 Extração:{' '}
+            <strong>{extractionCounts.extracted}</strong> ok{' · '}
+            <span style={{ color: 'var(--warn)' }}>{extractionCounts.errors}</span> erro{' · '}
+            <span style={{ color: 'var(--muted)' }}>{extractionCounts.pending}</span> pendentes
+            {bulkProgress && <span style={{ marginLeft: 8, color: 'var(--accent)' }}>· {bulkProgress}</span>}
+          </div>
+          <button
+            className="btn"
+            onClick={extractVisible}
+            disabled={bulkRunning || tables.every((t) => !!t.pdf_extracted_at || !t.link_tabela)}
+          >
+            {bulkRunning ? 'Extraindo...' : 'Extrair PDFs desta página'}
+          </button>
+        </div>
+      )}
 
       {(stats?.tables ?? 0) > 0 && (
         <>
@@ -129,45 +220,97 @@ export function DataExplorer({ refreshKey }: { refreshKey: number }) {
               marginTop: 12,
             }}
           >
-            {tables.map((t) => (
-              <div
-                key={t.id}
-                style={{
-                  background: 'var(--panel-light)',
-                  borderRadius: 6,
-                  padding: 12,
-                  display: 'flex',
-                  flexDirection: 'column',
-                  gap: 6,
-                }}
-              >
-                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                  {t.logo_url && (
-                    <img
-                      src={t.logo_url}
-                      alt={t.operator_name}
-                      style={{ height: 24, maxWidth: 80, objectFit: 'contain' }}
-                    />
+            {tables.map((t) => {
+              const status = t.pdf_extraction_error
+                ? 'err'
+                : t.pdf_extracted_at
+                  ? 'ok'
+                  : 'pending';
+              return (
+                <div
+                  key={t.id}
+                  style={{
+                    background: 'var(--panel-light)',
+                    borderRadius: 6,
+                    padding: 12,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: 6,
+                  }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                      {t.logo_url && (
+                        <img
+                          src={t.logo_url}
+                          alt={t.operator_name}
+                          style={{ height: 24, maxWidth: 80, objectFit: 'contain' }}
+                        />
+                      )}
+                      <span style={{ fontSize: 11, color: 'var(--muted)', letterSpacing: '0.05em' }}>
+                        {t.uf} · {t.operator_name}
+                      </span>
+                    </div>
+                    <span
+                      style={{
+                        fontSize: 10,
+                        fontWeight: 600,
+                        padding: '2px 8px',
+                        borderRadius: 999,
+                        background:
+                          status === 'ok'
+                            ? 'rgba(74, 222, 128, 0.15)'
+                            : status === 'err'
+                              ? 'rgba(248, 113, 113, 0.15)'
+                              : 'rgba(148, 163, 184, 0.15)',
+                        color:
+                          status === 'ok'
+                            ? 'var(--success)'
+                            : status === 'err'
+                              ? 'var(--danger)'
+                              : 'var(--muted)',
+                      }}
+                    >
+                      {status === 'ok' ? 'EXTRAÍDO' : status === 'err' ? 'ERRO' : 'PENDENTE'}
+                    </span>
+                  </div>
+                  <div style={{ fontWeight: 600, fontSize: 14 }}>{t.entity_name}</div>
+                  {t.link_tabela && (
+                    <a
+                      href={t.link_tabela}
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ fontSize: 12, color: 'var(--accent)' }}
+                    >
+                      📄 PDF original
+                    </a>
                   )}
-                  <span
-                    style={{ fontSize: 11, color: 'var(--muted)', letterSpacing: '0.05em' }}
-                  >
-                    {t.uf} · {t.operator_name}
-                  </span>
+                  <div style={{ display: 'flex', gap: 6, marginTop: 4 }}>
+                    {status === 'ok' ? (
+                      <button
+                        className="btn"
+                        style={{ padding: '6px 10px', fontSize: 12 }}
+                        onClick={() => setSelectedTable(t)}
+                      >
+                        Ver extração
+                      </button>
+                    ) : (
+                      <button
+                        className="btn"
+                        style={{ padding: '6px 10px', fontSize: 12 }}
+                        disabled={extractingId === t.id || !t.link_tabela}
+                        onClick={() => extractOne(t.id)}
+                      >
+                        {extractingId === t.id ? 'Extraindo...' : 'Extrair'}
+                      </button>
+                    )}
+                  </div>
+                  {t.pdf_extraction_error && (
+                    <div style={{ fontSize: 11, color: 'var(--danger)' }}>{t.pdf_extraction_error}</div>
+                  )}
                 </div>
-                <div style={{ fontWeight: 600, fontSize: 14 }}>{t.entity_name}</div>
-                {t.link_tabela && (
-                  <a
-                    href={t.link_tabela}
-                    target="_blank"
-                    rel="noreferrer"
-                    style={{ fontSize: 12, color: 'var(--accent)', wordBreak: 'break-all' }}
-                  >
-                    📄 Tabela (PDF)
-                  </a>
-                )}
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           {total > pageSize && (
@@ -191,6 +334,8 @@ export function DataExplorer({ refreshKey }: { refreshKey: number }) {
           Nada extraído ainda. Rode um sync.
         </div>
       )}
+
+      <ExtractionDrawer table={selectedTable} onClose={() => setSelectedTable(null)} />
     </div>
   );
 }

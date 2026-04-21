@@ -79,6 +79,9 @@ CREATE TABLE IF NOT EXISTS qc_tables (
     pdf_local_path TEXT,
     pdf_sha256 TEXT,
     pdf_downloaded_at TEXT,
+    pdf_extracted_at TEXT,
+    pdf_extraction_json TEXT,
+    pdf_extraction_error TEXT,
     created_at TEXT DEFAULT CURRENT_TIMESTAMP,
     updated_at TEXT DEFAULT CURRENT_TIMESTAMP,
     UNIQUE (uf, operator_id, entity_id)

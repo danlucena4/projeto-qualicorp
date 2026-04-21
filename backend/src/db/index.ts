@@ -12,6 +12,20 @@ db.exec('PRAGMA journal_mode = WAL;');
 const schemaSQL = fs.readFileSync(config.paths.schemaFile, 'utf-8');
 db.exec(schemaSQL);
 
+// Migrations defensivas: adiciona colunas novas em tabelas já existentes.
+// Cada ALTER só falha se a coluna já existir — ignoramos nesse caso.
+function tryAlter(sql: string) {
+  try {
+    db.exec(sql);
+  } catch (e) {
+    const msg = (e as Error).message;
+    if (!/duplicate column name/i.test(msg)) throw e;
+  }
+}
+tryAlter('ALTER TABLE qc_tables ADD COLUMN pdf_extracted_at TEXT');
+tryAlter('ALTER TABLE qc_tables ADD COLUMN pdf_extraction_json TEXT');
+tryAlter('ALTER TABLE qc_tables ADD COLUMN pdf_extraction_error TEXT');
+
 console.log(`[db] ready: ${path.relative(process.cwd(), config.paths.dbFile)}`);
 
 // ============================================================================
@@ -277,7 +291,10 @@ export function listQcTables(filters: {
     .prepare(
       `SELECT t.id, t.uf, t.link_tabela, t.link_adesao, t.link_filiacao,
               t.link_aditivo, t.link_outros_documentos, t.publico,
-              t.pdf_local_path, t.pdf_downloaded_at, t.updated_at,
+              t.pdf_local_path, t.pdf_downloaded_at,
+              t.pdf_extracted_at, t.pdf_extraction_error,
+              CASE WHEN t.pdf_extraction_json IS NOT NULL THEN 1 ELSE 0 END AS has_extraction,
+              t.updated_at,
               o.id AS operator_id, o.name AS operator_name, o.logo_url,
               e.id AS entity_id, e.name AS entity_name
        FROM qc_tables t

@@ -52,7 +52,63 @@ export interface QcTable {
   link_outros_documentos: string | null;
   publico: number | null;
   pdf_local_path: string | null;
+  pdf_extracted_at: string | null;
+  pdf_extraction_error: string | null;
+  has_extraction?: number;
   updated_at: string;
+}
+
+export interface ExtractionCounts {
+  total: number;
+  extracted: number;
+  errors: number;
+  pending: number;
+}
+
+export interface ExtractedProduct {
+  rawName: string;
+  ansCode: string | null;
+  segment: string | null;
+  coverage: string | null;
+  accommodation: 'Apartamento' | 'Enfermaria' | null;
+  prices: {
+    age0_18: number;
+    age19_23: number;
+    age24_28: number;
+    age29_33: number;
+    age34_38: number;
+    age39_43: number;
+    age44_48: number;
+    age49_53: number;
+    age54_58: number;
+    age59Upper: number;
+  };
+}
+
+export interface ExtractedTable {
+  blockLabel: string;
+  includesCoparticipation: 'WITH' | 'WITHOUT' | 'PARTIAL' | null;
+  products: ExtractedProduct[];
+}
+
+export interface ExtractedPDF {
+  operatorHint: string | null;
+  planNameHint: string | null;
+  validityBaseMonth: string | null;
+  validityPeriod: string | null;
+  entities: Array<{ code: string; name?: string }>;
+  tables: ExtractedTable[];
+  cities: Array<{ name: string; state?: string }>;
+  refnets: Array<{ name: string; city?: string; kind: 'HOSPITAL' | 'LAB' | 'UNKNOWN'; specialties?: string[] }>;
+  stats: {
+    pages: number;
+    textLength: number;
+    tableBlocks: number;
+    products: number;
+    citiesCount: number;
+    refnetsCount: number;
+    warnings: string[];
+  };
 }
 
 export const api = {
@@ -109,6 +165,27 @@ export const api = {
     if (filters.limit) q.set('limit', String(filters.limit));
     if (filters.offset) q.set('offset', String(filters.offset));
     const r = await fetch(`${BASE}/api/plans/tables?${q}`);
+    return r.json();
+  },
+  async extractPdf(qcTableId: number): Promise<{ ok: boolean; stats?: ExtractedPDF['stats']; error?: string }> {
+    const r = await fetch(`${BASE}/api/pdfs/${qcTableId}/extract`, { method: 'POST' });
+    return r.json();
+  },
+  async getExtraction(qcTableId: number): Promise<ExtractedPDF | null> {
+    const r = await fetch(`${BASE}/api/pdfs/${qcTableId}/extraction`);
+    if (!r.ok) return null;
+    return r.json();
+  },
+  async extractionCounts(): Promise<ExtractionCounts> {
+    const r = await fetch(`${BASE}/api/pdfs/counts`);
+    return r.json();
+  },
+  async extractBatch(ids: number[], concurrency = 3): Promise<{ ok: number; errors: Array<{ id: number; error: string }> }> {
+    const r = await fetch(`${BASE}/api/pdfs/extract-batch`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ids, concurrency }),
+    });
     return r.json();
   },
 };
