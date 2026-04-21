@@ -63,7 +63,7 @@
     ],
     "tables": [
       {
-        "blockLabel": "Coparticipação Parcial",
+        "blockLabel": "PLANOS | COPARTICIPAÇÃO PARCIAL",
         "includesCoparticipation": "PARTIAL",
         "products": [
           {
@@ -126,7 +126,7 @@
         ]
       },
       {
-        "blockLabel": "Coparticipação Parcial",
+        "blockLabel": "Coparticipação Parcial (inferido)",
         "includesCoparticipation": "PARTIAL",
         "products": [
           {
@@ -189,7 +189,7 @@
         ]
       },
       {
-        "blockLabel": "Com Coparticipação",
+        "blockLabel": "PLANOS | COPARTICIPAÇÃO TOTAL",
         "includesCoparticipation": "WITH",
         "products": [
           {
@@ -252,7 +252,7 @@
         ]
       },
       {
-        "blockLabel": "Com Coparticipação",
+        "blockLabel": "Com Coparticipação (inferido)",
         "includesCoparticipation": "WITH",
         "products": [
           {

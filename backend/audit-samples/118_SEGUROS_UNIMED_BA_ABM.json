@@ -19,7 +19,7 @@
     ],
     "tables": [
       {
-        "blockLabel": "Sem Coparticipação",
+        "blockLabel": "PLANOS SEM COPARTICIPAÇÃO",
         "includesCoparticipation": "WITHOUT",
         "products": [
           {
@@ -177,7 +177,7 @@
         ]
       },
       {
-        "blockLabel": "Com Coparticipação",
+        "blockLabel": "Planos COM Coparticipação",
         "includesCoparticipation": "WITH",
         "products": [
           {

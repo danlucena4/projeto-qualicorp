@@ -71,7 +71,7 @@
         ]
       },
       {
-        "blockLabel": "Coparticipação Parcial",
+        "blockLabel": "Planos COM Coparticipação Parcial",
         "includesCoparticipation": "PARTIAL",
         "products": [
           {
