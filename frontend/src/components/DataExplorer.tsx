@@ -8,6 +8,8 @@ import {
   type Stats,
 } from '../api/client';
 
+const PAGE_SIZE_OPTIONS = [24, 48, 96, 200];
+
 export function DataExplorer({ refreshKey }: { refreshKey: number }) {
   const [stats, setStats] = useState<Stats | null>(null);
   const [states, setStates] = useState<QcState[]>([]);
@@ -18,6 +20,8 @@ export function DataExplorer({ refreshKey }: { refreshKey: number }) {
   const [filterEnt, setFilterEnt] = useState('');
   const [tables, setTables] = useState<QcTable[]>([]);
   const [total, setTotal] = useState(0);
+  const [page, setPage] = useState(0);
+  const [pageSize, setPageSize] = useState(48);
 
   useEffect(() => {
     Promise.all([
@@ -35,20 +39,30 @@ export function DataExplorer({ refreshKey }: { refreshKey: number }) {
       .catch(() => {});
   }, [refreshKey]);
 
+  // Reseta a página quando os filtros ou o pageSize mudam.
+  useEffect(() => {
+    setPage(0);
+  }, [filterUf, filterOp, filterEnt, pageSize, refreshKey]);
+
   useEffect(() => {
     api
       .listTables({
         uf: filterUf || undefined,
         operatorId: filterOp ? Number(filterOp) : undefined,
         entityId: filterEnt ? Number(filterEnt) : undefined,
-        limit: 50,
+        limit: pageSize,
+        offset: page * pageSize,
       })
       .then((r) => {
         setTables(r.items);
         setTotal(r.total);
       })
       .catch(() => {});
-  }, [refreshKey, filterUf, filterOp, filterEnt]);
+  }, [refreshKey, filterUf, filterOp, filterEnt, page, pageSize]);
+
+  const totalPages = Math.max(1, Math.ceil(total / pageSize));
+  const start = total === 0 ? 0 : page * pageSize + 1;
+  const end = Math.min(total, (page + 1) * pageSize);
 
   return (
     <div>
@@ -96,9 +110,16 @@ export function DataExplorer({ refreshKey }: { refreshKey: number }) {
             />
           </div>
 
-          <div style={{ marginTop: 12, color: 'var(--muted)', fontSize: 13 }}>
-            Exibindo {tables.length} de {total} tabelas.
-          </div>
+          <Pagination
+            page={page}
+            totalPages={totalPages}
+            pageSize={pageSize}
+            onPageChange={setPage}
+            onPageSizeChange={setPageSize}
+            rangeStart={start}
+            rangeEnd={end}
+            total={total}
+          />
 
           <div
             style={{
@@ -148,6 +169,20 @@ export function DataExplorer({ refreshKey }: { refreshKey: number }) {
               </div>
             ))}
           </div>
+
+          {total > pageSize && (
+            <Pagination
+              page={page}
+              totalPages={totalPages}
+              pageSize={pageSize}
+              onPageChange={setPage}
+              onPageSizeChange={setPageSize}
+              rangeStart={start}
+              rangeEnd={end}
+              total={total}
+              hidePageSize
+            />
+          )}
         </>
       )}
 
@@ -165,6 +200,120 @@ function Stat({ label, value }: { label: string; value: number | string }) {
     <div className="stat">
       <div className="label">{label}</div>
       <div className="value">{value}</div>
+    </div>
+  );
+}
+
+function Pagination({
+  page,
+  totalPages,
+  pageSize,
+  onPageChange,
+  onPageSizeChange,
+  rangeStart,
+  rangeEnd,
+  total,
+  hidePageSize,
+}: {
+  page: number;
+  totalPages: number;
+  pageSize: number;
+  onPageChange: (p: number) => void;
+  onPageSizeChange: (n: number) => void;
+  rangeStart: number;
+  rangeEnd: number;
+  total: number;
+  hidePageSize?: boolean;
+}) {
+  // Gera números de páginas com elipses quando há muitas páginas.
+  const numbers: Array<number | 'ellipsis'> = (() => {
+    if (totalPages <= 7) return Array.from({ length: totalPages }, (_, i) => i);
+    const out: Array<number | 'ellipsis'> = [0];
+    const windowStart = Math.max(1, page - 1);
+    const windowEnd = Math.min(totalPages - 2, page + 1);
+    if (windowStart > 1) out.push('ellipsis');
+    for (let i = windowStart; i <= windowEnd; i++) out.push(i);
+    if (windowEnd < totalPages - 2) out.push('ellipsis');
+    out.push(totalPages - 1);
+    return out;
+  })();
+
+  const btn = (label: string, targetPage: number, disabled?: boolean, active?: boolean) => (
+    <button
+      key={`${label}-${targetPage}`}
+      onClick={() => onPageChange(targetPage)}
+      disabled={disabled}
+      style={{
+        background: active ? 'var(--accent-strong)' : 'transparent',
+        color: active ? '#0b1120' : 'var(--text)',
+        border: '1px solid ' + (active ? 'var(--accent-strong)' : 'var(--border)'),
+        borderRadius: 6,
+        padding: '6px 10px',
+        fontSize: 12,
+        fontWeight: active ? 700 : 500,
+        cursor: disabled ? 'not-allowed' : 'pointer',
+        opacity: disabled ? 0.4 : 1,
+        minWidth: 36,
+      }}
+    >
+      {label}
+    </button>
+  );
+
+  return (
+    <div
+      style={{
+        marginTop: 12,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        gap: 12,
+        flexWrap: 'wrap',
+      }}
+    >
+      <div style={{ color: 'var(--muted)', fontSize: 13 }}>
+        {total === 0
+          ? 'Nenhuma tabela encontrada.'
+          : `Exibindo ${rangeStart}–${rangeEnd} de ${total} tabelas · página ${page + 1} de ${totalPages}`}
+      </div>
+
+      <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+        {btn('«', 0, page === 0)}
+        {btn('‹', Math.max(0, page - 1), page === 0)}
+        {numbers.map((n, i) =>
+          n === 'ellipsis' ? (
+            <span key={`e-${i}`} style={{ color: 'var(--muted)', padding: '0 4px' }}>
+              …
+            </span>
+          ) : (
+            btn(String(n + 1), n, false, n === page)
+          ),
+        )}
+        {btn('›', Math.min(totalPages - 1, page + 1), page >= totalPages - 1)}
+        {btn('»', totalPages - 1, page >= totalPages - 1)}
+
+        {!hidePageSize && (
+          <select
+            value={pageSize}
+            onChange={(e) => onPageSizeChange(Number(e.target.value))}
+            style={{
+              background: '#0b1120',
+              color: 'var(--text)',
+              border: '1px solid var(--border)',
+              borderRadius: 6,
+              padding: '6px 10px',
+              fontSize: 12,
+              marginLeft: 8,
+            }}
+          >
+            {PAGE_SIZE_OPTIONS.map((n) => (
+              <option key={n} value={n}>
+                {n}/página
+              </option>
+            ))}
+          </select>
+        )}
+      </div>
     </div>
   );
 }
