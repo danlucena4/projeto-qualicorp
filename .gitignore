@@ -1,0 +1,27 @@
+node_modules/
+dist/
+build/
+*.log
+
+# Environment (contém credenciais)
+.env
+.env.local
+
+# Banco de dados local
+backend/data/
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Playwright
+backend/.playwright-session/
+backend/test-results/
+backend/playwright-report/
+backend/explore-output/
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

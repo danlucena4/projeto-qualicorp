@@ -1,0 +1,245 @@
+:root {
+  --bg: #0f172a;
+  --panel: #1e293b;
+  --panel-light: #334155;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+  --accent-strong: #0ea5e9;
+  --success: #4ade80;
+  --warn: #fbbf24;
+  --danger: #f87171;
+  --border: #334155;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.header .subtitle {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.panel h2 {
+  margin: 0 0 12px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.btn {
+  background: var(--accent-strong);
+  color: #0b1120;
+  border: 0;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 120ms;
+}
+
+.btn:hover {
+  background: var(--accent);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn.ghost {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.btn.ghost:hover {
+  background: var(--panel-light);
+}
+
+.btn.danger {
+  background: var(--danger);
+  color: #0b1120;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.status-RUNNING { background: rgba(56, 189, 248, 0.15); color: var(--accent); }
+.status-WAITING_MFA { background: rgba(251, 191, 36, 0.15); color: var(--warn); }
+.status-SUCCESS { background: rgba(74, 222, 128, 0.15); color: var(--success); }
+.status-FAILED { background: rgba(248, 113, 113, 0.15); color: var(--danger); }
+.status-CANCELLED { background: rgba(148, 163, 184, 0.15); color: var(--muted); }
+
+.log {
+  background: #0b1120;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px 14px;
+  font-family: 'JetBrains Mono', 'Consolas', monospace;
+  font-size: 12px;
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.log .line {
+  padding: 2px 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.log .line.error { color: var(--danger); }
+.log .line.warn { color: var(--warn); }
+.log .line.mfa { color: var(--warn); font-weight: 600; }
+.log .line.progress { color: var(--accent); }
+.log .line.done { color: var(--success); font-weight: 600; }
+
+.progress-bar {
+  height: 6px;
+  background: var(--panel-light);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.progress-bar > div {
+  height: 100%;
+  background: var(--accent);
+  transition: width 200ms;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 7, 18, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 28px 32px;
+  width: min(420px, 92vw);
+}
+
+.modal h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.modal p {
+  color: var(--muted);
+  margin: 0 0 20px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.modal input {
+  width: 100%;
+  padding: 12px 14px;
+  background: #0b1120;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  font-family: 'JetBrains Mono', 'Consolas', monospace;
+  margin-bottom: 16px;
+}
+
+.modal input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.modal .actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.stat {
+  background: var(--panel-light);
+  border-radius: 6px;
+  padding: 12px 14px;
+}
+
+.stat .label {
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.stat .value {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.empty {
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+  padding: 24px 0;
+}
