@@ -63,7 +63,7 @@
     ],
     "tables": [
       {
-        "blockLabel": "PLANOS | COPARTICIPAÇÃO PARCIAL",
+        "blockLabel": "PLANOS | COPARTICIPAÇÃO PARCIAL (SEM ODONTO)",
         "includesCoparticipation": "PARTIAL",
         "products": [
           {
@@ -126,7 +126,7 @@
         ]
       },
       {
-        "blockLabel": "Coparticipação Parcial (inferido)",
+        "blockLabel": "Coparticipação Parcial (COM ODONTO)",
         "includesCoparticipation": "PARTIAL",
         "products": [
           {
@@ -189,7 +189,7 @@
         ]
       },
       {
-        "blockLabel": "PLANOS | COPARTICIPAÇÃO TOTAL",
+        "blockLabel": "PLANOS | COPARTICIPAÇÃO TOTAL (SEM ODONTO)",
         "includesCoparticipation": "WITH",
         "products": [
           {
@@ -252,7 +252,7 @@
         ]
       },
       {
-        "blockLabel": "Com Coparticipação (inferido)",
+        "blockLabel": "Com Coparticipação (COM ODONTO)",
         "includesCoparticipation": "WITH",
         "products": [
           {

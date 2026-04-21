@@ -115,7 +115,7 @@
     ],
     "tables": [
       {
-        "blockLabel": "COM COPARTICIPAÇÃO",
+        "blockLabel": "COM COPARTICIPAÇÃO (TITULAR OU +1 DEP)",
         "includesCoparticipation": "WITH",
         "products": [
           {
@@ -159,7 +159,7 @@
         ]
       },
       {
-        "blockLabel": "Com Coparticipação (inferido)",
+        "blockLabel": "Com Coparticipação (TITULAR +2 DEPs)",
         "includesCoparticipation": "WITH",
         "products": [
           {
@@ -203,7 +203,7 @@
         ]
       },
       {
-        "blockLabel": "COM COPARTICIPAÇÃO",
+        "blockLabel": "COM COPARTICIPAÇÃO (TITULAR OU +1 DEP)",
         "includesCoparticipation": "WITH",
         "products": [
           {
@@ -247,7 +247,7 @@
         ]
       },
       {
-        "blockLabel": "Com Coparticipação (inferido)",
+        "blockLabel": "Com Coparticipação (TITULAR +2 DEPs)",
         "includesCoparticipation": "WITH",
         "products": [
           {
@@ -291,7 +291,7 @@
         ]
       },
       {
-        "blockLabel": "PLANOS COM COPARTICIPAÇÃO",
+        "blockLabel": "PLANOS COM COPARTICIPAÇÃO (TITULAR OU +1 DEP)",
         "includesCoparticipation": "WITH",
         "products": [
           {
@@ -373,7 +373,7 @@
         ]
       },
       {
-        "blockLabel": "Com Coparticipação (inferido)",
+        "blockLabel": "Com Coparticipação (TITULAR +2 DEPs)",
         "includesCoparticipation": "WITH",
         "products": [
           {

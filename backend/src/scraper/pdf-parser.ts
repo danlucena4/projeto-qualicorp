@@ -209,6 +209,49 @@ function sniffCoparticipation(block: string): ExtractedTable['includesCoparticip
 // especificidade. Mantém o texto como apareceu (normalizado só em whitespace).
 // Se o bloco não tem título explícito, cai num fallback legível baseado
 // no copart resolvido.
+// Detecta um par de sub-labels que aparecem na seção de preços e indicam que
+// os blocos gêmeos (mesmos ANS) são variações. Os mais comuns:
+//
+//  - Hapvida:  "Planos SEM ODONTO" + "Planos COM ODONTO"
+//              → bloco 1 = SEM ODONTO, bloco 2 = COM ODONTO
+//  - SulAmérica: "TITULAR OU TITULAR + 1 DEPENDENTE" + "TITULAR + 2 OU MAIS"
+//              → bloco 1 = TITULAR+1, bloco 2 = TITULAR+2+
+//
+// Retorna a lista ordenada (mesma ordem em que aparecem no PDF) pra casar por
+// posição nos blocos gêmeos.
+interface VariationInfo {
+  labels: string[];
+}
+
+function detectVariation(pricesSection: string): VariationInfo {
+  const normalized = pricesSection.replace(/\s+/g, ' ');
+  const sem = /Planos?\s+SEM\s+ODONTO/i.test(normalized);
+  const com = /Planos?\s+COM\s+ODONTO/i.test(normalized);
+  if (sem && com) {
+    const semIdx = normalized.search(/Planos?\s+SEM\s+ODONTO/i);
+    const comIdx = normalized.search(/Planos?\s+COM\s+ODONTO/i);
+    return semIdx < comIdx
+      ? { labels: ['SEM ODONTO', 'COM ODONTO'] }
+      : { labels: ['COM ODONTO', 'SEM ODONTO'] };
+  }
+
+  // Sem flag `i` — queremos casar somente os marcadores dos blocos, que estão
+  // em CAIXA ALTA ("TITULAR ou TITULAR + 1 DEPENDENTE"). Isso ignora a
+  // legenda do topo que aparece em Title Case ("Titular / Titular + 1 Dep..."),
+  // que senão bagunçaria a ordem detectada.
+  const soloRe = /\bTITULAR\s+(ou|OU)\s+TITULAR\s*\+\s*1\s+DEPENDENTE\b/;
+  const famRe = /\bTITULAR\s*\+\s*2\s+(ou|OU)\s+MAIS\s+DEPENDENTES\b/;
+  const soloIdx = normalized.search(soloRe);
+  const famIdx = normalized.search(famRe);
+  if (soloIdx >= 0 && famIdx >= 0) {
+    return soloIdx < famIdx
+      ? { labels: ['TITULAR OU +1 DEP', 'TITULAR +2 DEPs'] }
+      : { labels: ['TITULAR +2 DEPs', 'TITULAR OU +1 DEP'] };
+  }
+
+  return { labels: [] };
+}
+
 // Verifica se um label é coerente com o copart resolvido. Útil porque em
 // alguns PDFs (ex.: ONMED) aparece "Planos SEM Coparticipação" e "Planos COM
 // Coparticipação" lado a lado como uma linha de transição entre blocos, e o
@@ -689,12 +732,19 @@ export async function parseQualicorpPdf(data: Uint8Array): Promise<ExtractedPDF>
   // Divide em blocos e parseia cada um.
   const blocks = splitPriceBlocks(pricesSection);
   const tables: ExtractedTable[] = [];
-  // Herança contextual pra bloco-gêmeos (SulAmérica: dois blocos com mesmos
-  // ANS onde só o primeiro captura o header "COM COPARTICIPAÇÃO"). Herdamos
-  // somente quando o bloco atual tem a MESMA lista de ANS do bloco anterior
-  // (indicando que é uma variação do mesmo catálogo).
+
+  // Detecta variações conhecidas dentro da seção de preços (pares de sub-
+  // labels que se repetem). O N-ésimo bloco com os mesmos ANS do anterior
+  // assume o N-ésimo sub-label.
+  const variation = detectVariation(pricesSection);
+
+  // Herança contextual pra bloco-gêmeos (mesmos ANS do bloco anterior).
   let lastCopart: ExtractedTable['includesCoparticipation'] = null;
-  let lastAnsSet = '';
+  let lastAnsKey = '';
+  // Contador de posição dentro de cada grupo de (copart, ANS). Reseta ao
+  // mudar a coparticipação — é o que permite que Hapvida "COPARTICIPAÇÃO
+  // TOTAL" comece novamente SEM ODONTO → COM ODONTO.
+  const twinPositionByGroup = new Map<string, number>();
 
   for (const block of blocks) {
     if (!/Até\s+18\s+anos/i.test(block)) continue;
@@ -708,14 +758,32 @@ export async function parseQualicorpPdf(data: Uint8Array): Promise<ExtractedPDF>
       .map((p) => p.ansCode ?? '')
       .sort()
       .join('|');
-    const sameAns = ansKey === lastAnsSet && ansKey !== '';
 
-    const resolvedCopart = blockCopart ?? (sameAns ? lastCopart : null);
+    // Resolve copart (herdando do gêmeo anterior se não houver marker).
+    const sameAsPrevious = ansKey !== '' && ansKey === lastAnsKey;
+    const resolvedCopart = blockCopart ?? (sameAsPrevious ? lastCopart : null);
     if (blockCopart) lastCopart = blockCopart;
-    lastAnsSet = ansKey;
+    else if (!sameAsPrevious) lastCopart = null;
+    lastAnsKey = ansKey;
+
+    // Chave de agrupamento inclui copart pra que mudar PARCIAL → TOTAL reinicie
+    // o contador de variações (SEM ODONTO/COM ODONTO).
+    const groupKey = `${resolvedCopart ?? '?'}|${ansKey}`;
+    const twinIdx = twinPositionByGroup.get(groupKey) ?? 0;
+    twinPositionByGroup.set(groupKey, twinIdx + 1);
+
+    let label = sniffBlockLabel(block, resolvedCopart);
+    // Anexa o sub-label da variação (SEM ODONTO, COM ODONTO, TITULAR+2+, ...)
+    // se detectamos esse padrão e há um label pra essa posição.
+    const subLabel = variation.labels[twinIdx];
+    if (subLabel) {
+      // Tira o "(inferido)" quando adicionamos uma sub-etiqueta concreta.
+      label = label.replace(/\s*\(inferido\)\s*$/i, '').trim();
+      label = `${label} (${subLabel})`;
+    }
 
     tables.push({
-      blockLabel: sniffBlockLabel(block, resolvedCopart),
+      blockLabel: label,
       includesCoparticipation: resolvedCopart,
       products,
     });
